@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <!-- meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+        <!-- title -->
+        <title>Template</title>
+
+        <!--favicon-->
+        <link rel="icon" type="image/png" href="image/favicon.png">
+
+        <!-- CSS files -->
+        <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" href="plugins/swiper/swiper-bundle.min.css">
+
+        <!-- main stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="site-wrapper overflow-hidden {{page_class}}">
+            {% block main %}{% endblock %}
+        </div>
+        <!-- JS files -->
+        <script src="plugins/jquery/jquery.min.js"></script>
+        <script src="plugins/bootstrap/bootstrap.bundle.min.js"></script>
+        <script src="plugins/swiper/swiper-bundle.min.js"></script>
+        <script src="plugins/isotope/isotope.min.js"></script>
+        {% block pluginjs %}{% endblock %}
+        <!-- Main Script -->
+        <script src="js/script.js"></script>
+
+    </body>
+</html>

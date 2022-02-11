@@ -1,0 +1,71 @@
+/* typography */
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+body {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  font-size: 16px;
+  color: #909090;
+  background-color: #001213;
+  line-height: 1.6;
+}
+
+p,
+.paragraph {
+  margin: 0;
+  line-height: 1.7;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.4;
+}
+
+h4, h5, h6 {
+  font-weight: 700;
+}
+
+h1, .h1 {
+  font-size: 48px;
+}
+
+@media (max-width: 767px) {
+  h1, .h1 {
+    font-size: 40px;
+  }
+}
+
+h2, .h2 {
+  font-size: 38px;
+}
+
+@media (max-width: 767px) {
+  h2, .h2 {
+    font-size: 30px;
+  }
+}
+
+h3, .h3 {
+  font-size: 30px;
+}
+
+@media (max-width: 767px) {
+  h3, .h3 {
+    font-size: 26px;
+  }
+}
+
+h4, .h4 {
+  font-size: 24px;
+}
+
+h5, .h5 {
+  font-size: 18px;
+}
+
+h6, .h6 {
+  font-size: 15px;
+}
+
+/*# sourceMappingURL=maps/style.css.map */
