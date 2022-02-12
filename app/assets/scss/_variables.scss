@@ -1,22 +1,36 @@
 // Colors
-$color-primary: #00b75f;
-$color-light: #bbb;
-$color-dark: #001213;
-$color-muted: #909090;
-$black: #000;
-$white: #fff;
+$Headlines: #000000;
+$Background: #ffffff;
+$Highlight-1: #e5ff61;
+$Highlight-2: #7b61ff;
+$Highlight-3: #ff6196;
+$Highlight-4: #61ffca;
+$Highlight-5: #ff3030;
+
+// gradient-color
+$gradient-1: linear-gradient(90deg, #f6e3dc 0%, #fdf1e3 100%);
+$gradient-2: linear-gradient(90deg, #f6e1e8 0%, #ebe3f0 100%);
+$gradient-3: linear-gradient(90deg, #efecff 0%, #c4b8ff 100%);
+$gradient-4: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+$gradient-5: linear-gradient(90deg, #ffecfd 0%, #b8bbff 100%);
+$gradient-6: linear-gradient(90deg, #e5ff61 0%, #94ff61 100%);
+$gradient-7: linear-gradient(90deg, #7b61ff8e 0%, #b7a9ff5d 0.01%, #7b61ff6c 100%);
+$gradient-8: linear-gradient(90deg, #ffbed4 0%, #ff6196 100%);
+$gradient-9: linear-gradient(113.66deg, #ceffef 15.16%, #61ffca 84.69%);
 
 // Fonts
-$font-primary: 'Space Grotesk', sans-serif;
+$font-primary: "Space Grotesk", sans-serif;
 
 // Typography
-$h1: 48px;
-$h1-md: 40px;
-$h2: 38px;
-$h2-md: 30px;
-$h3: 30px;
-$h3-md: 26px;
-$h4: 24px;
-$h5: 18px;
-$h6: 15px;
-$body-text-size : 16px;
+$h1: 56px;
+$h1-line_height: 66px;
+$h2: 50px;
+$h2-line-height: 59px;
+$h3: 42px;
+$h3-line-height: 49px;
+$h4: 21px;
+$h4-line-height: 25px;
+$h5: 16px;
+$h5-line-height: 19px;
+$body-font-size: 16px;
+$body-line-height: 24px;

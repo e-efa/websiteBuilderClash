@@ -1,0 +1,12 @@
+.btn{
+    height: 52px;
+    width: 192px;
+    left: 0px;
+    top: 0px;
+    border-radius: 0px;
+    padding: 16px, 32px, 16px, 32px;
+    &-download{
+        background-color: $Headlines;
+        color: $Background;
+    }    
+}

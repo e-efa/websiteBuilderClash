@@ -1,0 +1,47 @@
+// hero4header
+.navigation_section {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+//   width: 1440px;
+  justify-content: center;
+  gap: 234px;
+  padding-top: 38.04px;
+  padding-left: 147px;
+  background: $gradient-7;
+  .navbar_menu {
+    .list {
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      padding-top: 12px;
+      gap: 48px;
+      .item {
+        align-self: center;
+        a {
+          font-size: 16px;
+          line-height: 19px;
+          letter-spacing: 0em;
+          text-align: right;
+          color: $Headlines;
+        }
+      }
+    }
+  }
+  .navbar_btn {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding-top: 8px;
+    .android_app-btn,
+    .ioS_app-btn {
+      width: 138px;
+      height: 40px;
+      border: 2px solid #000;
+      box-sizing: border-box;
+    }
+    .ioS_app-btn {
+      width: 105px;
+    }
+  }
+}

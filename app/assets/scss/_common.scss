@@ -1,0 +1,63 @@
+// hero4
+.hero_section {
+  padding-top: 90px;
+  padding-left: 147px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 190px;
+  background: $gradient-7;
+  .hero_section-content {
+    .title {
+      padding-top: 93px;
+      width: 600px;
+    }
+    .body {
+      margin-top: 22px;
+      margin-bottom: 42px;
+      width: 523px;
+    }
+    .sub-text {
+      margin-top: 13px;
+      span {
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+    }
+    .testimonial-section {
+      margin-top: 55px;
+      width: 531px;
+      height: 139px;
+      display: flex;
+      flex-direction: row;
+      gap: 28px;
+      border: 2px solid #000000;
+      box-sizing: border-box;
+      padding-left: 29px;
+      padding-top: 21px;
+      .customer_content {
+        .position {
+          margin-top: 10px;
+          span {
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 17px;
+            letter-spacing: 0em;
+            text-align: left;
+          }
+        }
+      }
+    }
+    .circle {
+      position: relative;
+      top: -85px;
+      right: 47px;
+      z-index: -9999;
+    }
+  }
+}

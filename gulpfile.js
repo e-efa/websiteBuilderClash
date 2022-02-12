@@ -293,6 +293,7 @@ const buildWatch = gulp.series(build,browserReload, gulp.parallel(watchFiles));
 
 
 exports.html = html;
+exports.imgmin = imgmin;
 exports. browserReload =  browserReload;
 exports.pluginJs = pluginJs;
 exports.pluginCss = pluginCss;
