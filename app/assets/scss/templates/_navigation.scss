@@ -1,14 +1,27 @@
+
 // hero4header
 .navigation_section {
   margin: auto;
   display: flex;
   flex-direction: row;
-//   width: 1440px;
   justify-content: center;
   gap: 234px;
   padding-top: 38.04px;
   padding-left: 147px;
   background: $gradient-7;
+  &-dark{
+    @extend .navigation_section;
+    background: #000 ;
+  }
+  &-light{
+    @extend .navigation_section;
+    background: $Background;
+  }
+  &-purple{
+    @extend .navigation_section;
+    background: $Highlight-2;
+    color: #fff;
+  }
   .navbar_menu {
     .list {
       list-style: none;
@@ -39,9 +52,27 @@
       height: 40px;
       border: 2px solid #000;
       box-sizing: border-box;
+      &_light{
+        @extend .android_app-btn;
+        border: 2px solid #fff;
+        background: #000;
+        color: #fff;
+      }
+      &_purple{
+        @extend .android_app-btn;
+        border: 2px solid #fff;
+        background: $Highlight-2;
+        color: #fff;
+      }
     }
     .ioS_app-btn {
       width: 105px;
+      &_light{
+        width: 105px;
+      }
+      &_purple{
+        width:  105px;
+      }
     }
   }
 }

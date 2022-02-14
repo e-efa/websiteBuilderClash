@@ -73,12 +73,21 @@ h5, .h5 {
   padding: 16px, 32px, 16px, 32px;
 }
 
-.btn-download {
+.btn-download, .btn-download_gradient {
   background-color: #000000;
   color: #ffffff;
 }
 
-.hero_section {
+.btn-download_gradient {
+  color: #000;
+  background: linear-gradient(90deg, #EFECFF 0%, #C4B8FF 100%);
+}
+
+.light-task {
+  color: #ffffff !important;
+}
+
+.hero_section, .hero_section-dark, .hero_section-light, .hero_section-purple {
   padding-top: 90px;
   padding-left: 147px;
   display: flex;
@@ -86,24 +95,25 @@ h5, .h5 {
   justify-content: center;
   gap: 190px;
   background: linear-gradient(90deg, #7b61ff8e 0%, #b7a9ff5d 0.01%, #7b61ff6c 100%);
+  margin-bottom: 30px;
 }
 
-.hero_section .hero_section-content .title {
+.hero_section .hero_section-content .title, .hero_section-dark .hero_section-content .title, .hero_section-light .hero_section-content .title, .hero_section-purple .hero_section-content .title {
   padding-top: 93px;
   width: 600px;
 }
 
-.hero_section .hero_section-content .body {
+.hero_section .hero_section-content .body, .hero_section-dark .hero_section-content .body, .hero_section-light .hero_section-content .body, .hero_section-purple .hero_section-content .body {
   margin-top: 22px;
   margin-bottom: 42px;
   width: 523px;
 }
 
-.hero_section .hero_section-content .sub-text {
+.hero_section .hero_section-content .sub-text, .hero_section-dark .hero_section-content .sub-text, .hero_section-light .hero_section-content .sub-text, .hero_section-purple .hero_section-content .sub-text {
   margin-top: 13px;
 }
 
-.hero_section .hero_section-content .sub-text span {
+.hero_section .hero_section-content .sub-text span, .hero_section-dark .hero_section-content .sub-text span, .hero_section-light .hero_section-content .sub-text span, .hero_section-purple .hero_section-content .sub-text span {
   font-size: 13px;
   font-style: normal;
   font-weight: 400;
@@ -112,7 +122,7 @@ h5, .h5 {
   text-align: left;
 }
 
-.hero_section .hero_section-content .testimonial-section {
+.hero_section .hero_section-content .testimonial-section, .hero_section-dark .hero_section-content .testimonial-section, .hero_section-light .hero_section-content .testimonial-section, .hero_section-purple .hero_section-content .testimonial-section, .hero_section .hero_section-content .testimonial-section-light, .hero_section-dark .hero_section-content .testimonial-section-light, .hero_section-light .hero_section-content .testimonial-section-light, .hero_section-purple .hero_section-content .testimonial-section-light, .hero_section .hero_section-content .testimonial-section-no_border, .hero_section-dark .hero_section-content .testimonial-section-no_border, .hero_section-light .hero_section-content .testimonial-section-no_border, .hero_section-purple .hero_section-content .testimonial-section-no_border {
   margin-top: 55px;
   width: 531px;
   height: 139px;
@@ -125,11 +135,11 @@ h5, .h5 {
   padding-top: 21px;
 }
 
-.hero_section .hero_section-content .testimonial-section .customer_content .position {
+.hero_section .hero_section-content .testimonial-section .customer_content .position, .hero_section-dark .hero_section-content .testimonial-section .customer_content .position, .hero_section-light .hero_section-content .testimonial-section .customer_content .position, .hero_section-purple .hero_section-content .testimonial-section .customer_content .position, .hero_section .hero_section-content .testimonial-section-light .customer_content .position, .hero_section-dark .hero_section-content .testimonial-section-light .customer_content .position, .hero_section-light .hero_section-content .testimonial-section-light .customer_content .position, .hero_section-purple .hero_section-content .testimonial-section-light .customer_content .position, .hero_section .hero_section-content .testimonial-section-no_border .customer_content .position, .hero_section-dark .hero_section-content .testimonial-section-no_border .customer_content .position, .hero_section-light .hero_section-content .testimonial-section-no_border .customer_content .position, .hero_section-purple .hero_section-content .testimonial-section-no_border .customer_content .position {
   margin-top: 10px;
 }
 
-.hero_section .hero_section-content .testimonial-section .customer_content .position span {
+.hero_section .hero_section-content .testimonial-section .customer_content .position span, .hero_section-dark .hero_section-content .testimonial-section .customer_content .position span, .hero_section-light .hero_section-content .testimonial-section .customer_content .position span, .hero_section-purple .hero_section-content .testimonial-section .customer_content .position span, .hero_section .hero_section-content .testimonial-section-light .customer_content .position span, .hero_section-dark .hero_section-content .testimonial-section-light .customer_content .position span, .hero_section-light .hero_section-content .testimonial-section-light .customer_content .position span, .hero_section-purple .hero_section-content .testimonial-section-light .customer_content .position span, .hero_section .hero_section-content .testimonial-section-no_border .customer_content .position span, .hero_section-dark .hero_section-content .testimonial-section-no_border .customer_content .position span, .hero_section-light .hero_section-content .testimonial-section-no_border .customer_content .position span, .hero_section-purple .hero_section-content .testimonial-section-no_border .customer_content .position span {
   font-size: 13px;
   font-style: normal;
   font-weight: 400;
@@ -138,14 +148,39 @@ h5, .h5 {
   text-align: left;
 }
 
-.hero_section .hero_section-content .circle {
+.hero_section .hero_section-content .testimonial-section-light, .hero_section-dark .hero_section-content .testimonial-section-light, .hero_section-light .hero_section-content .testimonial-section-light, .hero_section-purple .hero_section-content .testimonial-section-light {
+  border: 2px solid #fff;
+}
+
+.hero_section .hero_section-content .testimonial-section-no_border, .hero_section-dark .hero_section-content .testimonial-section-no_border, .hero_section-light .hero_section-content .testimonial-section-no_border, .hero_section-purple .hero_section-content .testimonial-section-no_border {
+  border: none;
+}
+
+.hero_section .hero_section-content .circle, .hero_section-dark .hero_section-content .circle, .hero_section-light .hero_section-content .circle, .hero_section-purple .hero_section-content .circle, .hero_section .hero_section-content .circle-light, .hero_section-dark .hero_section-content .circle-light, .hero_section-light .hero_section-content .circle-light, .hero_section-purple .hero_section-content .circle-light {
   position: relative;
   top: -85px;
   right: 47px;
-  z-index: -9999;
+  z-index: 9999;
 }
 
-.navigation_section {
+.hero_section .hero_section-content .circle-light, .hero_section-dark .hero_section-content .circle-light, .hero_section-light .hero_section-content .circle-light, .hero_section-purple .hero_section-content .circle-light {
+  z-index: 999;
+}
+
+.hero_section-dark {
+  background: #000000;
+  color: #ffffff;
+}
+
+.hero_section-light {
+  background: #ffffff;
+}
+
+.hero_section-purple {
+  background: #7b61ff;
+}
+
+.navigation_section, .navigation_section-dark, .navigation_section-light, .navigation_section-purple {
   margin: auto;
   display: flex;
   flex-direction: row;
@@ -156,7 +191,20 @@ h5, .h5 {
   background: linear-gradient(90deg, #7b61ff8e 0%, #b7a9ff5d 0.01%, #7b61ff6c 100%);
 }
 
-.navigation_section .navbar_menu .list {
+.navigation_section-dark {
+  background: #000;
+}
+
+.navigation_section-light {
+  background: #ffffff;
+}
+
+.navigation_section-purple {
+  background: #7b61ff;
+  color: #fff;
+}
+
+.navigation_section .navbar_menu .list, .navigation_section-dark .navbar_menu .list, .navigation_section-light .navbar_menu .list, .navigation_section-purple .navbar_menu .list {
   list-style: none;
   display: flex;
   flex-direction: row;
@@ -164,11 +212,11 @@ h5, .h5 {
   gap: 48px;
 }
 
-.navigation_section .navbar_menu .list .item {
+.navigation_section .navbar_menu .list .item, .navigation_section-dark .navbar_menu .list .item, .navigation_section-light .navbar_menu .list .item, .navigation_section-purple .navbar_menu .list .item {
   align-self: center;
 }
 
-.navigation_section .navbar_menu .list .item a {
+.navigation_section .navbar_menu .list .item a, .navigation_section-dark .navbar_menu .list .item a, .navigation_section-light .navbar_menu .list .item a, .navigation_section-purple .navbar_menu .list .item a {
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 0em;
@@ -176,22 +224,73 @@ h5, .h5 {
   color: #000000;
 }
 
-.navigation_section .navbar_btn {
+.navigation_section .navbar_btn, .navigation_section-dark .navbar_btn, .navigation_section-light .navbar_btn, .navigation_section-purple .navbar_btn {
   display: flex;
   flex-direction: row;
   gap: 10px;
   padding-top: 8px;
 }
 
-.navigation_section .navbar_btn .android_app-btn,
-.navigation_section .navbar_btn .ioS_app-btn {
+.navigation_section .navbar_btn .android_app-btn, .navigation_section-dark .navbar_btn .android_app-btn, .navigation_section-light .navbar_btn .android_app-btn, .navigation_section-purple .navbar_btn .android_app-btn, .navigation_section .navbar_btn .android_app-btn_light, .navigation_section-dark .navbar_btn .android_app-btn_light, .navigation_section-light .navbar_btn .android_app-btn_light, .navigation_section-purple .navbar_btn .android_app-btn_light,
+.navigation_section .navbar_btn .ioS_app-btn_light,
+.navigation_section-dark .navbar_btn .ioS_app-btn_light,
+.navigation_section-light .navbar_btn .ioS_app-btn_light,
+.navigation_section-purple .navbar_btn .ioS_app-btn_light, .navigation_section .navbar_btn .android_app-btn_purple, .navigation_section-dark .navbar_btn .android_app-btn_purple, .navigation_section-light .navbar_btn .android_app-btn_purple, .navigation_section-purple .navbar_btn .android_app-btn_purple,
+.navigation_section .navbar_btn .ioS_app-btn_purple,
+.navigation_section-dark .navbar_btn .ioS_app-btn_purple,
+.navigation_section-light .navbar_btn .ioS_app-btn_purple,
+.navigation_section-purple .navbar_btn .ioS_app-btn_purple,
+.navigation_section .navbar_btn .ioS_app-btn,
+.navigation_section-dark .navbar_btn .ioS_app-btn,
+.navigation_section-light .navbar_btn .ioS_app-btn,
+.navigation_section-purple .navbar_btn .ioS_app-btn {
   width: 138px;
   height: 40px;
   border: 2px solid #000;
   box-sizing: border-box;
 }
 
-.navigation_section .navbar_btn .ioS_app-btn {
+.navigation_section .navbar_btn .android_app-btn_light, .navigation_section-dark .navbar_btn .android_app-btn_light, .navigation_section-light .navbar_btn .android_app-btn_light, .navigation_section-purple .navbar_btn .android_app-btn_light,
+.navigation_section .navbar_btn .ioS_app-btn_light,
+.navigation_section-dark .navbar_btn .ioS_app-btn_light,
+.navigation_section-light .navbar_btn .ioS_app-btn_light,
+.navigation_section-purple .navbar_btn .ioS_app-btn_light {
+  border: 2px solid #fff;
+  background: #000;
+  color: #fff;
+}
+
+.navigation_section .navbar_btn .android_app-btn_purple, .navigation_section-dark .navbar_btn .android_app-btn_purple, .navigation_section-light .navbar_btn .android_app-btn_purple, .navigation_section-purple .navbar_btn .android_app-btn_purple,
+.navigation_section .navbar_btn .ioS_app-btn_purple,
+.navigation_section-dark .navbar_btn .ioS_app-btn_purple,
+.navigation_section-light .navbar_btn .ioS_app-btn_purple,
+.navigation_section-purple .navbar_btn .ioS_app-btn_purple {
+  border: 2px solid #fff;
+  background: #7b61ff;
+  color: #fff;
+}
+
+
+.navigation_section .navbar_btn .ioS_app-btn,
+.navigation_section-dark .navbar_btn .ioS_app-btn,
+.navigation_section-light .navbar_btn .ioS_app-btn,
+.navigation_section-purple .navbar_btn .ioS_app-btn {
+  width: 105px;
+}
+
+
+.navigation_section .navbar_btn .ioS_app-btn_light,
+.navigation_section-dark .navbar_btn .ioS_app-btn_light,
+.navigation_section-light .navbar_btn .ioS_app-btn_light,
+.navigation_section-purple .navbar_btn .ioS_app-btn_light {
+  width: 105px;
+}
+
+
+.navigation_section .navbar_btn .ioS_app-btn_purple,
+.navigation_section-dark .navbar_btn .ioS_app-btn_purple,
+.navigation_section-light .navbar_btn .ioS_app-btn_purple,
+.navigation_section-purple .navbar_btn .ioS_app-btn_purple {
   width: 105px;
 }
 

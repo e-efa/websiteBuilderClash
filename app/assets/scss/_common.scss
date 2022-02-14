@@ -1,3 +1,7 @@
+// dark - text
+.light-task {
+  color: $Background !important;
+}
 // hero4
 .hero_section {
   padding-top: 90px;
@@ -7,6 +11,7 @@
   justify-content: center;
   gap: 190px;
   background: $gradient-7;
+  margin-bottom: 30px;
   .hero_section-content {
     .title {
       padding-top: 93px;
@@ -52,12 +57,37 @@
           }
         }
       }
+      &-light {
+        @extend .testimonial-section;
+        border: 2px solid #fff;
+      }
+      &-no_border{
+        @extend .testimonial-section;
+        border: none;
+      }
     }
     .circle {
       position: relative;
       top: -85px;
       right: 47px;
-      z-index: -9999;
+      z-index: 9999;
+      &-light{
+        @extend .circle;
+        z-index: 999;
+      }
     }
+  }
+  &-dark {
+    @extend .hero_section;
+    background: #000000;
+    color: $Background;
+  }
+  &-light{
+    @extend .hero_section;
+    background: $Background;
+  }
+  &-purple{
+    @extend .hero_section;
+    background: $Highlight-2;
   }
 }
