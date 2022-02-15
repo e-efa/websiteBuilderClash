@@ -1,4 +1,3 @@
-
 // hero4header
 .navigation_section {
   margin: auto;
@@ -9,15 +8,20 @@
   padding-top: 38.04px;
   padding-left: 147px;
   background: $gradient-7;
-  &-dark{
-    @extend .navigation_section;
-    background: #000 ;
+  @include mobile {
+    width: 390px;
+    padding-left: 0;
+    gap: 230px;
   }
-  &-light{
+  &-dark {
+    @extend .navigation_section;
+    background: #000;
+  }
+  &-light {
     @extend .navigation_section;
     background: $Background;
   }
-  &-purple{
+  &-purple {
     @extend .navigation_section;
     background: $Highlight-2;
     color: #fff;
@@ -40,6 +44,9 @@
         }
       }
     }
+    @include mobile {
+      display: none;
+    }
   }
   .navbar_btn {
     display: flex;
@@ -52,13 +59,13 @@
       height: 40px;
       border: 2px solid #000;
       box-sizing: border-box;
-      &_light{
+      &_light {
         @extend .android_app-btn;
         border: 2px solid #fff;
         background: #000;
         color: #fff;
       }
-      &_purple{
+      &_purple {
         @extend .android_app-btn;
         border: 2px solid #fff;
         background: $Highlight-2;
@@ -67,12 +74,76 @@
     }
     .ioS_app-btn {
       width: 105px;
-      &_light{
+      &_light {
         width: 105px;
       }
-      &_purple{
-        width:  105px;
+      &_purple {
+        width: 105px;
       }
     }
+    @include mobile {
+      display: none;
+    }
+  }
+  .hamburger {
+    @include mobile {
+      width: 30px;
+      height: 30px;
+      padding-top: 12px;
+    }
+    ul {
+      padding-inline-start: 0px;
+      list-style: none;
+    }
+    .bar {
+      @include mobile {
+        width: 20px;
+        height: 3px;
+        background-color: #000;
+      }
+      &:nth-child(1) {
+        @include mobile {
+          width: 35px;
+          margin-bottom: 6px;
+        }
+      }
+      &:nth-child(2) {
+        @include mobile {
+          width: 35px;
+          margin-bottom: 6px;
+        }
+      }
+      &:nth-child(3) {
+        @include mobile {
+          position: relative;
+          width: 20px;
+          left: 13px;
+        }
+      }
+    }
+    .bar-light {
+      background-color: #fff !important;
+    }
+  }
+}
+
+// hero1
+.h1-navigation_section {
+  display: flex;
+  flex-direction: row;
+  padding-left: 147px;
+  padding-top: 38.04px;
+  gap: 80%;
+  @include mobile {
+    margin: auto;
+    width: 280px;
+    padding-left: 0px;
+    padding-top: 24.03px;
+  }
+  .nav-logo {
+    align-self: flex-start;
+  }
+  .nav-menu {
+    align-self: center;
   }
 }

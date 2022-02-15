@@ -12,15 +12,52 @@
   gap: 190px;
   background: $gradient-7;
   margin-bottom: 30px;
+  @include mobile {
+    width: 390px;
+    flex-direction: column;
+    padding-left: 35px;
+    padding-right: 12px;
+    gap: 48px;
+  }
   .hero_section-content {
+    @include mobile {
+      order: 2;
+    }
     .title {
       padding-top: 93px;
       width: 600px;
+      @include mobile {
+        padding-top: 0;
+        width: 327px;
+        text-align: center;
+      }
+      h2 {
+        @include mobile {
+          font-size: 38px;
+          line-height: 45px;
+          letter-spacing: 0em;
+          text-align: left;
+        }
+      }
     }
     .body {
       margin-top: 22px;
       margin-bottom: 42px;
       width: 523px;
+      @include mobile {
+        width: 327px;
+        text-align: center;
+      }
+      p {
+        @include mobile {
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 27px;
+          letter-spacing: 0em;
+          text-align: left;
+        }
+      }
     }
     .sub-text {
       margin-top: 13px;
@@ -31,6 +68,9 @@
         line-height: 17px;
         letter-spacing: 0em;
         text-align: left;
+      }
+      @include mobile {
+        display: none;
       }
     }
     .testimonial-section {
@@ -44,6 +84,16 @@
       box-sizing: border-box;
       padding-left: 29px;
       padding-top: 21px;
+      @include mobile {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        width: 327px;
+        height: 242px;
+        border: none;
+        padding-bottom: 80px;
+        padding-left: 10px;
+      }
       .customer_content {
         .position {
           margin-top: 10px;
@@ -60,8 +110,11 @@
       &-light {
         @extend .testimonial-section;
         border: 2px solid #fff;
+        @include mobile {
+          border: none;
+        }
       }
-      &-no_border{
+      &-no_border {
         @extend .testimonial-section;
         border: none;
       }
@@ -71,9 +124,12 @@
       top: -85px;
       right: 47px;
       z-index: 9999;
-      &-light{
+      &-light {
         @extend .circle;
         z-index: 999;
+      }
+      @include mobile {
+        display: none;
       }
     }
   }
@@ -82,12 +138,207 @@
     background: #000000;
     color: $Background;
   }
-  &-light{
+  &-light {
     @extend .hero_section;
     background: $Background;
   }
-  &-purple{
+  &-purple {
     @extend .hero_section;
     background: $Highlight-2;
+  }
+  .hero_section-img {
+    img {
+      @include mobile {
+        margin: auto;
+        width: 327px;
+      }
+    }
+  }
+}
+
+// hero1
+.h1-hero_section {
+  margin: auto;
+  margin-bottom: 100px;
+  margin-top: 119px;
+  width: 1440px;
+  height: 903px;
+  display: flex;
+  flex-direction: row;
+  padding-left: 95px;
+  gap: 70px;
+  .content-section {
+    width: 531px;
+    padding-top: 48px;
+    .title {
+      margin-bottom: 22px;
+    }
+    .body {
+      width: 523px;
+      margin-bottom: 46.5px;
+    }
+    .sub-body {
+      span {
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+      margin-bottom: 47px;
+    }
+    .testimonial-section {
+      display: flex;
+      flex-direction: row;
+      width: 531px;
+      height: 139px;
+      padding-top: 20px;
+      padding-left: 29px;
+      background: #faf9ff;
+      gap: 19px;
+      .testi-content {
+        width: 380px;
+        .testi-body {
+          p {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0em;
+            text-align: left;
+          }
+        }
+        .testi-position {
+          span {
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 17px;
+            letter-spacing: 0em;
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+  .image_section {
+    width: 560px;
+    height: 560px;
+    background: linear-gradient(90deg, #efecff 0%, #c4b8ff 100%);
+    img {
+      position: relative;
+      width: 500px;
+      top: -63px;
+      left: 37px;
+    }
+  }
+}
+
+// hero2
+.h2-hero_section {
+  width: 1240px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  padding-top: 118px;
+  margin-bottom: 100px;
+  .content-section {
+    margin: auto;
+    width: 754px;
+    .title {
+      margin-bottom: 22px;
+      h2 {
+        text-align: center;
+      }
+    }
+    .body {
+      margin: auto;
+      width: 754px;
+      p {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 27px;
+        letter-spacing: 0em;
+        text-align: center;
+        margin-bottom: 32px;
+      }
+    }
+    .btn_container {
+      margin: auto;
+      width: 754px;
+      text-align: center;
+      .sub-body {
+        margin-top: 27px;
+      }
+    }
+  }
+  .image_section {
+    margin: auto;
+    width: 1146px;
+    height: 680px;
+    background: linear-gradient(90deg, #efecff 0%, #c4b8ff 100%);
+    margin-top: 103px;
+    padding-left: 142px;
+    img {
+      position: relative;
+      top: 140px;
+      width: 364px;
+      left: 12px;
+      &:nth-child(1) {
+        width: 444px;
+      }
+    }
+  }
+}
+
+// hero3
+.h3-input {
+  display: flex;
+  flex-direction: row;
+  width: 401px;
+  height: 55px;
+  gap: 189px;
+  border: 2px solid #000000;
+  margin-bottom: 76px;
+  span {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #000000;
+    opacity: 0.3;
+    align-self: center;
+    padding-left: 28px;
+  }
+  .h3-btn {
+    width: 130px;
+    height: 40px;
+    align-self: center;
+  }
+}
+
+// hero5
+.hero-5 {
+  margin: auto;
+  width: 100%;
+  background-image: url("/image/png/hero5/bg-h5.png");
+  background-repeat: no-repeat;
+  .bg-purple {
+    position: relative;
+    background-color: $gradient-7;
+    background: #7b61ff;
+    opacity: 0.93;
+  }
+  .image_section{
+    background: transparent !important;
+  }
+  .testi-h5{
+   background: transparent;
   }
 }

@@ -73,6 +73,12 @@ h5, .h5 {
   padding: 16px, 32px, 16px, 32px;
 }
 
+@media (max-width: 575px) {
+  .btn {
+    width: 327px;
+  }
+}
+
 .btn-download, .btn-download_gradient {
   background-color: #000000;
   color: #ffffff;
@@ -81,6 +87,11 @@ h5, .h5 {
 .btn-download_gradient {
   color: #000;
   background: linear-gradient(90deg, #EFECFF 0%, #C4B8FF 100%);
+}
+
+.btn-black {
+  background-color: #000;
+  color: #ffffff;
 }
 
 .light-task {
@@ -98,15 +109,66 @@ h5, .h5 {
   margin-bottom: 30px;
 }
 
+@media (max-width: 575px) {
+  .hero_section, .hero_section-dark, .hero_section-light, .hero_section-purple {
+    width: 390px;
+    flex-direction: column;
+    padding-left: 35px;
+    padding-right: 12px;
+    gap: 48px;
+  }
+}
+
+@media (max-width: 575px) {
+  .hero_section .hero_section-content, .hero_section-dark .hero_section-content, .hero_section-light .hero_section-content, .hero_section-purple .hero_section-content {
+    order: 2;
+  }
+}
+
 .hero_section .hero_section-content .title, .hero_section-dark .hero_section-content .title, .hero_section-light .hero_section-content .title, .hero_section-purple .hero_section-content .title {
   padding-top: 93px;
   width: 600px;
+}
+
+@media (max-width: 575px) {
+  .hero_section .hero_section-content .title, .hero_section-dark .hero_section-content .title, .hero_section-light .hero_section-content .title, .hero_section-purple .hero_section-content .title {
+    padding-top: 0;
+    width: 327px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 575px) {
+  .hero_section .hero_section-content .title h2, .hero_section-dark .hero_section-content .title h2, .hero_section-light .hero_section-content .title h2, .hero_section-purple .hero_section-content .title h2 {
+    font-size: 38px;
+    line-height: 45px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
 }
 
 .hero_section .hero_section-content .body, .hero_section-dark .hero_section-content .body, .hero_section-light .hero_section-content .body, .hero_section-purple .hero_section-content .body {
   margin-top: 22px;
   margin-bottom: 42px;
   width: 523px;
+}
+
+@media (max-width: 575px) {
+  .hero_section .hero_section-content .body, .hero_section-dark .hero_section-content .body, .hero_section-light .hero_section-content .body, .hero_section-purple .hero_section-content .body {
+    width: 327px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 575px) {
+  .hero_section .hero_section-content .body p, .hero_section-dark .hero_section-content .body p, .hero_section-light .hero_section-content .body p, .hero_section-purple .hero_section-content .body p {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
 }
 
 .hero_section .hero_section-content .sub-text, .hero_section-dark .hero_section-content .sub-text, .hero_section-light .hero_section-content .sub-text, .hero_section-purple .hero_section-content .sub-text {
@@ -122,6 +184,12 @@ h5, .h5 {
   text-align: left;
 }
 
+@media (max-width: 575px) {
+  .hero_section .hero_section-content .sub-text, .hero_section-dark .hero_section-content .sub-text, .hero_section-light .hero_section-content .sub-text, .hero_section-purple .hero_section-content .sub-text {
+    display: none;
+  }
+}
+
 .hero_section .hero_section-content .testimonial-section, .hero_section-dark .hero_section-content .testimonial-section, .hero_section-light .hero_section-content .testimonial-section, .hero_section-purple .hero_section-content .testimonial-section, .hero_section .hero_section-content .testimonial-section-light, .hero_section-dark .hero_section-content .testimonial-section-light, .hero_section-light .hero_section-content .testimonial-section-light, .hero_section-purple .hero_section-content .testimonial-section-light, .hero_section .hero_section-content .testimonial-section-no_border, .hero_section-dark .hero_section-content .testimonial-section-no_border, .hero_section-light .hero_section-content .testimonial-section-no_border, .hero_section-purple .hero_section-content .testimonial-section-no_border {
   margin-top: 55px;
   width: 531px;
@@ -133,6 +201,19 @@ h5, .h5 {
   box-sizing: border-box;
   padding-left: 29px;
   padding-top: 21px;
+}
+
+@media (max-width: 575px) {
+  .hero_section .hero_section-content .testimonial-section, .hero_section-dark .hero_section-content .testimonial-section, .hero_section-light .hero_section-content .testimonial-section, .hero_section-purple .hero_section-content .testimonial-section, .hero_section .hero_section-content .testimonial-section-light, .hero_section-dark .hero_section-content .testimonial-section-light, .hero_section-light .hero_section-content .testimonial-section-light, .hero_section-purple .hero_section-content .testimonial-section-light, .hero_section .hero_section-content .testimonial-section-no_border, .hero_section-dark .hero_section-content .testimonial-section-no_border, .hero_section-light .hero_section-content .testimonial-section-no_border, .hero_section-purple .hero_section-content .testimonial-section-no_border {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 327px;
+    height: 242px;
+    border: none;
+    padding-bottom: 80px;
+    padding-left: 10px;
+  }
 }
 
 .hero_section .hero_section-content .testimonial-section .customer_content .position, .hero_section-dark .hero_section-content .testimonial-section .customer_content .position, .hero_section-light .hero_section-content .testimonial-section .customer_content .position, .hero_section-purple .hero_section-content .testimonial-section .customer_content .position, .hero_section .hero_section-content .testimonial-section-light .customer_content .position, .hero_section-dark .hero_section-content .testimonial-section-light .customer_content .position, .hero_section-light .hero_section-content .testimonial-section-light .customer_content .position, .hero_section-purple .hero_section-content .testimonial-section-light .customer_content .position, .hero_section .hero_section-content .testimonial-section-no_border .customer_content .position, .hero_section-dark .hero_section-content .testimonial-section-no_border .customer_content .position, .hero_section-light .hero_section-content .testimonial-section-no_border .customer_content .position, .hero_section-purple .hero_section-content .testimonial-section-no_border .customer_content .position {
@@ -152,6 +233,12 @@ h5, .h5 {
   border: 2px solid #fff;
 }
 
+@media (max-width: 575px) {
+  .hero_section .hero_section-content .testimonial-section-light, .hero_section-dark .hero_section-content .testimonial-section-light, .hero_section-light .hero_section-content .testimonial-section-light, .hero_section-purple .hero_section-content .testimonial-section-light {
+    border: none;
+  }
+}
+
 .hero_section .hero_section-content .testimonial-section-no_border, .hero_section-dark .hero_section-content .testimonial-section-no_border, .hero_section-light .hero_section-content .testimonial-section-no_border, .hero_section-purple .hero_section-content .testimonial-section-no_border {
   border: none;
 }
@@ -167,6 +254,12 @@ h5, .h5 {
   z-index: 999;
 }
 
+@media (max-width: 575px) {
+  .hero_section .hero_section-content .circle, .hero_section-dark .hero_section-content .circle, .hero_section-light .hero_section-content .circle, .hero_section-purple .hero_section-content .circle, .hero_section .hero_section-content .circle-light, .hero_section-dark .hero_section-content .circle-light, .hero_section-light .hero_section-content .circle-light, .hero_section-purple .hero_section-content .circle-light {
+    display: none;
+  }
+}
+
 .hero_section-dark {
   background: #000000;
   color: #ffffff;
@@ -180,6 +273,218 @@ h5, .h5 {
   background: #7b61ff;
 }
 
+@media (max-width: 575px) {
+  .hero_section .hero_section-img img, .hero_section-dark .hero_section-img img, .hero_section-light .hero_section-img img, .hero_section-purple .hero_section-img img {
+    margin: auto;
+    width: 327px;
+  }
+}
+
+.h1-hero_section {
+  margin: auto;
+  margin-bottom: 100px;
+  margin-top: 119px;
+  width: 1440px;
+  height: 903px;
+  display: flex;
+  flex-direction: row;
+  padding-left: 95px;
+  gap: 70px;
+}
+
+.h1-hero_section .content-section {
+  width: 531px;
+  padding-top: 48px;
+}
+
+.h1-hero_section .content-section .title {
+  margin-bottom: 22px;
+}
+
+.h1-hero_section .content-section .body {
+  width: 523px;
+  margin-bottom: 46.5px;
+}
+
+.h1-hero_section .content-section .sub-body {
+  margin-bottom: 47px;
+}
+
+.h1-hero_section .content-section .sub-body span {
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.h1-hero_section .content-section .testimonial-section, .h1-hero_section .content-section .hero_section .hero_section-content .testimonial-section-light, .hero_section .hero_section-content .h1-hero_section .content-section .testimonial-section-light, .h1-hero_section .content-section .hero_section-dark .hero_section-content .testimonial-section-light, .hero_section-dark .hero_section-content .h1-hero_section .content-section .testimonial-section-light, .h1-hero_section .content-section .hero_section-light .hero_section-content .testimonial-section-light, .hero_section-light .hero_section-content .h1-hero_section .content-section .testimonial-section-light, .h1-hero_section .content-section .hero_section-purple .hero_section-content .testimonial-section-light, .hero_section-purple .hero_section-content .h1-hero_section .content-section .testimonial-section-light, .h1-hero_section .content-section .hero_section .hero_section-content .testimonial-section-no_border, .hero_section .hero_section-content .h1-hero_section .content-section .testimonial-section-no_border, .h1-hero_section .content-section .hero_section-dark .hero_section-content .testimonial-section-no_border, .hero_section-dark .hero_section-content .h1-hero_section .content-section .testimonial-section-no_border, .h1-hero_section .content-section .hero_section-light .hero_section-content .testimonial-section-no_border, .hero_section-light .hero_section-content .h1-hero_section .content-section .testimonial-section-no_border, .h1-hero_section .content-section .hero_section-purple .hero_section-content .testimonial-section-no_border, .hero_section-purple .hero_section-content .h1-hero_section .content-section .testimonial-section-no_border {
+  display: flex;
+  flex-direction: row;
+  width: 531px;
+  height: 139px;
+  padding-top: 20px;
+  padding-left: 29px;
+  background: #faf9ff;
+  gap: 19px;
+}
+
+.h1-hero_section .content-section .testimonial-section .testi-content, .h1-hero_section .content-section .hero_section .hero_section-content .testimonial-section-light .testi-content, .hero_section .hero_section-content .h1-hero_section .content-section .testimonial-section-light .testi-content, .h1-hero_section .content-section .hero_section-dark .hero_section-content .testimonial-section-light .testi-content, .hero_section-dark .hero_section-content .h1-hero_section .content-section .testimonial-section-light .testi-content, .h1-hero_section .content-section .hero_section-light .hero_section-content .testimonial-section-light .testi-content, .hero_section-light .hero_section-content .h1-hero_section .content-section .testimonial-section-light .testi-content, .h1-hero_section .content-section .hero_section-purple .hero_section-content .testimonial-section-light .testi-content, .hero_section-purple .hero_section-content .h1-hero_section .content-section .testimonial-section-light .testi-content, .h1-hero_section .content-section .hero_section .hero_section-content .testimonial-section-no_border .testi-content, .hero_section .hero_section-content .h1-hero_section .content-section .testimonial-section-no_border .testi-content, .h1-hero_section .content-section .hero_section-dark .hero_section-content .testimonial-section-no_border .testi-content, .hero_section-dark .hero_section-content .h1-hero_section .content-section .testimonial-section-no_border .testi-content, .h1-hero_section .content-section .hero_section-light .hero_section-content .testimonial-section-no_border .testi-content, .hero_section-light .hero_section-content .h1-hero_section .content-section .testimonial-section-no_border .testi-content, .h1-hero_section .content-section .hero_section-purple .hero_section-content .testimonial-section-no_border .testi-content, .hero_section-purple .hero_section-content .h1-hero_section .content-section .testimonial-section-no_border .testi-content {
+  width: 380px;
+}
+
+.h1-hero_section .content-section .testimonial-section .testi-content .testi-body p, .h1-hero_section .content-section .hero_section .hero_section-content .testimonial-section-light .testi-content .testi-body p, .hero_section .hero_section-content .h1-hero_section .content-section .testimonial-section-light .testi-content .testi-body p, .h1-hero_section .content-section .hero_section-dark .hero_section-content .testimonial-section-light .testi-content .testi-body p, .hero_section-dark .hero_section-content .h1-hero_section .content-section .testimonial-section-light .testi-content .testi-body p, .h1-hero_section .content-section .hero_section-light .hero_section-content .testimonial-section-light .testi-content .testi-body p, .hero_section-light .hero_section-content .h1-hero_section .content-section .testimonial-section-light .testi-content .testi-body p, .h1-hero_section .content-section .hero_section-purple .hero_section-content .testimonial-section-light .testi-content .testi-body p, .hero_section-purple .hero_section-content .h1-hero_section .content-section .testimonial-section-light .testi-content .testi-body p, .h1-hero_section .content-section .hero_section .hero_section-content .testimonial-section-no_border .testi-content .testi-body p, .hero_section .hero_section-content .h1-hero_section .content-section .testimonial-section-no_border .testi-content .testi-body p, .h1-hero_section .content-section .hero_section-dark .hero_section-content .testimonial-section-no_border .testi-content .testi-body p, .hero_section-dark .hero_section-content .h1-hero_section .content-section .testimonial-section-no_border .testi-content .testi-body p, .h1-hero_section .content-section .hero_section-light .hero_section-content .testimonial-section-no_border .testi-content .testi-body p, .hero_section-light .hero_section-content .h1-hero_section .content-section .testimonial-section-no_border .testi-content .testi-body p, .h1-hero_section .content-section .hero_section-purple .hero_section-content .testimonial-section-no_border .testi-content .testi-body p, .hero_section-purple .hero_section-content .h1-hero_section .content-section .testimonial-section-no_border .testi-content .testi-body p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.h1-hero_section .content-section .testimonial-section .testi-content .testi-position span, .h1-hero_section .content-section .hero_section .hero_section-content .testimonial-section-light .testi-content .testi-position span, .hero_section .hero_section-content .h1-hero_section .content-section .testimonial-section-light .testi-content .testi-position span, .h1-hero_section .content-section .hero_section-dark .hero_section-content .testimonial-section-light .testi-content .testi-position span, .hero_section-dark .hero_section-content .h1-hero_section .content-section .testimonial-section-light .testi-content .testi-position span, .h1-hero_section .content-section .hero_section-light .hero_section-content .testimonial-section-light .testi-content .testi-position span, .hero_section-light .hero_section-content .h1-hero_section .content-section .testimonial-section-light .testi-content .testi-position span, .h1-hero_section .content-section .hero_section-purple .hero_section-content .testimonial-section-light .testi-content .testi-position span, .hero_section-purple .hero_section-content .h1-hero_section .content-section .testimonial-section-light .testi-content .testi-position span, .h1-hero_section .content-section .hero_section .hero_section-content .testimonial-section-no_border .testi-content .testi-position span, .hero_section .hero_section-content .h1-hero_section .content-section .testimonial-section-no_border .testi-content .testi-position span, .h1-hero_section .content-section .hero_section-dark .hero_section-content .testimonial-section-no_border .testi-content .testi-position span, .hero_section-dark .hero_section-content .h1-hero_section .content-section .testimonial-section-no_border .testi-content .testi-position span, .h1-hero_section .content-section .hero_section-light .hero_section-content .testimonial-section-no_border .testi-content .testi-position span, .hero_section-light .hero_section-content .h1-hero_section .content-section .testimonial-section-no_border .testi-content .testi-position span, .h1-hero_section .content-section .hero_section-purple .hero_section-content .testimonial-section-no_border .testi-content .testi-position span, .hero_section-purple .hero_section-content .h1-hero_section .content-section .testimonial-section-no_border .testi-content .testi-position span {
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.h1-hero_section .image_section {
+  width: 560px;
+  height: 560px;
+  background: linear-gradient(90deg, #efecff 0%, #c4b8ff 100%);
+}
+
+.h1-hero_section .image_section img {
+  position: relative;
+  width: 500px;
+  top: -63px;
+  left: 37px;
+}
+
+.h2-hero_section {
+  width: 1240px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  padding-top: 118px;
+  margin-bottom: 100px;
+}
+
+.h2-hero_section .content-section {
+  margin: auto;
+  width: 754px;
+}
+
+.h2-hero_section .content-section .title {
+  margin-bottom: 22px;
+}
+
+.h2-hero_section .content-section .title h2 {
+  text-align: center;
+}
+
+.h2-hero_section .content-section .body {
+  margin: auto;
+  width: 754px;
+}
+
+.h2-hero_section .content-section .body p {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.h2-hero_section .content-section .btn_container {
+  margin: auto;
+  width: 754px;
+  text-align: center;
+}
+
+.h2-hero_section .content-section .btn_container .sub-body {
+  margin-top: 27px;
+}
+
+.h2-hero_section .image_section {
+  margin: auto;
+  width: 1146px;
+  height: 680px;
+  background: linear-gradient(90deg, #efecff 0%, #c4b8ff 100%);
+  margin-top: 103px;
+  padding-left: 142px;
+}
+
+.h2-hero_section .image_section img {
+  position: relative;
+  top: 140px;
+  width: 364px;
+  left: 12px;
+}
+
+.h2-hero_section .image_section img:nth-child(1) {
+  width: 444px;
+}
+
+.h3-input {
+  display: flex;
+  flex-direction: row;
+  width: 401px;
+  height: 55px;
+  gap: 189px;
+  border: 2px solid #000000;
+  margin-bottom: 76px;
+}
+
+.h3-input span {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #000000;
+  opacity: 0.3;
+  align-self: center;
+  padding-left: 28px;
+}
+
+.h3-input .h3-btn {
+  width: 130px;
+  height: 40px;
+  align-self: center;
+}
+
+.hero-5 {
+  margin: auto;
+  width: 100%;
+  background-image: url("/image/png/hero5/bg-h5.png");
+  background-repeat: no-repeat;
+}
+
+.hero-5 .bg-purple {
+  position: relative;
+  background-color: linear-gradient(90deg, #7b61ff8e 0%, #b7a9ff5d 0.01%, #7b61ff6c 100%);
+  background: #7b61ff;
+  opacity: 0.93;
+}
+
+.hero-5 .image_section {
+  background: transparent !important;
+}
+
+.hero-5 .testi-h5 {
+  background: transparent;
+}
+
 .navigation_section, .navigation_section-dark, .navigation_section-light, .navigation_section-purple {
   margin: auto;
   display: flex;
@@ -189,6 +494,14 @@ h5, .h5 {
   padding-top: 38.04px;
   padding-left: 147px;
   background: linear-gradient(90deg, #7b61ff8e 0%, #b7a9ff5d 0.01%, #7b61ff6c 100%);
+}
+
+@media (max-width: 575px) {
+  .navigation_section, .navigation_section-dark, .navigation_section-light, .navigation_section-purple {
+    width: 390px;
+    padding-left: 0;
+    gap: 230px;
+  }
 }
 
 .navigation_section-dark {
@@ -222,6 +535,12 @@ h5, .h5 {
   letter-spacing: 0em;
   text-align: right;
   color: #000000;
+}
+
+@media (max-width: 575px) {
+  .navigation_section .navbar_menu, .navigation_section-dark .navbar_menu, .navigation_section-light .navbar_menu, .navigation_section-purple .navbar_menu {
+    display: none;
+  }
 }
 
 .navigation_section .navbar_btn, .navigation_section-dark .navbar_btn, .navigation_section-light .navbar_btn, .navigation_section-purple .navbar_btn {
@@ -292,6 +611,85 @@ h5, .h5 {
 .navigation_section-light .navbar_btn .ioS_app-btn_purple,
 .navigation_section-purple .navbar_btn .ioS_app-btn_purple {
   width: 105px;
+}
+
+@media (max-width: 575px) {
+  .navigation_section .navbar_btn, .navigation_section-dark .navbar_btn, .navigation_section-light .navbar_btn, .navigation_section-purple .navbar_btn {
+    display: none;
+  }
+}
+
+@media (max-width: 575px) {
+  .navigation_section .hamburger, .navigation_section-dark .hamburger, .navigation_section-light .hamburger, .navigation_section-purple .hamburger {
+    width: 30px;
+    height: 30px;
+    padding-top: 12px;
+  }
+}
+
+.navigation_section .hamburger ul, .navigation_section-dark .hamburger ul, .navigation_section-light .hamburger ul, .navigation_section-purple .hamburger ul {
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
+  list-style: none;
+}
+
+@media (max-width: 575px) {
+  .navigation_section .hamburger .bar, .navigation_section-dark .hamburger .bar, .navigation_section-light .hamburger .bar, .navigation_section-purple .hamburger .bar {
+    width: 20px;
+    height: 3px;
+    background-color: #000;
+  }
+}
+
+@media (max-width: 575px) {
+  .navigation_section .hamburger .bar:nth-child(1), .navigation_section-dark .hamburger .bar:nth-child(1), .navigation_section-light .hamburger .bar:nth-child(1), .navigation_section-purple .hamburger .bar:nth-child(1) {
+    width: 35px;
+    margin-bottom: 6px;
+  }
+}
+
+@media (max-width: 575px) {
+  .navigation_section .hamburger .bar:nth-child(2), .navigation_section-dark .hamburger .bar:nth-child(2), .navigation_section-light .hamburger .bar:nth-child(2), .navigation_section-purple .hamburger .bar:nth-child(2) {
+    width: 35px;
+    margin-bottom: 6px;
+  }
+}
+
+@media (max-width: 575px) {
+  .navigation_section .hamburger .bar:nth-child(3), .navigation_section-dark .hamburger .bar:nth-child(3), .navigation_section-light .hamburger .bar:nth-child(3), .navigation_section-purple .hamburger .bar:nth-child(3) {
+    position: relative;
+    width: 20px;
+    left: 13px;
+  }
+}
+
+.navigation_section .hamburger .bar-light, .navigation_section-dark .hamburger .bar-light, .navigation_section-light .hamburger .bar-light, .navigation_section-purple .hamburger .bar-light {
+  background-color: #fff !important;
+}
+
+.h1-navigation_section {
+  display: flex;
+  flex-direction: row;
+  padding-left: 147px;
+  padding-top: 38.04px;
+  gap: 80%;
+}
+
+@media (max-width: 575px) {
+  .h1-navigation_section {
+    margin: auto;
+    width: 280px;
+    padding-left: 0px;
+    padding-top: 24.03px;
+  }
+}
+
+.h1-navigation_section .nav-logo {
+  align-self: flex-start;
+}
+
+.h1-navigation_section .nav-menu {
+  align-self: center;
 }
 
 /*# sourceMappingURL=maps/style.css.map */
