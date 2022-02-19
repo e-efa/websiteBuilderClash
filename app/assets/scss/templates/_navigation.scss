@@ -61,9 +61,9 @@
       box-sizing: border-box;
       &_light {
         @extend .android_app-btn;
-        border: 2px solid #fff;
-        background: #000;
-        color: #fff;
+        border: 2px solid #000;
+        background: #fff;
+        color: #000;
       }
       &_purple {
         @extend .android_app-btn;
@@ -71,11 +71,20 @@
         background: $Highlight-2;
         color: #fff;
       }
+      &_dark {
+        @extend .android_app-btn;
+        border: 2px solid #fff;
+        background: #000;
+        color: #fff;
+      }
     }
     .ioS_app-btn {
       width: 105px;
       &_light {
         width: 105px;
+        border: 2px solid #000;
+        background: #fff;
+        color: #000;
       }
       &_purple {
         width: 105px;
@@ -125,6 +134,10 @@
       background-color: #fff !important;
     }
   }
+  &-no_bg {
+    @extend .navigation_section;
+    background: transparent;
+  }
 }
 
 // hero1
@@ -145,5 +158,213 @@
   }
   .nav-menu {
     align-self: center;
+  }
+}
+
+// hero 7
+.ios_app {
+  width: 151px;
+}
+
+// hero 11 light
+.hero-navigation-lightmode {
+  width: 1440px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 24%;
+  .hero-nav-menu-lightmode {
+    .hero-nav-list-lightmode {
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      align-self: center;
+      gap: 48px;
+      .hero-nav-item-lightmode {
+        a {
+          color: #000;
+        }
+      }
+    }
+  }
+  .hero-nav-buttons-lightmode{
+    padding-left: 10%;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+  }
+}
+
+// hero 11 dark 
+.hero-navigation-darkMode{
+  @extend .hero-navigation-lightmode;
+  padding-top: 55px;
+  background-color: #000;
+  .hero-nav-menu-darkMode{
+    .hero-nav-list-darkMode{
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      gap: 48px;
+      .hero-nav-item-darkMode{
+        a{
+          color: #fff;
+        }
+      }
+    }
+  }
+  .hero-nav-buttons-darkMode{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    .btn-light{
+      width: 97px;
+      height: 40px;
+      background: #000;
+      border: 2px solid #fff;
+      color: #fff;
+    }
+  }
+}
+
+// hero 11 purple
+.hero-navigation-purple{
+  @extend .hero-navigation-lightmode;
+  background-color: $Highlight-2;
+  padding-top: 55px;
+  .hero-nav-menu-purple{
+    .hero-nav-list-purple{
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      gap: 48px;
+      .hero-nav-item-purple{
+        a{
+          color: #fff;
+        }
+      }
+    }
+  }
+  .hero-nav-buttons-purple{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    .btn-light{
+      width: 97px;
+      height: 40px;
+      background-color: $Highlight-2;
+      border: 2px solid #fff;
+      color: #fff;
+    }
+  }
+}
+
+// hero 12 light version
+.hero_navigation{
+  width: 1440px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 26%;
+  padding-top: 53px;
+  .hero_navigation-menu{
+    .hero-navigation-list{
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      gap: 48px;
+      padding-left: 75%;
+      padding-top: 15px;
+    }
+  }
+  .hero_navigation-buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    button{
+      width: 97px;
+    }
+    .btn-light-h12{
+      width: 97px;
+      border: 2px solid #000; 
+    }
+    .btn-dark-h12{
+      background-color: #000;
+      color: #fff;
+    }
+  }
+}
+
+// hero 12 dark version
+.hero_navigation-light{
+  @extend .hero_navigation;
+  background-color: #000;
+  padding-left: 60px;
+  padding-right: 50px;
+  .hero_navigation-menu-light{
+    .hero-navigation-list-light{
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      gap: 48px;
+      padding-left: 70%;
+      padding-top: 15px;
+      .hero-list-item-light{
+        color: #fff;
+      }
+    }
+  }
+  .hero_navigation-buttons-light{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    button{
+      width: 97px;
+    }
+    .btn-light-h12Light{
+      width: 97px;
+      border: 2px solid #fff; 
+      color: #fff;
+    }
+    .btn-dark-h12Light{
+      background: linear-gradient(90deg, #EFECFF 0%, #C4B8FF 100%);
+      color: #000;
+    }
+  }
+}
+
+// purple version of header 12
+.hero_navigation-purple{
+  @extend .hero_navigation;
+  background-color: $Highlight-2;
+  padding-left: 60px;
+  padding-right: 50px;
+  .hero_navigation-list-purple{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 48px;
+    padding-left: 70%;
+    padding-top: 15px;
+    .hero-list-item-purple{
+      color: #fff;
+    }
+  }
+  .hero_navigation-buttons-purple{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    button{
+      width: 97px;
+      height: 40px;
+    }
+    .btn-light-h12Purple{
+      border: 2px solid #fff;
+      color: #fff;
+    }
+    .btn-dark-h12Purple{
+      background-color: #000;
+      color: #fff;
+    }
   }
 }
