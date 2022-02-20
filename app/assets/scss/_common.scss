@@ -167,15 +167,50 @@
   flex-direction: row;
   padding-left: 95px;
   gap: 70px;
+  @include mobile {
+    width: 327px;
+    height: 1160px;
+    margin: auto;
+    text-align: center;
+    flex-direction: column;
+    padding-left: 0;
+    padding-top: 80px;
+    margin-bottom: 100px;
+  }
   .content-section {
     width: 531px;
     padding-top: 48px;
+    @include mobile {
+      width: 327px;
+      text-align: left;
+    }
     .title {
       margin-bottom: 22px;
+      h2 {
+        @include mobile {
+          font-size: 38px;
+          line-height: 45px;
+          letter-spacing: 0em;
+          text-align: left;
+        }
+      }
     }
     .body {
       width: 523px;
       margin-bottom: 46.5px;
+      @include mobile {
+        width: 327px;
+      }
+      p {
+        @include mobile {
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 27px;
+          letter-spacing: 0em;
+          text-align: left;
+        }
+      }
     }
     .sub-body {
       span {
@@ -185,6 +220,9 @@
         line-height: 17px;
         letter-spacing: 0em;
         text-align: left;
+        @include mobile {
+          display: none;
+        }
       }
       margin-bottom: 47px;
     }
@@ -197,8 +235,26 @@
       padding-left: 29px;
       background: #faf9ff;
       gap: 19px;
+      @include mobile {
+        margin: auto;
+        width: 327px;
+        height: 242px;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 0;
+      }
+      .testi-person_img {
+        @include mobile {
+          text-align: center;
+        }
+      }
       .testi-content {
         width: 380px;
+        @include mobile {
+          margin: auto;
+          margin-top: 0px;
+          width: 310px;
+        }
         .testi-body {
           p {
             font-size: 16px;
@@ -207,9 +263,16 @@
             line-height: 24px;
             letter-spacing: 0em;
             text-align: left;
+            @include mobile {
+              text-align: center;
+              margin-bottom: 16px;
+            }
           }
         }
         .testi-position {
+          @include mobile {
+            text-align: center;
+          }
           span {
             font-size: 13px;
             font-style: normal;
@@ -221,16 +284,30 @@
         }
       }
     }
+    @include mobile {
+      order: 2;
+    }
   }
   .image_section {
     width: 560px;
     height: 560px;
     background: linear-gradient(90deg, #efecff 0%, #c4b8ff 100%);
+    @include mobile {
+      width: 327px;
+      height: 311.96px;
+      order: 1;
+    }
     img {
       position: relative;
       width: 500px;
       top: -63px;
       left: 37px;
+      @include mobile {
+        margin: auto;
+        width: 280px;
+        top: -23px;
+        left: 0px;
+      }
     }
   }
 }
@@ -245,18 +322,36 @@
   justify-items: center;
   padding-top: 118px;
   margin-bottom: 100px;
+  @include mobile {
+    padding-top: 49px;
+    width: 327px;
+  }
   .content-section {
     margin: auto;
     width: 754px;
+    @include mobile {
+      order: 2;
+      width: 327px;
+      margin-top: 48px;
+    }
     .title {
       margin-bottom: 22px;
       h2 {
         text-align: center;
+        @include mobile {
+          font-size: 38px;
+          line-height: 45px;
+          letter-spacing: 0em;
+          text-align: center;
+        }
       }
     }
     .body {
       margin: auto;
       width: 754px;
+      @include mobile {
+        width: 327px;
+      }
       p {
         font-size: 18px;
         font-style: normal;
@@ -271,6 +366,9 @@
       margin: auto;
       width: 754px;
       text-align: center;
+      @include mobile {
+        width: 327px;
+      }
       .sub-body {
         margin-top: 27px;
       }
@@ -283,13 +381,28 @@
     background: linear-gradient(90deg, #efecff 0%, #c4b8ff 100%);
     margin-top: 103px;
     padding-left: 142px;
+    @include mobile {
+      order: 1;
+      width: 327px;
+      height: 194.15px;
+      padding-left: 0;
+      margin-top: 0;
+    }
     img {
       position: relative;
       top: 140px;
       width: 364px;
       left: 12px;
+      @include mobile {
+        width: 88.31px;
+        top: 32px;
+        left: 64px;
+      }
       &:nth-child(1) {
-        width: 444px;
+        width: 435px;
+        @include mobile {
+          width: 105.19px;
+        }
       }
     }
   }
@@ -304,6 +417,10 @@
   gap: 189px;
   border: 2px solid #000000;
   margin-bottom: 76px;
+  @include mobile {
+    width: 327px;
+    gap: 117px;
+  }
   span {
     font-size: 16px;
     font-style: normal;
@@ -345,17 +462,33 @@
 
 // hero 6
 .hero_section-h6 {
+  display: flex;
+  flex-direction: column;
   margin: auto;
   width: 1100px;
   text-align: center;
+  @include mobile {
+    width: 327px;
+  }
   .content_section {
     margin: 8% auto 30%;
     width: 600px;
     display: flex;
     flex-direction: column;
     text-align: center;
+    @include mobile {
+      width: 327px;
+    }
     .title {
       margin-top: 134px;
+      h2 {
+        @include mobile {
+          font-size: 38px;
+          line-height: 45px;
+          letter-spacing: 0em;
+          text-align: center;
+        }
+      }
     }
     .body {
       margin-top: 22px;
@@ -363,15 +496,28 @@
     }
   }
   .image_section {
+    @include mobile{
+      margin-top: 59px;
+    }
     .circle-bg {
       img {
         &:nth-child(1) {
           width: 952px;
+          @include mobile {
+            width: 750px;
+            position: relative;
+            left: -217px;
+          }
         }
         &:nth-child(2) {
           position: relative;
           width: 551px;
           top: -671px;
+          @include mobile {
+            width: 352px;
+            top: -457px;
+            left: -16px;
+          }
         }
       }
     }
@@ -619,23 +765,23 @@
 }
 
 // hero 12 purple version
-.hero-section-h12-purple{
+.hero-section-h12-purple {
   @extend .hero-section-h12-light;
   background-color: $Highlight-2;
-  .h12-buttons-purple{
+  .h12-buttons-purple {
     display: flex;
     flex-direction: row;
     margin-top: 48px;
     justify-content: center;
     gap: 15px;
-    button{
+    button {
       width: 113px;
       height: 40px;
     }
-    .btn-dark{
+    .btn-dark {
       background-color: #000;
     }
-    .btn-light{
+    .btn-light {
       background-color: transparent;
       border: 2px solid #fff;
       color: #fff;

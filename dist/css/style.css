@@ -311,18 +311,64 @@ h5, .h5 {
   gap: 70px;
 }
 
+@media (max-width: 575px) {
+  .h1-hero_section, .h8-hero_section, .h10-hero_section {
+    width: 327px;
+    height: 1160px;
+    margin: auto;
+    text-align: center;
+    flex-direction: column;
+    padding-left: 0;
+    padding-top: 80px;
+    margin-bottom: 100px;
+  }
+}
+
 .h1-hero_section .content-section, .h8-hero_section .content-section, .h10-hero_section .content-section {
   width: 531px;
   padding-top: 48px;
+}
+
+@media (max-width: 575px) {
+  .h1-hero_section .content-section, .h8-hero_section .content-section, .h10-hero_section .content-section {
+    width: 327px;
+    text-align: left;
+  }
 }
 
 .h1-hero_section .content-section .title, .h8-hero_section .content-section .title, .h10-hero_section .content-section .title {
   margin-bottom: 22px;
 }
 
+@media (max-width: 575px) {
+  .h1-hero_section .content-section .title h2, .h8-hero_section .content-section .title h2, .h10-hero_section .content-section .title h2 {
+    font-size: 38px;
+    line-height: 45px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+}
+
 .h1-hero_section .content-section .body, .h8-hero_section .content-section .body, .h10-hero_section .content-section .body {
   width: 523px;
   margin-bottom: 46.5px;
+}
+
+@media (max-width: 575px) {
+  .h1-hero_section .content-section .body, .h8-hero_section .content-section .body, .h10-hero_section .content-section .body {
+    width: 327px;
+  }
+}
+
+@media (max-width: 575px) {
+  .h1-hero_section .content-section .body p, .h8-hero_section .content-section .body p, .h10-hero_section .content-section .body p {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
 }
 
 .h1-hero_section .content-section .sub-body, .h8-hero_section .content-section .sub-body, .h10-hero_section .content-section .sub-body {
@@ -338,6 +384,12 @@ h5, .h5 {
   text-align: left;
 }
 
+@media (max-width: 575px) {
+  .h1-hero_section .content-section .sub-body span, .h8-hero_section .content-section .sub-body span, .h10-hero_section .content-section .sub-body span {
+    display: none;
+  }
+}
+
 .h1-hero_section .content-section .testimonial-section, .h8-hero_section .content-section .testimonial-section, .h10-hero_section .content-section .testimonial-section, .h1-hero_section .content-section .hero_section .hero_section-content .testimonial-section-light, .hero_section .hero_section-content .h1-hero_section .content-section .testimonial-section-light, .h8-hero_section .content-section .hero_section .hero_section-content .testimonial-section-light, .hero_section .hero_section-content .h8-hero_section .content-section .testimonial-section-light, .h10-hero_section .content-section .hero_section .hero_section-content .testimonial-section-light, .hero_section .hero_section-content .h10-hero_section .content-section .testimonial-section-light, .h1-hero_section .content-section .hero_section-dark .hero_section-content .testimonial-section-light, .hero_section-dark .hero_section-content .h1-hero_section .content-section .testimonial-section-light, .h8-hero_section .content-section .hero_section-dark .hero_section-content .testimonial-section-light, .hero_section-dark .hero_section-content .h8-hero_section .content-section .testimonial-section-light, .h10-hero_section .content-section .hero_section-dark .hero_section-content .testimonial-section-light, .hero_section-dark .hero_section-content .h10-hero_section .content-section .testimonial-section-light, .h1-hero_section .content-section .hero_section-light .hero_section-content .testimonial-section-light, .hero_section-light .hero_section-content .h1-hero_section .content-section .testimonial-section-light, .h8-hero_section .content-section .hero_section-light .hero_section-content .testimonial-section-light, .hero_section-light .hero_section-content .h8-hero_section .content-section .testimonial-section-light, .h10-hero_section .content-section .hero_section-light .hero_section-content .testimonial-section-light, .hero_section-light .hero_section-content .h10-hero_section .content-section .testimonial-section-light, .h1-hero_section .content-section .hero_section-purple .hero_section-content .testimonial-section-light, .hero_section-purple .hero_section-content .h1-hero_section .content-section .testimonial-section-light, .h8-hero_section .content-section .hero_section-purple .hero_section-content .testimonial-section-light, .hero_section-purple .hero_section-content .h8-hero_section .content-section .testimonial-section-light, .h10-hero_section .content-section .hero_section-purple .hero_section-content .testimonial-section-light, .hero_section-purple .hero_section-content .h10-hero_section .content-section .testimonial-section-light, .h1-hero_section .content-section .hero_section .hero_section-content .testimonial-section-no_border, .hero_section .hero_section-content .h1-hero_section .content-section .testimonial-section-no_border, .h8-hero_section .content-section .hero_section .hero_section-content .testimonial-section-no_border, .hero_section .hero_section-content .h8-hero_section .content-section .testimonial-section-no_border, .h10-hero_section .content-section .hero_section .hero_section-content .testimonial-section-no_border, .hero_section .hero_section-content .h10-hero_section .content-section .testimonial-section-no_border, .h1-hero_section .content-section .hero_section-dark .hero_section-content .testimonial-section-no_border, .hero_section-dark .hero_section-content .h1-hero_section .content-section .testimonial-section-no_border, .h8-hero_section .content-section .hero_section-dark .hero_section-content .testimonial-section-no_border, .hero_section-dark .hero_section-content .h8-hero_section .content-section .testimonial-section-no_border, .h10-hero_section .content-section .hero_section-dark .hero_section-content .testimonial-section-no_border, .hero_section-dark .hero_section-content .h10-hero_section .content-section .testimonial-section-no_border, .h1-hero_section .content-section .hero_section-light .hero_section-content .testimonial-section-no_border, .hero_section-light .hero_section-content .h1-hero_section .content-section .testimonial-section-no_border, .h8-hero_section .content-section .hero_section-light .hero_section-content .testimonial-section-no_border, .hero_section-light .hero_section-content .h8-hero_section .content-section .testimonial-section-no_border, .h10-hero_section .content-section .hero_section-light .hero_section-content .testimonial-section-no_border, .hero_section-light .hero_section-content .h10-hero_section .content-section .testimonial-section-no_border, .h1-hero_section .content-section .hero_section-purple .hero_section-content .testimonial-section-no_border, .hero_section-purple .hero_section-content .h1-hero_section .content-section .testimonial-section-no_border, .h8-hero_section .content-section .hero_section-purple .hero_section-content .testimonial-section-no_border, .hero_section-purple .hero_section-content .h8-hero_section .content-section .testimonial-section-no_border, .h10-hero_section .content-section .hero_section-purple .hero_section-content .testimonial-section-no_border, .hero_section-purple .hero_section-content .h10-hero_section .content-section .testimonial-section-no_border {
   display: flex;
   flex-direction: row;
@@ -349,8 +401,33 @@ h5, .h5 {
   gap: 19px;
 }
 
+@media (max-width: 575px) {
+  .h1-hero_section .content-section .testimonial-section, .h8-hero_section .content-section .testimonial-section, .h10-hero_section .content-section .testimonial-section, .h1-hero_section .content-section .hero_section .hero_section-content .testimonial-section-light, .hero_section .hero_section-content .h1-hero_section .content-section .testimonial-section-light, .h8-hero_section .content-section .hero_section .hero_section-content .testimonial-section-light, .hero_section .hero_section-content .h8-hero_section .content-section .testimonial-section-light, .h10-hero_section .content-section .hero_section .hero_section-content .testimonial-section-light, .hero_section .hero_section-content .h10-hero_section .content-section .testimonial-section-light, .h1-hero_section .content-section .hero_section-dark .hero_section-content .testimonial-section-light, .hero_section-dark .hero_section-content .h1-hero_section .content-section .testimonial-section-light, .h8-hero_section .content-section .hero_section-dark .hero_section-content .testimonial-section-light, .hero_section-dark .hero_section-content .h8-hero_section .content-section .testimonial-section-light, .h10-hero_section .content-section .hero_section-dark .hero_section-content .testimonial-section-light, .hero_section-dark .hero_section-content .h10-hero_section .content-section .testimonial-section-light, .h1-hero_section .content-section .hero_section-light .hero_section-content .testimonial-section-light, .hero_section-light .hero_section-content .h1-hero_section .content-section .testimonial-section-light, .h8-hero_section .content-section .hero_section-light .hero_section-content .testimonial-section-light, .hero_section-light .hero_section-content .h8-hero_section .content-section .testimonial-section-light, .h10-hero_section .content-section .hero_section-light .hero_section-content .testimonial-section-light, .hero_section-light .hero_section-content .h10-hero_section .content-section .testimonial-section-light, .h1-hero_section .content-section .hero_section-purple .hero_section-content .testimonial-section-light, .hero_section-purple .hero_section-content .h1-hero_section .content-section .testimonial-section-light, .h8-hero_section .content-section .hero_section-purple .hero_section-content .testimonial-section-light, .hero_section-purple .hero_section-content .h8-hero_section .content-section .testimonial-section-light, .h10-hero_section .content-section .hero_section-purple .hero_section-content .testimonial-section-light, .hero_section-purple .hero_section-content .h10-hero_section .content-section .testimonial-section-light, .h1-hero_section .content-section .hero_section .hero_section-content .testimonial-section-no_border, .hero_section .hero_section-content .h1-hero_section .content-section .testimonial-section-no_border, .h8-hero_section .content-section .hero_section .hero_section-content .testimonial-section-no_border, .hero_section .hero_section-content .h8-hero_section .content-section .testimonial-section-no_border, .h10-hero_section .content-section .hero_section .hero_section-content .testimonial-section-no_border, .hero_section .hero_section-content .h10-hero_section .content-section .testimonial-section-no_border, .h1-hero_section .content-section .hero_section-dark .hero_section-content .testimonial-section-no_border, .hero_section-dark .hero_section-content .h1-hero_section .content-section .testimonial-section-no_border, .h8-hero_section .content-section .hero_section-dark .hero_section-content .testimonial-section-no_border, .hero_section-dark .hero_section-content .h8-hero_section .content-section .testimonial-section-no_border, .h10-hero_section .content-section .hero_section-dark .hero_section-content .testimonial-section-no_border, .hero_section-dark .hero_section-content .h10-hero_section .content-section .testimonial-section-no_border, .h1-hero_section .content-section .hero_section-light .hero_section-content .testimonial-section-no_border, .hero_section-light .hero_section-content .h1-hero_section .content-section .testimonial-section-no_border, .h8-hero_section .content-section .hero_section-light .hero_section-content .testimonial-section-no_border, .hero_section-light .hero_section-content .h8-hero_section .content-section .testimonial-section-no_border, .h10-hero_section .content-section .hero_section-light .hero_section-content .testimonial-section-no_border, .hero_section-light .hero_section-content .h10-hero_section .content-section .testimonial-section-no_border, .h1-hero_section .content-section .hero_section-purple .hero_section-content .testimonial-section-no_border, .hero_section-purple .hero_section-content .h1-hero_section .content-section .testimonial-section-no_border, .h8-hero_section .content-section .hero_section-purple .hero_section-content .testimonial-section-no_border, .hero_section-purple .hero_section-content .h8-hero_section .content-section .testimonial-section-no_border, .h10-hero_section .content-section .hero_section-purple .hero_section-content .testimonial-section-no_border, .hero_section-purple .hero_section-content .h10-hero_section .content-section .testimonial-section-no_border {
+    margin: auto;
+    width: 327px;
+    height: 242px;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .h1-hero_section .content-section .testimonial-section .testi-person_img, .h8-hero_section .content-section .testimonial-section .testi-person_img, .h10-hero_section .content-section .testimonial-section .testi-person_img, .h1-hero_section .content-section .hero_section .hero_section-content .testimonial-section-light .testi-person_img, .hero_section .hero_section-content .h1-hero_section .content-section .testimonial-section-light .testi-person_img, .h8-hero_section .content-section .hero_section .hero_section-content .testimonial-section-light .testi-person_img, .hero_section .hero_section-content .h8-hero_section .content-section .testimonial-section-light .testi-person_img, .h10-hero_section .content-section .hero_section .hero_section-content .testimonial-section-light .testi-person_img, .hero_section .hero_section-content .h10-hero_section .content-section .testimonial-section-light .testi-person_img, .h1-hero_section .content-section .hero_section-dark .hero_section-content .testimonial-section-light .testi-person_img, .hero_section-dark .hero_section-content .h1-hero_section .content-section .testimonial-section-light .testi-person_img, .h8-hero_section .content-section .hero_section-dark .hero_section-content .testimonial-section-light .testi-person_img, .hero_section-dark .hero_section-content .h8-hero_section .content-section .testimonial-section-light .testi-person_img, .h10-hero_section .content-section .hero_section-dark .hero_section-content .testimonial-section-light .testi-person_img, .hero_section-dark .hero_section-content .h10-hero_section .content-section .testimonial-section-light .testi-person_img, .h1-hero_section .content-section .hero_section-light .hero_section-content .testimonial-section-light .testi-person_img, .hero_section-light .hero_section-content .h1-hero_section .content-section .testimonial-section-light .testi-person_img, .h8-hero_section .content-section .hero_section-light .hero_section-content .testimonial-section-light .testi-person_img, .hero_section-light .hero_section-content .h8-hero_section .content-section .testimonial-section-light .testi-person_img, .h10-hero_section .content-section .hero_section-light .hero_section-content .testimonial-section-light .testi-person_img, .hero_section-light .hero_section-content .h10-hero_section .content-section .testimonial-section-light .testi-person_img, .h1-hero_section .content-section .hero_section-purple .hero_section-content .testimonial-section-light .testi-person_img, .hero_section-purple .hero_section-content .h1-hero_section .content-section .testimonial-section-light .testi-person_img, .h8-hero_section .content-section .hero_section-purple .hero_section-content .testimonial-section-light .testi-person_img, .hero_section-purple .hero_section-content .h8-hero_section .content-section .testimonial-section-light .testi-person_img, .h10-hero_section .content-section .hero_section-purple .hero_section-content .testimonial-section-light .testi-person_img, .hero_section-purple .hero_section-content .h10-hero_section .content-section .testimonial-section-light .testi-person_img, .h1-hero_section .content-section .hero_section .hero_section-content .testimonial-section-no_border .testi-person_img, .hero_section .hero_section-content .h1-hero_section .content-section .testimonial-section-no_border .testi-person_img, .h8-hero_section .content-section .hero_section .hero_section-content .testimonial-section-no_border .testi-person_img, .hero_section .hero_section-content .h8-hero_section .content-section .testimonial-section-no_border .testi-person_img, .h10-hero_section .content-section .hero_section .hero_section-content .testimonial-section-no_border .testi-person_img, .hero_section .hero_section-content .h10-hero_section .content-section .testimonial-section-no_border .testi-person_img, .h1-hero_section .content-section .hero_section-dark .hero_section-content .testimonial-section-no_border .testi-person_img, .hero_section-dark .hero_section-content .h1-hero_section .content-section .testimonial-section-no_border .testi-person_img, .h8-hero_section .content-section .hero_section-dark .hero_section-content .testimonial-section-no_border .testi-person_img, .hero_section-dark .hero_section-content .h8-hero_section .content-section .testimonial-section-no_border .testi-person_img, .h10-hero_section .content-section .hero_section-dark .hero_section-content .testimonial-section-no_border .testi-person_img, .hero_section-dark .hero_section-content .h10-hero_section .content-section .testimonial-section-no_border .testi-person_img, .h1-hero_section .content-section .hero_section-light .hero_section-content .testimonial-section-no_border .testi-person_img, .hero_section-light .hero_section-content .h1-hero_section .content-section .testimonial-section-no_border .testi-person_img, .h8-hero_section .content-section .hero_section-light .hero_section-content .testimonial-section-no_border .testi-person_img, .hero_section-light .hero_section-content .h8-hero_section .content-section .testimonial-section-no_border .testi-person_img, .h10-hero_section .content-section .hero_section-light .hero_section-content .testimonial-section-no_border .testi-person_img, .hero_section-light .hero_section-content .h10-hero_section .content-section .testimonial-section-no_border .testi-person_img, .h1-hero_section .content-section .hero_section-purple .hero_section-content .testimonial-section-no_border .testi-person_img, .hero_section-purple .hero_section-content .h1-hero_section .content-section .testimonial-section-no_border .testi-person_img, .h8-hero_section .content-section .hero_section-purple .hero_section-content .testimonial-section-no_border .testi-person_img, .hero_section-purple .hero_section-content .h8-hero_section .content-section .testimonial-section-no_border .testi-person_img, .h10-hero_section .content-section .hero_section-purple .hero_section-content .testimonial-section-no_border .testi-person_img, .hero_section-purple .hero_section-content .h10-hero_section .content-section .testimonial-section-no_border .testi-person_img {
+    text-align: center;
+  }
+}
+
 .h1-hero_section .content-section .testimonial-section .testi-content, .h8-hero_section .content-section .testimonial-section .testi-content, .h10-hero_section .content-section .testimonial-section .testi-content, .h1-hero_section .content-section .hero_section .hero_section-content .testimonial-section-light .testi-content, .hero_section .hero_section-content .h1-hero_section .content-section .testimonial-section-light .testi-content, .h8-hero_section .content-section .hero_section .hero_section-content .testimonial-section-light .testi-content, .hero_section .hero_section-content .h8-hero_section .content-section .testimonial-section-light .testi-content, .h10-hero_section .content-section .hero_section .hero_section-content .testimonial-section-light .testi-content, .hero_section .hero_section-content .h10-hero_section .content-section .testimonial-section-light .testi-content, .h1-hero_section .content-section .hero_section-dark .hero_section-content .testimonial-section-light .testi-content, .hero_section-dark .hero_section-content .h1-hero_section .content-section .testimonial-section-light .testi-content, .h8-hero_section .content-section .hero_section-dark .hero_section-content .testimonial-section-light .testi-content, .hero_section-dark .hero_section-content .h8-hero_section .content-section .testimonial-section-light .testi-content, .h10-hero_section .content-section .hero_section-dark .hero_section-content .testimonial-section-light .testi-content, .hero_section-dark .hero_section-content .h10-hero_section .content-section .testimonial-section-light .testi-content, .h1-hero_section .content-section .hero_section-light .hero_section-content .testimonial-section-light .testi-content, .hero_section-light .hero_section-content .h1-hero_section .content-section .testimonial-section-light .testi-content, .h8-hero_section .content-section .hero_section-light .hero_section-content .testimonial-section-light .testi-content, .hero_section-light .hero_section-content .h8-hero_section .content-section .testimonial-section-light .testi-content, .h10-hero_section .content-section .hero_section-light .hero_section-content .testimonial-section-light .testi-content, .hero_section-light .hero_section-content .h10-hero_section .content-section .testimonial-section-light .testi-content, .h1-hero_section .content-section .hero_section-purple .hero_section-content .testimonial-section-light .testi-content, .hero_section-purple .hero_section-content .h1-hero_section .content-section .testimonial-section-light .testi-content, .h8-hero_section .content-section .hero_section-purple .hero_section-content .testimonial-section-light .testi-content, .hero_section-purple .hero_section-content .h8-hero_section .content-section .testimonial-section-light .testi-content, .h10-hero_section .content-section .hero_section-purple .hero_section-content .testimonial-section-light .testi-content, .hero_section-purple .hero_section-content .h10-hero_section .content-section .testimonial-section-light .testi-content, .h1-hero_section .content-section .hero_section .hero_section-content .testimonial-section-no_border .testi-content, .hero_section .hero_section-content .h1-hero_section .content-section .testimonial-section-no_border .testi-content, .h8-hero_section .content-section .hero_section .hero_section-content .testimonial-section-no_border .testi-content, .hero_section .hero_section-content .h8-hero_section .content-section .testimonial-section-no_border .testi-content, .h10-hero_section .content-section .hero_section .hero_section-content .testimonial-section-no_border .testi-content, .hero_section .hero_section-content .h10-hero_section .content-section .testimonial-section-no_border .testi-content, .h1-hero_section .content-section .hero_section-dark .hero_section-content .testimonial-section-no_border .testi-content, .hero_section-dark .hero_section-content .h1-hero_section .content-section .testimonial-section-no_border .testi-content, .h8-hero_section .content-section .hero_section-dark .hero_section-content .testimonial-section-no_border .testi-content, .hero_section-dark .hero_section-content .h8-hero_section .content-section .testimonial-section-no_border .testi-content, .h10-hero_section .content-section .hero_section-dark .hero_section-content .testimonial-section-no_border .testi-content, .hero_section-dark .hero_section-content .h10-hero_section .content-section .testimonial-section-no_border .testi-content, .h1-hero_section .content-section .hero_section-light .hero_section-content .testimonial-section-no_border .testi-content, .hero_section-light .hero_section-content .h1-hero_section .content-section .testimonial-section-no_border .testi-content, .h8-hero_section .content-section .hero_section-light .hero_section-content .testimonial-section-no_border .testi-content, .hero_section-light .hero_section-content .h8-hero_section .content-section .testimonial-section-no_border .testi-content, .h10-hero_section .content-section .hero_section-light .hero_section-content .testimonial-section-no_border .testi-content, .hero_section-light .hero_section-content .h10-hero_section .content-section .testimonial-section-no_border .testi-content, .h1-hero_section .content-section .hero_section-purple .hero_section-content .testimonial-section-no_border .testi-content, .hero_section-purple .hero_section-content .h1-hero_section .content-section .testimonial-section-no_border .testi-content, .h8-hero_section .content-section .hero_section-purple .hero_section-content .testimonial-section-no_border .testi-content, .hero_section-purple .hero_section-content .h8-hero_section .content-section .testimonial-section-no_border .testi-content, .h10-hero_section .content-section .hero_section-purple .hero_section-content .testimonial-section-no_border .testi-content, .hero_section-purple .hero_section-content .h10-hero_section .content-section .testimonial-section-no_border .testi-content {
   width: 380px;
+}
+
+@media (max-width: 575px) {
+  .h1-hero_section .content-section .testimonial-section .testi-content, .h8-hero_section .content-section .testimonial-section .testi-content, .h10-hero_section .content-section .testimonial-section .testi-content, .h1-hero_section .content-section .hero_section .hero_section-content .testimonial-section-light .testi-content, .hero_section .hero_section-content .h1-hero_section .content-section .testimonial-section-light .testi-content, .h8-hero_section .content-section .hero_section .hero_section-content .testimonial-section-light .testi-content, .hero_section .hero_section-content .h8-hero_section .content-section .testimonial-section-light .testi-content, .h10-hero_section .content-section .hero_section .hero_section-content .testimonial-section-light .testi-content, .hero_section .hero_section-content .h10-hero_section .content-section .testimonial-section-light .testi-content, .h1-hero_section .content-section .hero_section-dark .hero_section-content .testimonial-section-light .testi-content, .hero_section-dark .hero_section-content .h1-hero_section .content-section .testimonial-section-light .testi-content, .h8-hero_section .content-section .hero_section-dark .hero_section-content .testimonial-section-light .testi-content, .hero_section-dark .hero_section-content .h8-hero_section .content-section .testimonial-section-light .testi-content, .h10-hero_section .content-section .hero_section-dark .hero_section-content .testimonial-section-light .testi-content, .hero_section-dark .hero_section-content .h10-hero_section .content-section .testimonial-section-light .testi-content, .h1-hero_section .content-section .hero_section-light .hero_section-content .testimonial-section-light .testi-content, .hero_section-light .hero_section-content .h1-hero_section .content-section .testimonial-section-light .testi-content, .h8-hero_section .content-section .hero_section-light .hero_section-content .testimonial-section-light .testi-content, .hero_section-light .hero_section-content .h8-hero_section .content-section .testimonial-section-light .testi-content, .h10-hero_section .content-section .hero_section-light .hero_section-content .testimonial-section-light .testi-content, .hero_section-light .hero_section-content .h10-hero_section .content-section .testimonial-section-light .testi-content, .h1-hero_section .content-section .hero_section-purple .hero_section-content .testimonial-section-light .testi-content, .hero_section-purple .hero_section-content .h1-hero_section .content-section .testimonial-section-light .testi-content, .h8-hero_section .content-section .hero_section-purple .hero_section-content .testimonial-section-light .testi-content, .hero_section-purple .hero_section-content .h8-hero_section .content-section .testimonial-section-light .testi-content, .h10-hero_section .content-section .hero_section-purple .hero_section-content .testimonial-section-light .testi-content, .hero_section-purple .hero_section-content .h10-hero_section .content-section .testimonial-section-light .testi-content, .h1-hero_section .content-section .hero_section .hero_section-content .testimonial-section-no_border .testi-content, .hero_section .hero_section-content .h1-hero_section .content-section .testimonial-section-no_border .testi-content, .h8-hero_section .content-section .hero_section .hero_section-content .testimonial-section-no_border .testi-content, .hero_section .hero_section-content .h8-hero_section .content-section .testimonial-section-no_border .testi-content, .h10-hero_section .content-section .hero_section .hero_section-content .testimonial-section-no_border .testi-content, .hero_section .hero_section-content .h10-hero_section .content-section .testimonial-section-no_border .testi-content, .h1-hero_section .content-section .hero_section-dark .hero_section-content .testimonial-section-no_border .testi-content, .hero_section-dark .hero_section-content .h1-hero_section .content-section .testimonial-section-no_border .testi-content, .h8-hero_section .content-section .hero_section-dark .hero_section-content .testimonial-section-no_border .testi-content, .hero_section-dark .hero_section-content .h8-hero_section .content-section .testimonial-section-no_border .testi-content, .h10-hero_section .content-section .hero_section-dark .hero_section-content .testimonial-section-no_border .testi-content, .hero_section-dark .hero_section-content .h10-hero_section .content-section .testimonial-section-no_border .testi-content, .h1-hero_section .content-section .hero_section-light .hero_section-content .testimonial-section-no_border .testi-content, .hero_section-light .hero_section-content .h1-hero_section .content-section .testimonial-section-no_border .testi-content, .h8-hero_section .content-section .hero_section-light .hero_section-content .testimonial-section-no_border .testi-content, .hero_section-light .hero_section-content .h8-hero_section .content-section .testimonial-section-no_border .testi-content, .h10-hero_section .content-section .hero_section-light .hero_section-content .testimonial-section-no_border .testi-content, .hero_section-light .hero_section-content .h10-hero_section .content-section .testimonial-section-no_border .testi-content, .h1-hero_section .content-section .hero_section-purple .hero_section-content .testimonial-section-no_border .testi-content, .hero_section-purple .hero_section-content .h1-hero_section .content-section .testimonial-section-no_border .testi-content, .h8-hero_section .content-section .hero_section-purple .hero_section-content .testimonial-section-no_border .testi-content, .hero_section-purple .hero_section-content .h8-hero_section .content-section .testimonial-section-no_border .testi-content, .h10-hero_section .content-section .hero_section-purple .hero_section-content .testimonial-section-no_border .testi-content, .hero_section-purple .hero_section-content .h10-hero_section .content-section .testimonial-section-no_border .testi-content {
+    margin: auto;
+    margin-top: 0px;
+    width: 310px;
+  }
 }
 
 .h1-hero_section .content-section .testimonial-section .testi-content .testi-body p, .h8-hero_section .content-section .testimonial-section .testi-content .testi-body p, .h10-hero_section .content-section .testimonial-section .testi-content .testi-body p, .h1-hero_section .content-section .hero_section .hero_section-content .testimonial-section-light .testi-content .testi-body p, .hero_section .hero_section-content .h1-hero_section .content-section .testimonial-section-light .testi-content .testi-body p, .h8-hero_section .content-section .hero_section .hero_section-content .testimonial-section-light .testi-content .testi-body p, .hero_section .hero_section-content .h8-hero_section .content-section .testimonial-section-light .testi-content .testi-body p, .h10-hero_section .content-section .hero_section .hero_section-content .testimonial-section-light .testi-content .testi-body p, .hero_section .hero_section-content .h10-hero_section .content-section .testimonial-section-light .testi-content .testi-body p, .h1-hero_section .content-section .hero_section-dark .hero_section-content .testimonial-section-light .testi-content .testi-body p, .hero_section-dark .hero_section-content .h1-hero_section .content-section .testimonial-section-light .testi-content .testi-body p, .h8-hero_section .content-section .hero_section-dark .hero_section-content .testimonial-section-light .testi-content .testi-body p, .hero_section-dark .hero_section-content .h8-hero_section .content-section .testimonial-section-light .testi-content .testi-body p, .h10-hero_section .content-section .hero_section-dark .hero_section-content .testimonial-section-light .testi-content .testi-body p, .hero_section-dark .hero_section-content .h10-hero_section .content-section .testimonial-section-light .testi-content .testi-body p, .h1-hero_section .content-section .hero_section-light .hero_section-content .testimonial-section-light .testi-content .testi-body p, .hero_section-light .hero_section-content .h1-hero_section .content-section .testimonial-section-light .testi-content .testi-body p, .h8-hero_section .content-section .hero_section-light .hero_section-content .testimonial-section-light .testi-content .testi-body p, .hero_section-light .hero_section-content .h8-hero_section .content-section .testimonial-section-light .testi-content .testi-body p, .h10-hero_section .content-section .hero_section-light .hero_section-content .testimonial-section-light .testi-content .testi-body p, .hero_section-light .hero_section-content .h10-hero_section .content-section .testimonial-section-light .testi-content .testi-body p, .h1-hero_section .content-section .hero_section-purple .hero_section-content .testimonial-section-light .testi-content .testi-body p, .hero_section-purple .hero_section-content .h1-hero_section .content-section .testimonial-section-light .testi-content .testi-body p, .h8-hero_section .content-section .hero_section-purple .hero_section-content .testimonial-section-light .testi-content .testi-body p, .hero_section-purple .hero_section-content .h8-hero_section .content-section .testimonial-section-light .testi-content .testi-body p, .h10-hero_section .content-section .hero_section-purple .hero_section-content .testimonial-section-light .testi-content .testi-body p, .hero_section-purple .hero_section-content .h10-hero_section .content-section .testimonial-section-light .testi-content .testi-body p, .h1-hero_section .content-section .hero_section .hero_section-content .testimonial-section-no_border .testi-content .testi-body p, .hero_section .hero_section-content .h1-hero_section .content-section .testimonial-section-no_border .testi-content .testi-body p, .h8-hero_section .content-section .hero_section .hero_section-content .testimonial-section-no_border .testi-content .testi-body p, .hero_section .hero_section-content .h8-hero_section .content-section .testimonial-section-no_border .testi-content .testi-body p, .h10-hero_section .content-section .hero_section .hero_section-content .testimonial-section-no_border .testi-content .testi-body p, .hero_section .hero_section-content .h10-hero_section .content-section .testimonial-section-no_border .testi-content .testi-body p, .h1-hero_section .content-section .hero_section-dark .hero_section-content .testimonial-section-no_border .testi-content .testi-body p, .hero_section-dark .hero_section-content .h1-hero_section .content-section .testimonial-section-no_border .testi-content .testi-body p, .h8-hero_section .content-section .hero_section-dark .hero_section-content .testimonial-section-no_border .testi-content .testi-body p, .hero_section-dark .hero_section-content .h8-hero_section .content-section .testimonial-section-no_border .testi-content .testi-body p, .h10-hero_section .content-section .hero_section-dark .hero_section-content .testimonial-section-no_border .testi-content .testi-body p, .hero_section-dark .hero_section-content .h10-hero_section .content-section .testimonial-section-no_border .testi-content .testi-body p, .h1-hero_section .content-section .hero_section-light .hero_section-content .testimonial-section-no_border .testi-content .testi-body p, .hero_section-light .hero_section-content .h1-hero_section .content-section .testimonial-section-no_border .testi-content .testi-body p, .h8-hero_section .content-section .hero_section-light .hero_section-content .testimonial-section-no_border .testi-content .testi-body p, .hero_section-light .hero_section-content .h8-hero_section .content-section .testimonial-section-no_border .testi-content .testi-body p, .h10-hero_section .content-section .hero_section-light .hero_section-content .testimonial-section-no_border .testi-content .testi-body p, .hero_section-light .hero_section-content .h10-hero_section .content-section .testimonial-section-no_border .testi-content .testi-body p, .h1-hero_section .content-section .hero_section-purple .hero_section-content .testimonial-section-no_border .testi-content .testi-body p, .hero_section-purple .hero_section-content .h1-hero_section .content-section .testimonial-section-no_border .testi-content .testi-body p, .h8-hero_section .content-section .hero_section-purple .hero_section-content .testimonial-section-no_border .testi-content .testi-body p, .hero_section-purple .hero_section-content .h8-hero_section .content-section .testimonial-section-no_border .testi-content .testi-body p, .h10-hero_section .content-section .hero_section-purple .hero_section-content .testimonial-section-no_border .testi-content .testi-body p, .hero_section-purple .hero_section-content .h10-hero_section .content-section .testimonial-section-no_border .testi-content .testi-body p {
@@ -362,6 +439,19 @@ h5, .h5 {
   text-align: left;
 }
 
+@media (max-width: 575px) {
+  .h1-hero_section .content-section .testimonial-section .testi-content .testi-body p, .h8-hero_section .content-section .testimonial-section .testi-content .testi-body p, .h10-hero_section .content-section .testimonial-section .testi-content .testi-body p, .h1-hero_section .content-section .hero_section .hero_section-content .testimonial-section-light .testi-content .testi-body p, .hero_section .hero_section-content .h1-hero_section .content-section .testimonial-section-light .testi-content .testi-body p, .h8-hero_section .content-section .hero_section .hero_section-content .testimonial-section-light .testi-content .testi-body p, .hero_section .hero_section-content .h8-hero_section .content-section .testimonial-section-light .testi-content .testi-body p, .h10-hero_section .content-section .hero_section .hero_section-content .testimonial-section-light .testi-content .testi-body p, .hero_section .hero_section-content .h10-hero_section .content-section .testimonial-section-light .testi-content .testi-body p, .h1-hero_section .content-section .hero_section-dark .hero_section-content .testimonial-section-light .testi-content .testi-body p, .hero_section-dark .hero_section-content .h1-hero_section .content-section .testimonial-section-light .testi-content .testi-body p, .h8-hero_section .content-section .hero_section-dark .hero_section-content .testimonial-section-light .testi-content .testi-body p, .hero_section-dark .hero_section-content .h8-hero_section .content-section .testimonial-section-light .testi-content .testi-body p, .h10-hero_section .content-section .hero_section-dark .hero_section-content .testimonial-section-light .testi-content .testi-body p, .hero_section-dark .hero_section-content .h10-hero_section .content-section .testimonial-section-light .testi-content .testi-body p, .h1-hero_section .content-section .hero_section-light .hero_section-content .testimonial-section-light .testi-content .testi-body p, .hero_section-light .hero_section-content .h1-hero_section .content-section .testimonial-section-light .testi-content .testi-body p, .h8-hero_section .content-section .hero_section-light .hero_section-content .testimonial-section-light .testi-content .testi-body p, .hero_section-light .hero_section-content .h8-hero_section .content-section .testimonial-section-light .testi-content .testi-body p, .h10-hero_section .content-section .hero_section-light .hero_section-content .testimonial-section-light .testi-content .testi-body p, .hero_section-light .hero_section-content .h10-hero_section .content-section .testimonial-section-light .testi-content .testi-body p, .h1-hero_section .content-section .hero_section-purple .hero_section-content .testimonial-section-light .testi-content .testi-body p, .hero_section-purple .hero_section-content .h1-hero_section .content-section .testimonial-section-light .testi-content .testi-body p, .h8-hero_section .content-section .hero_section-purple .hero_section-content .testimonial-section-light .testi-content .testi-body p, .hero_section-purple .hero_section-content .h8-hero_section .content-section .testimonial-section-light .testi-content .testi-body p, .h10-hero_section .content-section .hero_section-purple .hero_section-content .testimonial-section-light .testi-content .testi-body p, .hero_section-purple .hero_section-content .h10-hero_section .content-section .testimonial-section-light .testi-content .testi-body p, .h1-hero_section .content-section .hero_section .hero_section-content .testimonial-section-no_border .testi-content .testi-body p, .hero_section .hero_section-content .h1-hero_section .content-section .testimonial-section-no_border .testi-content .testi-body p, .h8-hero_section .content-section .hero_section .hero_section-content .testimonial-section-no_border .testi-content .testi-body p, .hero_section .hero_section-content .h8-hero_section .content-section .testimonial-section-no_border .testi-content .testi-body p, .h10-hero_section .content-section .hero_section .hero_section-content .testimonial-section-no_border .testi-content .testi-body p, .hero_section .hero_section-content .h10-hero_section .content-section .testimonial-section-no_border .testi-content .testi-body p, .h1-hero_section .content-section .hero_section-dark .hero_section-content .testimonial-section-no_border .testi-content .testi-body p, .hero_section-dark .hero_section-content .h1-hero_section .content-section .testimonial-section-no_border .testi-content .testi-body p, .h8-hero_section .content-section .hero_section-dark .hero_section-content .testimonial-section-no_border .testi-content .testi-body p, .hero_section-dark .hero_section-content .h8-hero_section .content-section .testimonial-section-no_border .testi-content .testi-body p, .h10-hero_section .content-section .hero_section-dark .hero_section-content .testimonial-section-no_border .testi-content .testi-body p, .hero_section-dark .hero_section-content .h10-hero_section .content-section .testimonial-section-no_border .testi-content .testi-body p, .h1-hero_section .content-section .hero_section-light .hero_section-content .testimonial-section-no_border .testi-content .testi-body p, .hero_section-light .hero_section-content .h1-hero_section .content-section .testimonial-section-no_border .testi-content .testi-body p, .h8-hero_section .content-section .hero_section-light .hero_section-content .testimonial-section-no_border .testi-content .testi-body p, .hero_section-light .hero_section-content .h8-hero_section .content-section .testimonial-section-no_border .testi-content .testi-body p, .h10-hero_section .content-section .hero_section-light .hero_section-content .testimonial-section-no_border .testi-content .testi-body p, .hero_section-light .hero_section-content .h10-hero_section .content-section .testimonial-section-no_border .testi-content .testi-body p, .h1-hero_section .content-section .hero_section-purple .hero_section-content .testimonial-section-no_border .testi-content .testi-body p, .hero_section-purple .hero_section-content .h1-hero_section .content-section .testimonial-section-no_border .testi-content .testi-body p, .h8-hero_section .content-section .hero_section-purple .hero_section-content .testimonial-section-no_border .testi-content .testi-body p, .hero_section-purple .hero_section-content .h8-hero_section .content-section .testimonial-section-no_border .testi-content .testi-body p, .h10-hero_section .content-section .hero_section-purple .hero_section-content .testimonial-section-no_border .testi-content .testi-body p, .hero_section-purple .hero_section-content .h10-hero_section .content-section .testimonial-section-no_border .testi-content .testi-body p {
+    text-align: center;
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 575px) {
+  .h1-hero_section .content-section .testimonial-section .testi-content .testi-position, .h8-hero_section .content-section .testimonial-section .testi-content .testi-position, .h10-hero_section .content-section .testimonial-section .testi-content .testi-position, .h1-hero_section .content-section .hero_section .hero_section-content .testimonial-section-light .testi-content .testi-position, .hero_section .hero_section-content .h1-hero_section .content-section .testimonial-section-light .testi-content .testi-position, .h8-hero_section .content-section .hero_section .hero_section-content .testimonial-section-light .testi-content .testi-position, .hero_section .hero_section-content .h8-hero_section .content-section .testimonial-section-light .testi-content .testi-position, .h10-hero_section .content-section .hero_section .hero_section-content .testimonial-section-light .testi-content .testi-position, .hero_section .hero_section-content .h10-hero_section .content-section .testimonial-section-light .testi-content .testi-position, .h1-hero_section .content-section .hero_section-dark .hero_section-content .testimonial-section-light .testi-content .testi-position, .hero_section-dark .hero_section-content .h1-hero_section .content-section .testimonial-section-light .testi-content .testi-position, .h8-hero_section .content-section .hero_section-dark .hero_section-content .testimonial-section-light .testi-content .testi-position, .hero_section-dark .hero_section-content .h8-hero_section .content-section .testimonial-section-light .testi-content .testi-position, .h10-hero_section .content-section .hero_section-dark .hero_section-content .testimonial-section-light .testi-content .testi-position, .hero_section-dark .hero_section-content .h10-hero_section .content-section .testimonial-section-light .testi-content .testi-position, .h1-hero_section .content-section .hero_section-light .hero_section-content .testimonial-section-light .testi-content .testi-position, .hero_section-light .hero_section-content .h1-hero_section .content-section .testimonial-section-light .testi-content .testi-position, .h8-hero_section .content-section .hero_section-light .hero_section-content .testimonial-section-light .testi-content .testi-position, .hero_section-light .hero_section-content .h8-hero_section .content-section .testimonial-section-light .testi-content .testi-position, .h10-hero_section .content-section .hero_section-light .hero_section-content .testimonial-section-light .testi-content .testi-position, .hero_section-light .hero_section-content .h10-hero_section .content-section .testimonial-section-light .testi-content .testi-position, .h1-hero_section .content-section .hero_section-purple .hero_section-content .testimonial-section-light .testi-content .testi-position, .hero_section-purple .hero_section-content .h1-hero_section .content-section .testimonial-section-light .testi-content .testi-position, .h8-hero_section .content-section .hero_section-purple .hero_section-content .testimonial-section-light .testi-content .testi-position, .hero_section-purple .hero_section-content .h8-hero_section .content-section .testimonial-section-light .testi-content .testi-position, .h10-hero_section .content-section .hero_section-purple .hero_section-content .testimonial-section-light .testi-content .testi-position, .hero_section-purple .hero_section-content .h10-hero_section .content-section .testimonial-section-light .testi-content .testi-position, .h1-hero_section .content-section .hero_section .hero_section-content .testimonial-section-no_border .testi-content .testi-position, .hero_section .hero_section-content .h1-hero_section .content-section .testimonial-section-no_border .testi-content .testi-position, .h8-hero_section .content-section .hero_section .hero_section-content .testimonial-section-no_border .testi-content .testi-position, .hero_section .hero_section-content .h8-hero_section .content-section .testimonial-section-no_border .testi-content .testi-position, .h10-hero_section .content-section .hero_section .hero_section-content .testimonial-section-no_border .testi-content .testi-position, .hero_section .hero_section-content .h10-hero_section .content-section .testimonial-section-no_border .testi-content .testi-position, .h1-hero_section .content-section .hero_section-dark .hero_section-content .testimonial-section-no_border .testi-content .testi-position, .hero_section-dark .hero_section-content .h1-hero_section .content-section .testimonial-section-no_border .testi-content .testi-position, .h8-hero_section .content-section .hero_section-dark .hero_section-content .testimonial-section-no_border .testi-content .testi-position, .hero_section-dark .hero_section-content .h8-hero_section .content-section .testimonial-section-no_border .testi-content .testi-position, .h10-hero_section .content-section .hero_section-dark .hero_section-content .testimonial-section-no_border .testi-content .testi-position, .hero_section-dark .hero_section-content .h10-hero_section .content-section .testimonial-section-no_border .testi-content .testi-position, .h1-hero_section .content-section .hero_section-light .hero_section-content .testimonial-section-no_border .testi-content .testi-position, .hero_section-light .hero_section-content .h1-hero_section .content-section .testimonial-section-no_border .testi-content .testi-position, .h8-hero_section .content-section .hero_section-light .hero_section-content .testimonial-section-no_border .testi-content .testi-position, .hero_section-light .hero_section-content .h8-hero_section .content-section .testimonial-section-no_border .testi-content .testi-position, .h10-hero_section .content-section .hero_section-light .hero_section-content .testimonial-section-no_border .testi-content .testi-position, .hero_section-light .hero_section-content .h10-hero_section .content-section .testimonial-section-no_border .testi-content .testi-position, .h1-hero_section .content-section .hero_section-purple .hero_section-content .testimonial-section-no_border .testi-content .testi-position, .hero_section-purple .hero_section-content .h1-hero_section .content-section .testimonial-section-no_border .testi-content .testi-position, .h8-hero_section .content-section .hero_section-purple .hero_section-content .testimonial-section-no_border .testi-content .testi-position, .hero_section-purple .hero_section-content .h8-hero_section .content-section .testimonial-section-no_border .testi-content .testi-position, .h10-hero_section .content-section .hero_section-purple .hero_section-content .testimonial-section-no_border .testi-content .testi-position, .hero_section-purple .hero_section-content .h10-hero_section .content-section .testimonial-section-no_border .testi-content .testi-position {
+    text-align: center;
+  }
+}
+
 .h1-hero_section .content-section .testimonial-section .testi-content .testi-position span, .h8-hero_section .content-section .testimonial-section .testi-content .testi-position span, .h10-hero_section .content-section .testimonial-section .testi-content .testi-position span, .h1-hero_section .content-section .hero_section .hero_section-content .testimonial-section-light .testi-content .testi-position span, .hero_section .hero_section-content .h1-hero_section .content-section .testimonial-section-light .testi-content .testi-position span, .h8-hero_section .content-section .hero_section .hero_section-content .testimonial-section-light .testi-content .testi-position span, .hero_section .hero_section-content .h8-hero_section .content-section .testimonial-section-light .testi-content .testi-position span, .h10-hero_section .content-section .hero_section .hero_section-content .testimonial-section-light .testi-content .testi-position span, .hero_section .hero_section-content .h10-hero_section .content-section .testimonial-section-light .testi-content .testi-position span, .h1-hero_section .content-section .hero_section-dark .hero_section-content .testimonial-section-light .testi-content .testi-position span, .hero_section-dark .hero_section-content .h1-hero_section .content-section .testimonial-section-light .testi-content .testi-position span, .h8-hero_section .content-section .hero_section-dark .hero_section-content .testimonial-section-light .testi-content .testi-position span, .hero_section-dark .hero_section-content .h8-hero_section .content-section .testimonial-section-light .testi-content .testi-position span, .h10-hero_section .content-section .hero_section-dark .hero_section-content .testimonial-section-light .testi-content .testi-position span, .hero_section-dark .hero_section-content .h10-hero_section .content-section .testimonial-section-light .testi-content .testi-position span, .h1-hero_section .content-section .hero_section-light .hero_section-content .testimonial-section-light .testi-content .testi-position span, .hero_section-light .hero_section-content .h1-hero_section .content-section .testimonial-section-light .testi-content .testi-position span, .h8-hero_section .content-section .hero_section-light .hero_section-content .testimonial-section-light .testi-content .testi-position span, .hero_section-light .hero_section-content .h8-hero_section .content-section .testimonial-section-light .testi-content .testi-position span, .h10-hero_section .content-section .hero_section-light .hero_section-content .testimonial-section-light .testi-content .testi-position span, .hero_section-light .hero_section-content .h10-hero_section .content-section .testimonial-section-light .testi-content .testi-position span, .h1-hero_section .content-section .hero_section-purple .hero_section-content .testimonial-section-light .testi-content .testi-position span, .hero_section-purple .hero_section-content .h1-hero_section .content-section .testimonial-section-light .testi-content .testi-position span, .h8-hero_section .content-section .hero_section-purple .hero_section-content .testimonial-section-light .testi-content .testi-position span, .hero_section-purple .hero_section-content .h8-hero_section .content-section .testimonial-section-light .testi-content .testi-position span, .h10-hero_section .content-section .hero_section-purple .hero_section-content .testimonial-section-light .testi-content .testi-position span, .hero_section-purple .hero_section-content .h10-hero_section .content-section .testimonial-section-light .testi-content .testi-position span, .h1-hero_section .content-section .hero_section .hero_section-content .testimonial-section-no_border .testi-content .testi-position span, .hero_section .hero_section-content .h1-hero_section .content-section .testimonial-section-no_border .testi-content .testi-position span, .h8-hero_section .content-section .hero_section .hero_section-content .testimonial-section-no_border .testi-content .testi-position span, .hero_section .hero_section-content .h8-hero_section .content-section .testimonial-section-no_border .testi-content .testi-position span, .h10-hero_section .content-section .hero_section .hero_section-content .testimonial-section-no_border .testi-content .testi-position span, .hero_section .hero_section-content .h10-hero_section .content-section .testimonial-section-no_border .testi-content .testi-position span, .h1-hero_section .content-section .hero_section-dark .hero_section-content .testimonial-section-no_border .testi-content .testi-position span, .hero_section-dark .hero_section-content .h1-hero_section .content-section .testimonial-section-no_border .testi-content .testi-position span, .h8-hero_section .content-section .hero_section-dark .hero_section-content .testimonial-section-no_border .testi-content .testi-position span, .hero_section-dark .hero_section-content .h8-hero_section .content-section .testimonial-section-no_border .testi-content .testi-position span, .h10-hero_section .content-section .hero_section-dark .hero_section-content .testimonial-section-no_border .testi-content .testi-position span, .hero_section-dark .hero_section-content .h10-hero_section .content-section .testimonial-section-no_border .testi-content .testi-position span, .h1-hero_section .content-section .hero_section-light .hero_section-content .testimonial-section-no_border .testi-content .testi-position span, .hero_section-light .hero_section-content .h1-hero_section .content-section .testimonial-section-no_border .testi-content .testi-position span, .h8-hero_section .content-section .hero_section-light .hero_section-content .testimonial-section-no_border .testi-content .testi-position span, .hero_section-light .hero_section-content .h8-hero_section .content-section .testimonial-section-no_border .testi-content .testi-position span, .h10-hero_section .content-section .hero_section-light .hero_section-content .testimonial-section-no_border .testi-content .testi-position span, .hero_section-light .hero_section-content .h10-hero_section .content-section .testimonial-section-no_border .testi-content .testi-position span, .h1-hero_section .content-section .hero_section-purple .hero_section-content .testimonial-section-no_border .testi-content .testi-position span, .hero_section-purple .hero_section-content .h1-hero_section .content-section .testimonial-section-no_border .testi-content .testi-position span, .h8-hero_section .content-section .hero_section-purple .hero_section-content .testimonial-section-no_border .testi-content .testi-position span, .hero_section-purple .hero_section-content .h8-hero_section .content-section .testimonial-section-no_border .testi-content .testi-position span, .h10-hero_section .content-section .hero_section-purple .hero_section-content .testimonial-section-no_border .testi-content .testi-position span, .hero_section-purple .hero_section-content .h10-hero_section .content-section .testimonial-section-no_border .testi-content .testi-position span {
   font-size: 13px;
   font-style: normal;
@@ -371,10 +461,24 @@ h5, .h5 {
   text-align: left;
 }
 
+@media (max-width: 575px) {
+  .h1-hero_section .content-section, .h8-hero_section .content-section, .h10-hero_section .content-section {
+    order: 2;
+  }
+}
+
 .h1-hero_section .image_section, .h8-hero_section .image_section, .h10-hero_section .image_section, .h1-hero_section .image_section-circle, .h8-hero_section .image_section-circle, .h10-hero_section .image_section-circle {
   width: 560px;
   height: 560px;
   background: linear-gradient(90deg, #efecff 0%, #c4b8ff 100%);
+}
+
+@media (max-width: 575px) {
+  .h1-hero_section .image_section, .h8-hero_section .image_section, .h10-hero_section .image_section, .h1-hero_section .image_section-circle, .h8-hero_section .image_section-circle, .h10-hero_section .image_section-circle {
+    width: 327px;
+    height: 311.96px;
+    order: 1;
+  }
 }
 
 .h1-hero_section .image_section img, .h8-hero_section .image_section img, .h10-hero_section .image_section img, .h1-hero_section .image_section-circle img, .h8-hero_section .image_section-circle img, .h10-hero_section .image_section-circle img {
@@ -382,6 +486,15 @@ h5, .h5 {
   width: 500px;
   top: -63px;
   left: 37px;
+}
+
+@media (max-width: 575px) {
+  .h1-hero_section .image_section img, .h8-hero_section .image_section img, .h10-hero_section .image_section img, .h1-hero_section .image_section-circle img, .h8-hero_section .image_section-circle img, .h10-hero_section .image_section-circle img {
+    margin: auto;
+    width: 280px;
+    top: -23px;
+    left: 0px;
+  }
 }
 
 .h2-hero_section {
@@ -395,9 +508,24 @@ h5, .h5 {
   margin-bottom: 100px;
 }
 
+@media (max-width: 575px) {
+  .h2-hero_section {
+    padding-top: 49px;
+    width: 327px;
+  }
+}
+
 .h2-hero_section .content-section {
   margin: auto;
   width: 754px;
+}
+
+@media (max-width: 575px) {
+  .h2-hero_section .content-section {
+    order: 2;
+    width: 327px;
+    margin-top: 48px;
+  }
 }
 
 .h2-hero_section .content-section .title {
@@ -408,9 +536,24 @@ h5, .h5 {
   text-align: center;
 }
 
+@media (max-width: 575px) {
+  .h2-hero_section .content-section .title h2 {
+    font-size: 38px;
+    line-height: 45px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+}
+
 .h2-hero_section .content-section .body {
   margin: auto;
   width: 754px;
+}
+
+@media (max-width: 575px) {
+  .h2-hero_section .content-section .body {
+    width: 327px;
+  }
 }
 
 .h2-hero_section .content-section .body p {
@@ -429,6 +572,12 @@ h5, .h5 {
   text-align: center;
 }
 
+@media (max-width: 575px) {
+  .h2-hero_section .content-section .btn_container {
+    width: 327px;
+  }
+}
+
 .h2-hero_section .content-section .btn_container .sub-body {
   margin-top: 27px;
 }
@@ -442,6 +591,16 @@ h5, .h5 {
   padding-left: 142px;
 }
 
+@media (max-width: 575px) {
+  .h2-hero_section .image_section, .h2-hero_section .image_section-circle {
+    order: 1;
+    width: 327px;
+    height: 194.15px;
+    padding-left: 0;
+    margin-top: 0;
+  }
+}
+
 .h2-hero_section .image_section img, .h2-hero_section .image_section-circle img {
   position: relative;
   top: 140px;
@@ -449,8 +608,22 @@ h5, .h5 {
   left: 12px;
 }
 
+@media (max-width: 575px) {
+  .h2-hero_section .image_section img, .h2-hero_section .image_section-circle img {
+    width: 88.31px;
+    top: 32px;
+    left: 64px;
+  }
+}
+
 .h2-hero_section .image_section img:nth-child(1), .h2-hero_section .image_section-circle img:nth-child(1) {
-  width: 444px;
+  width: 435px;
+}
+
+@media (max-width: 575px) {
+  .h2-hero_section .image_section img:nth-child(1), .h2-hero_section .image_section-circle img:nth-child(1) {
+    width: 105.19px;
+  }
 }
 
 .h3-input {
@@ -461,6 +634,13 @@ h5, .h5 {
   gap: 189px;
   border: 2px solid #000000;
   margin-bottom: 76px;
+}
+
+@media (max-width: 575px) {
+  .h3-input {
+    width: 327px;
+    gap: 117px;
+  }
 }
 
 .h3-input span {
@@ -505,9 +685,17 @@ h5, .h5 {
 }
 
 .hero_section-h6 {
+  display: flex;
+  flex-direction: column;
   margin: auto;
   width: 1100px;
   text-align: center;
+}
+
+@media (max-width: 575px) {
+  .hero_section-h6 {
+    width: 327px;
+  }
 }
 
 .hero_section-h6 .content_section {
@@ -518,8 +706,23 @@ h5, .h5 {
   text-align: center;
 }
 
+@media (max-width: 575px) {
+  .hero_section-h6 .content_section {
+    width: 327px;
+  }
+}
+
 .hero_section-h6 .content_section .title {
   margin-top: 134px;
+}
+
+@media (max-width: 575px) {
+  .hero_section-h6 .content_section .title h2 {
+    font-size: 38px;
+    line-height: 45px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
 }
 
 .hero_section-h6 .content_section .body {
@@ -527,14 +730,36 @@ h5, .h5 {
   margin-bottom: 48px;
 }
 
+@media (max-width: 575px) {
+  .hero_section-h6 .image_section, .hero_section-h6 .image_section-circle {
+    margin-top: 59px;
+  }
+}
+
 .hero_section-h6 .image_section .circle-bg img:nth-child(1), .hero_section-h6 .image_section-circle .circle-bg img:nth-child(1) {
   width: 952px;
+}
+
+@media (max-width: 575px) {
+  .hero_section-h6 .image_section .circle-bg img:nth-child(1), .hero_section-h6 .image_section-circle .circle-bg img:nth-child(1) {
+    width: 750px;
+    position: relative;
+    left: -217px;
+  }
 }
 
 .hero_section-h6 .image_section .circle-bg img:nth-child(2), .hero_section-h6 .image_section-circle .circle-bg img:nth-child(2) {
   position: relative;
   width: 551px;
   top: -671px;
+}
+
+@media (max-width: 575px) {
+  .hero_section-h6 .image_section .circle-bg img:nth-child(2), .hero_section-h6 .image_section-circle .circle-bg img:nth-child(2) {
+    width: 352px;
+    top: -457px;
+    left: -16px;
+  }
 }
 
 .h8-hero_section {
@@ -1106,10 +1331,9 @@ h5, .h5 {
 
 @media (max-width: 575px) {
   .h1-navigation_section {
-    margin: auto;
-    width: 280px;
-    padding-left: 0px;
-    padding-top: 24.03px;
+    width: 343px;
+    padding-left: 26px;
+    padding-top: 40.03px;
   }
 }
 
