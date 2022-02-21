@@ -9,6 +9,10 @@
   vertical-align: center;
   gap: 128px;
   margin-bottom: 100px;
+  @include mobile{
+    width: 327px;
+    flex-direction: column;
+  }
   .feature-img {
     width: 558px;
     height: 557.87px;
@@ -33,7 +37,19 @@
         color: #000;
       }
     }
-    &-body{}
+    &-body {
+      margin-top: 32px;
+      width: 455.6190490722656px;
+
+      p {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 27px;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+    }
     &-services {
       margin-top: 3em;
       &-list {
@@ -57,6 +73,26 @@
           }
         }
       }
+    }
+  }
+}
+
+// features 2
+.feature-content-service-card {
+  display: flex;
+  flex-direction: row;
+  gap: 89px;
+  &-item {
+    width: 183.23809814453125px;
+    margin-top: 57.61px;
+    &-icon {
+      margin-bottom: 15.85px;
+    }
+    &-title {
+      margin-bottom: 15.85px;
+    }
+    &-body {
+      margin-bottom: 59.8px;
     }
   }
 }

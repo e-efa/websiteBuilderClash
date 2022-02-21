@@ -1,16 +1,17 @@
 <!-- varibales -->
 {% set title="Plug & play template to get you up and running fast."%}
 {% set bodyText="Here is a section with two features or points and a subheading."%}
-{% set featureItemContent1="Explain your value prop as easily as possible."%}
-{% set featureItemContent2="Communicate your most important features."%}
-{% set featureItemContent3="Close with killer testimonials."%}
+{% set serviceTitle1="A simple heading"%}
+{% set serviceBody1="The point of a landing page is to make the case for your product."%}
+{% set serviceTitle2="A simple heading"%}
+{% set serviceBody2="To do so as quickly as possible."%}
 {% set buttonTitle="Primary"%}
 
 <!-- img path -->
 {% set featureImgPath="/image/png/hero4/clash-hero-img.png"%}
-{% set barIconPath="/image/svg/features/Feature-Icon.svg"%}
-{% set toggleIconPath="/image/svg/features/toggle-icon.svg"%}
-{% set comaIconPath="/image/svg/features/quote-icon.svg"%}
+{% set serviceIconPath1="/image/svg/features/shopping-cart.svg"%}
+{% set serviceIconPath2="/image/svg/features/meter.svg"%}
+{% set arrowIcon="/image/svg/features/arrow.svg"%}
 <!-- features 1 -->
 <div class="features-section">
     <div class="feature-img">
@@ -23,15 +24,32 @@
         <div class="feature-content-body">
             <p>{{bodyText}}</p>
         </div>
-        <div class="feature-content-services">
-            <ul class="feature-content-services-list">
-                <li class="feature-content-services-list-item"><img src="{{barIconPath}}" alt="">{{featureItemContent1}}</li>
-                <li class="feature-content-services-list-item"><img src="{{toggleIconPath}}" alt="">{{featureItemContent2}}</li>
-                <li class="feature-content-services-list-item"><img src="{{comaIconPath}}" alt="">{{featureItemContent3}}</li>
-            </ul>
+        <div class="feature-content-service-card">
+            <div class="feature-content-service-card-item">
+                <div class="feature-content-service-card-item-icon">
+                    <img src="{{serviceIconPath1}}" alt="shoppingCart">
+                </div>
+                <div class="feature-content-service-card-item-title">
+                    <h5>{{serviceTitle1}}</h5>
+                </div>
+                <div class="feature-content-service-card-item-body">
+                    <p>{{serviceBody1}}</p>
+                </div>
+            </div>
+            <div class="feature-content-service-card-item">
+                <div class="feature-content-service-card-item-icon">
+                    <img src="{{serviceIconPath2}}" alt="meter">
+                </div>
+                <div class="feature-content-service-card-item-title">
+                    <h5>{{serviceTitle2}}</h5>
+                </div>
+                <div class="feature-content-service-card-item-body">
+                    <p>{{serviceBody2}}</p>
+                </div>
+            </div>
         </div>
         <div class="feature-content-button">
-            <button class="btn btn-black">{{buttonTitle}}</button>
+            <button class="btn btn-black">{{buttonTitle}} <img src="{{arrowIcon}}" alt="arrow"></button>
         </div>
     </div>
 </div>
