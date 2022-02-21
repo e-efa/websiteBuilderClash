@@ -163,6 +163,10 @@
 // hero 7
 .ios_app {
   width: 151px;
+  @include mobile {
+    width: 327px;
+    height: 52px;
+  }
 }
 
 // hero 11 light
@@ -186,7 +190,7 @@
       }
     }
   }
-  .hero-nav-buttons-lightmode{
+  .hero-nav-buttons-lightmode {
     padding-left: 10%;
     display: flex;
     flex-direction: row;
@@ -194,29 +198,29 @@
   }
 }
 
-// hero 11 dark 
-.hero-navigation-darkMode{
+// hero 11 dark
+.hero-navigation-darkMode {
   @extend .hero-navigation-lightmode;
   padding-top: 55px;
   background-color: #000;
-  .hero-nav-menu-darkMode{
-    .hero-nav-list-darkMode{
+  .hero-nav-menu-darkMode {
+    .hero-nav-list-darkMode {
       list-style: none;
       display: flex;
       flex-direction: row;
       gap: 48px;
-      .hero-nav-item-darkMode{
-        a{
+      .hero-nav-item-darkMode {
+        a {
           color: #fff;
         }
       }
     }
   }
-  .hero-nav-buttons-darkMode{
+  .hero-nav-buttons-darkMode {
     display: flex;
     flex-direction: row;
     gap: 15px;
-    .btn-light{
+    .btn-light {
       width: 97px;
       height: 40px;
       background: #000;
@@ -227,28 +231,28 @@
 }
 
 // hero 11 purple
-.hero-navigation-purple{
+.hero-navigation-purple {
   @extend .hero-navigation-lightmode;
   background-color: $Highlight-2;
   padding-top: 55px;
-  .hero-nav-menu-purple{
-    .hero-nav-list-purple{
+  .hero-nav-menu-purple {
+    .hero-nav-list-purple {
       list-style: none;
       display: flex;
       flex-direction: row;
       gap: 48px;
-      .hero-nav-item-purple{
-        a{
+      .hero-nav-item-purple {
+        a {
           color: #fff;
         }
       }
     }
   }
-  .hero-nav-buttons-purple{
+  .hero-nav-buttons-purple {
     display: flex;
     flex-direction: row;
     gap: 15px;
-    .btn-light{
+    .btn-light {
       width: 97px;
       height: 40px;
       background-color: $Highlight-2;
@@ -259,15 +263,15 @@
 }
 
 // hero 12 light version
-.hero_navigation{
+.hero_navigation {
   width: 1440px;
   margin: auto;
   display: flex;
   flex-direction: row;
   gap: 26%;
   padding-top: 53px;
-  .hero_navigation-menu{
-    .hero-navigation-list{
+  .hero_navigation-menu {
+    .hero-navigation-list {
       list-style: none;
       display: flex;
       flex-direction: row;
@@ -276,18 +280,18 @@
       padding-top: 15px;
     }
   }
-  .hero_navigation-buttons{
+  .hero_navigation-buttons {
     display: flex;
     flex-direction: row;
     gap: 15px;
-    button{
+    button {
       width: 97px;
     }
-    .btn-light-h12{
+    .btn-light-h12 {
       width: 97px;
-      border: 2px solid #000; 
+      border: 2px solid #000;
     }
-    .btn-dark-h12{
+    .btn-dark-h12 {
       background-color: #000;
       color: #fff;
     }
@@ -295,73 +299,73 @@
 }
 
 // hero 12 dark version
-.hero_navigation-light{
+.hero_navigation-light {
   @extend .hero_navigation;
   background-color: #000;
   padding-left: 60px;
   padding-right: 50px;
-  .hero_navigation-menu-light{
-    .hero-navigation-list-light{
+  .hero_navigation-menu-light {
+    .hero-navigation-list-light {
       list-style: none;
       display: flex;
       flex-direction: row;
       gap: 48px;
       padding-left: 70%;
       padding-top: 15px;
-      .hero-list-item-light{
+      .hero-list-item-light {
         color: #fff;
       }
     }
   }
-  .hero_navigation-buttons-light{
+  .hero_navigation-buttons-light {
     display: flex;
     flex-direction: row;
     gap: 15px;
-    button{
+    button {
       width: 97px;
     }
-    .btn-light-h12Light{
+    .btn-light-h12Light {
       width: 97px;
-      border: 2px solid #fff; 
+      border: 2px solid #fff;
       color: #fff;
     }
-    .btn-dark-h12Light{
-      background: linear-gradient(90deg, #EFECFF 0%, #C4B8FF 100%);
+    .btn-dark-h12Light {
+      background: linear-gradient(90deg, #efecff 0%, #c4b8ff 100%);
       color: #000;
     }
   }
 }
 
 // purple version of header 12
-.hero_navigation-purple{
+.hero_navigation-purple {
   @extend .hero_navigation;
   background-color: $Highlight-2;
   padding-left: 60px;
   padding-right: 50px;
-  .hero_navigation-list-purple{
+  .hero_navigation-list-purple {
     list-style: none;
     display: flex;
     flex-direction: row;
     gap: 48px;
     padding-left: 70%;
     padding-top: 15px;
-    .hero-list-item-purple{
+    .hero-list-item-purple {
       color: #fff;
     }
   }
-  .hero_navigation-buttons-purple{
+  .hero_navigation-buttons-purple {
     display: flex;
     flex-direction: row;
     gap: 15px;
-    button{
+    button {
       width: 97px;
       height: 40px;
     }
-    .btn-light-h12Purple{
+    .btn-light-h12Purple {
       border: 2px solid #fff;
       color: #fff;
     }
-    .btn-dark-h12Purple{
+    .btn-dark-h12Purple {
       background-color: #000;
       color: #fff;
     }

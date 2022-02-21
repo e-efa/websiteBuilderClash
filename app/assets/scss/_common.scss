@@ -496,7 +496,7 @@
     }
   }
   .image_section {
-    @include mobile{
+    @include mobile {
       margin-top: 59px;
     }
     .circle-bg {
@@ -524,12 +524,25 @@
   }
 }
 
+// hero7
+.flex-btn {
+  @include mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+}
 // hero 8
 .h8-hero_section {
   @extend .h1-hero_section;
   margin-top: 181px;
   padding-left: 134px;
   gap: 86px;
+  @include mobile {
+    width: 327px;
+    margin-top: 49px;
+    padding-left: 0;
+  }
 }
 .image_section-circle {
   @extend .image_section;
@@ -537,6 +550,9 @@
   img {
     top: -22px !important;
     left: 56px !important;
+    @include mobile {
+      left: 8px !important;
+    }
   }
 }
 
@@ -550,11 +566,35 @@
       margin: auto;
       width: 600px;
       padding-top: 134px;
+      @include mobile {
+        width: 327px;
+      }
+      h2 {
+        @include mobile {
+          font-size: 38px;
+          line-height: 45px;
+          letter-spacing: 0em;
+          text-align: center;
+        }
+      }
     }
     .body {
       margin: auto;
       width: 523px;
       padding-top: 32px;
+      @include mobile {
+        width: 327px;
+      }
+      p {
+        @include mobile {
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 27px;
+          letter-spacing: 0em;
+          text-align: center;
+        }
+      }
     }
     .button_section {
       display: flex;
@@ -562,6 +602,10 @@
       gap: 22px;
       justify-content: center;
       padding-top: 40px;
+      @include mobile {
+        flex-direction: column;
+        margin-left: 32px;
+      }
     }
     .light_purple-bg {
       margin: auto;
@@ -569,15 +613,34 @@
       height: 340px;
       background: linear-gradient(90deg, #efecffdc 0%, #f7f6f8c2 100%);
       margin-top: 135px;
+      @include mobile {
+        width: 360px;
+        height: 168px;
+      }
     }
     &_bottom {
       margin: auto;
       width: 1146px;
       height: 400px;
+      @include mobile {
+        width: 327px;
+      }
       img {
         position: relative;
         top: -71%;
         left: 10%;
+        @include mobile {
+          top: -36%;
+          left: 0%;
+        }
+        @include mobile {
+          width: 170px;
+        }
+        &:nth-child(2) {
+          @include mobile {
+            width: 146px;
+          }
+        }
       }
     }
   }
@@ -587,13 +650,35 @@
   @extend .h1-hero_section;
   vertical-align: center;
   gap: 155px;
+  .content-section{
+    .title{
+      h2{
+        @include mobile{
+          text-align: center;
+        }
+      }
+    }
+    .body{
+      p{
+        @include mobile{
+          text-align: center;
+        }
+      }
+    }
+  }
   .image_section {
     width: 722px;
     height: 500px;
     overflow: hidden;
+    @include mobile{
+      width: 327px;
+    }
     img {
       top: 12px;
-      left: 145px;
+      left: 100px;
+      @include mobile{
+        left: 7px;
+      }
     }
   }
 }
