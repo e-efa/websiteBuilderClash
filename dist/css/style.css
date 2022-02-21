@@ -1678,4 +1678,72 @@ h5, .h5 {
   color: #fff;
 }
 
+.features-section {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  vertical-align: center;
+  gap: 128px;
+  margin-bottom: 100px;
+}
+
+.features-section .feature-img {
+  width: 558px;
+  height: 557.87px;
+  background: linear-gradient(90deg, #7b61ff8e 0%, #b7a9ff5d 0.01%, #7b61ff6c 100%);
+}
+
+.features-section .feature-img img {
+  position: relative;
+  width: 526px;
+  top: -10%;
+  left: 12px;
+  z-index: 999;
+  overflow: hidden;
+}
+
+.features-section .feature-content-title {
+  width: 496px;
+}
+
+.features-section .feature-content-title h2 {
+  font-size: 50px;
+  line-height: 59px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #000;
+}
+
+.features-section .feature-content-services {
+  margin-top: 3em;
+}
+
+.features-section .feature-content-services-list {
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  margin-bottom: 48px;
+}
+
+.features-section .feature-content-services-list-item {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+  justify-content: left;
+  color: #000;
+}
+
+.features-section .feature-content-services-list-item img {
+  width: 48px;
+  height: 48px;
+  align-items: center;
+}
+
 /*# sourceMappingURL=maps/style.css.map */

@@ -1,0 +1,37 @@
+<!-- varibales -->
+{% set title="Plug & play template to get you up and running fast."%}
+{% set bodyText="Here is a section with two features or points and a subheading."%}
+{% set featureItemContent1="Explain your value prop as easily as possible."%}
+{% set featureItemContent2="Communicate your most important features."%}
+{% set featureItemContent3="Close with killer testimonials."%}
+{% set buttonTitle="Primary"%}
+
+<!-- img path -->
+{% set featureImgPath="/image/png/hero4/clash-hero-img.png"%}
+{% set barIconPath="/image/svg/features/Feature-Icon.svg"%}
+{% set toggleIconPath="/image/svg/features/toggle-icon.svg"%}
+{% set comaIconPath="/image/svg/features/quote-icon.svg"%}
+<!-- features 1 -->
+<div class="features-section">
+    <div class="feature-img">
+        <img src="{{featureImgPath}}" alt="">
+    </div>
+    <div class="feature-content">
+        <div class="feature-content-title">
+            <h2>{{title}}</h2>
+        </div>
+        <div class="feature-content-body">
+            <p>{{bodyText}}</p>
+        </div>
+        <div class="feature-content-services">
+            <ul class="feature-content-services-list">
+                <li class="feature-content-services-list-item"><img src="{{barIconPath}}" alt="">{{featureItemContent1}}</li>
+                <li class="feature-content-services-list-item"><img src="{{toggleIconPath}}" alt="">{{featureItemContent2}}</li>
+                <li class="feature-content-services-list-item"><img src="{{comaIconPath}}" alt="">{{featureItemContent3}}</li>
+            </ul>
+        </div>
+        <div class="feature-content-button">
+            <button class="btn btn-black">{{buttonTitle}}</button>
+        </div>
+    </div>
+</div>

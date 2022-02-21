@@ -1,0 +1,62 @@
+//  features 1
+.features-section {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  vertical-align: center;
+  gap: 128px;
+  margin-bottom: 100px;
+  .feature-img {
+    width: 558px;
+    height: 557.87px;
+    background: $gradient-7;
+    img {
+      position: relative;
+      width: 526px;
+      top: -10%;
+      left: 12px;
+      z-index: 999;
+      overflow: hidden;
+    }
+  }
+  .feature-content {
+    &-title {
+      width: 496px;
+      h2 {
+        font-size: 50px;
+        line-height: 59px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #000;
+      }
+    }
+    &-body{}
+    &-services {
+      margin-top: 3em;
+      &-list {
+        padding-inline-start: 0px;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 23px;
+        margin-bottom: 48px;
+        &-item {
+          display: flex;
+          flex-direction: row;
+          gap: 16px;
+          align-items: center;
+          justify-content: left;
+          color: #000;
+          img {
+            width: 48px;
+            height: 48px;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+}
