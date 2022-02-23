@@ -1680,12 +1680,10 @@ h5, .h5 {
 
 .features-section {
   display: flex;
-  width: 100%;
-  height: 100vh;
+  padding-top: 121px;
   align-items: center;
   flex-direction: row;
   justify-content: center;
-  vertical-align: center;
   gap: 128px;
   margin-bottom: 100px;
 }
@@ -1706,7 +1704,7 @@ h5, .h5 {
 .features-section .feature-img img {
   position: relative;
   width: 526px;
-  top: -10%;
+  top: -56px;
   left: 12px;
   z-index: 999;
   overflow: hidden;
@@ -1768,8 +1766,10 @@ h5, .h5 {
 }
 
 .feature-content-service-card {
+  width: 536px;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   gap: 89px;
 }
 
@@ -1788,6 +1788,100 @@ h5, .h5 {
 
 .feature-content-service-card-item-body {
   margin-bottom: 59.8px;
+}
+
+.feature-section-column-view {
+  width: 1440px;
+  margin: auto;
+  padding-top: 120px;
+  padding-left: 147px;
+  margin-bottom: 100px;
+}
+
+.feature-section-column-view-text-content {
+  margin-bottom: 66px;
+}
+
+.feature-section-column-view-text-content-title {
+  width: 721px;
+}
+
+.feature-section-column-view-text-content-title h2 {
+  font-size: 50px;
+  line-height: 59px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.feature-section-column-view-text-content-body {
+  margin-top: 18px !important;
+  width: 562px;
+}
+
+.feature-section-column-view-text-content-body p {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.feature-section-column-view-list-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 100px;
+}
+
+.feature-section-column-view-list-content-item {
+  width: 350px;
+}
+
+.feature-section-column-view-list-content-item-icon {
+  margin-bottom: 16px;
+}
+
+.feature-section-column-view-list-content-item-title {
+  margin-bottom: 16px;
+}
+
+.feature-section-column-view-list-content-item-body {
+  width: 300px;
+}
+
+.m-top {
+  margin-top: 200px !important;
+}
+
+.g-30 {
+  gap: 30px !important;
+}
+
+.card-item-width {
+  width: 300px !important;
+}
+
+.title-width {
+  width: 768px !important;
+}
+
+.body-width {
+  width: 600px !important;
+}
+
+.card-width {
+  width: 696px !important;
+}
+
+.left-padding {
+  padding-left: 121px !important;
+  gap: 0 !important;
+}
+
+.position-center {
+  margin: auto !important;
+  text-align: center !important;
 }
 
 /*# sourceMappingURL=maps/style.css.map */
