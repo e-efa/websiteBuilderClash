@@ -1,0 +1,79 @@
+<!-- var -->
+{% set title="News & Updates"%}
+{% set cardTitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. "%}
+{% set cardBody="Lorem ipsum dolor sit amet, consectetur adipiscing elit."%}
+{% set subText="Read more"%}
+
+<!-- img path -->
+{% set imgPath1="/image/png/blog/moon.png"%}
+{% set imgPath2="/image/png/blog/table-chair.png"%}
+{% set imgPath3="/image/png/blog/joystick.png"%}
+{% set logo="/image/svg/blog/logo-bg-purple.svg"%}
+{% set arrow="/image/svg/blog/arrow-right.svg"%}
+
+<div class="blog-section">
+    <div class="blog-section-title-track">
+        <div class="title">
+            <h2>{{title}}</h2>
+        </div>
+        <div class="title-button">
+            <button>More articles <img src="{{arrow}}" alt=""></button>
+        </div>
+    </div>
+    <div class="blog-section-card-list">
+        <div class="blog-section-card-list-item">
+            <div class="blog-section-card-list-item-img">
+                <img src="{{imgPath1}}" alt="">
+                <div class="brand-icon">
+                    <img src="{{logo}}" alt="">
+                </div>
+            </div>
+            <div class="blog-section-card-list-item-title">
+                <h4>{{cardTitle}}</h4>
+            </div>
+            <div class="blog-section-card-list-item-body">
+                <p>{{cardBody}}</p>
+            </div>
+            <div class="sub-text">
+                <span>{{subText}}</span>
+                <img src="{{arrow}}" alt="">
+            </div>
+        </div>
+        <div class="blog-section-card-list-item">
+            <div class="blog-section-card-list-item-img">
+                <img src="{{imgPath2}}" alt="">
+                <div class="brand-icon">
+                    <img src="{{logo}}" alt="">
+                </div>
+            </div>
+            <div class="blog-section-card-list-item-title">
+                <h4>{{cardTitle}}</h4>
+            </div>
+            <div class="blog-section-card-list-item-body">
+                <p>{{cardBody}}</p>
+            </div>
+            <div class="sub-text">
+                <span>{{subText}}</span>
+                <img src="{{arrow}}" alt="">
+            </div>
+        </div>
+        <div class="blog-section-card-list-item">
+            <div class="blog-section-card-list-item-img">
+                <img src="{{imgPath3}}" alt="">
+                <div class="brand-icon">
+                    <img src="{{logo}}" alt="">
+                </div>
+            </div>
+            <div class="blog-section-card-list-item-title">
+                <h4>{{cardTitle}}</h4>
+            </div>
+            <div class="blog-section-card-list-item-body">
+                <p>{{cardBody}}</p>
+            </div>
+            <div class="sub-text">
+                <span>{{subText}}</span>
+                <img src="{{arrow}}" alt="">
+            </div>
+        </div>
+    </div>
+</div>

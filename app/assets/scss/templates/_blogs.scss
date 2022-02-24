@@ -1,0 +1,111 @@
+.wide-card{
+  width: 558px !important;
+  height: 517px !important;
+}
+.wide-area{
+  width: 476px !important;
+}
+.blog-section {
+  width: 90em;
+  margin: auto;
+  padding-top: 5.625em;
+  margin-bottom: 100px;
+  &-title-track {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 36.8125em;
+    .title {
+      &-button {
+        align-self: center;
+        button {
+          height: 52px;
+          width: 180px;
+          left: 1113px;
+          top: 90px;
+          border: 1px solid #000;
+          border-radius: 0px;
+          padding: 16px, 23px, 16px, 32px;
+          background: #fff;
+          img {
+            width: 18px;
+            height: 14px;
+            margin-left: 12px;
+          }
+        }
+      }
+    }
+  }
+  &-title {
+    width: 680px;
+    margin: auto;
+    h2 {
+      font-size: 50px;
+      line-height: 59px;
+      letter-spacing: 0em;
+      text-align: center;
+    }
+  }
+  &-card-list {
+    display: flex;
+    flex-direction: row;
+    gap: 1.875em;
+    justify-content: center;
+    padding-top: 3.3125em;
+    &-item {
+      background: #faf9ff;
+      height: 509px;
+      width: 362px;
+      &-img {
+        .brand-icon {
+          position: relative;
+          top: -239px;
+          left: 264px;
+        }
+        .wide-brand-icon{
+          @extend .brand-icon;
+          left: 446px;
+        }
+      }
+      &-title {
+        padding-left: 32px;
+        margin-bottom: 14px;
+        h4 {
+          width: 322px;
+          font-size: 24px;
+          line-height: 28px;
+          letter-spacing: 0em;
+          text-align: left;
+        }
+      }
+      &-body {
+        padding-left: 32px;
+        margin-bottom: 14px;
+        p {
+          width: 300px;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 24px;
+          letter-spacing: 0em;
+          text-align: left;
+        }
+      }
+      .sub-text {
+        margin-top: 22px;
+        padding-left: 32px;
+        display: flex;
+        flex-direction: row;
+        gap: 200px;
+        span {
+          font-size: 16px;
+          font-weight: 600;
+        }
+      }
+      .wide-sub-text{
+        @extend .sub-text;
+        gap: 365px;
+      }
+    }
+  }
+}

@@ -190,11 +190,11 @@ h5, .h5 {
   }
 }
 
-.hero_section .hero_section-content .sub-text, .hero_section-dark .hero_section-content .sub-text, .hero_section-light .hero_section-content .sub-text, .hero_section-purple .hero_section-content .sub-text {
+.hero_section .hero_section-content .sub-text, .hero_section-dark .hero_section-content .sub-text, .hero_section-light .hero_section-content .sub-text, .hero_section-purple .hero_section-content .sub-text, .hero_section .hero_section-content .blog-section-card-list-item .wide-sub-text, .blog-section-card-list-item .hero_section .hero_section-content .wide-sub-text, .hero_section-dark .hero_section-content .blog-section-card-list-item .wide-sub-text, .blog-section-card-list-item .hero_section-dark .hero_section-content .wide-sub-text, .hero_section-light .hero_section-content .blog-section-card-list-item .wide-sub-text, .blog-section-card-list-item .hero_section-light .hero_section-content .wide-sub-text, .hero_section-purple .hero_section-content .blog-section-card-list-item .wide-sub-text, .blog-section-card-list-item .hero_section-purple .hero_section-content .wide-sub-text {
   margin-top: 13px;
 }
 
-.hero_section .hero_section-content .sub-text span, .hero_section-dark .hero_section-content .sub-text span, .hero_section-light .hero_section-content .sub-text span, .hero_section-purple .hero_section-content .sub-text span {
+.hero_section .hero_section-content .sub-text span, .hero_section-dark .hero_section-content .sub-text span, .hero_section-light .hero_section-content .sub-text span, .hero_section-purple .hero_section-content .sub-text span, .hero_section .hero_section-content .blog-section-card-list-item .wide-sub-text span, .blog-section-card-list-item .hero_section .hero_section-content .wide-sub-text span, .hero_section-dark .hero_section-content .blog-section-card-list-item .wide-sub-text span, .blog-section-card-list-item .hero_section-dark .hero_section-content .wide-sub-text span, .hero_section-light .hero_section-content .blog-section-card-list-item .wide-sub-text span, .blog-section-card-list-item .hero_section-light .hero_section-content .wide-sub-text span, .hero_section-purple .hero_section-content .blog-section-card-list-item .wide-sub-text span, .blog-section-card-list-item .hero_section-purple .hero_section-content .wide-sub-text span {
   font-size: 13px;
   font-style: normal;
   font-weight: 400;
@@ -204,7 +204,7 @@ h5, .h5 {
 }
 
 @media (max-width: 575px) {
-  .hero_section .hero_section-content .sub-text, .hero_section-dark .hero_section-content .sub-text, .hero_section-light .hero_section-content .sub-text, .hero_section-purple .hero_section-content .sub-text {
+  .hero_section .hero_section-content .sub-text, .hero_section-dark .hero_section-content .sub-text, .hero_section-light .hero_section-content .sub-text, .hero_section-purple .hero_section-content .sub-text, .hero_section .hero_section-content .blog-section-card-list-item .wide-sub-text, .blog-section-card-list-item .hero_section .hero_section-content .wide-sub-text, .hero_section-dark .hero_section-content .blog-section-card-list-item .wide-sub-text, .blog-section-card-list-item .hero_section-dark .hero_section-content .wide-sub-text, .hero_section-light .hero_section-content .blog-section-card-list-item .wide-sub-text, .blog-section-card-list-item .hero_section-light .hero_section-content .wide-sub-text, .hero_section-purple .hero_section-content .blog-section-card-list-item .wide-sub-text, .blog-section-card-list-item .hero_section-purple .hero_section-content .wide-sub-text {
     display: none;
   }
 }
@@ -1163,6 +1163,131 @@ h5, .h5 {
   background-color: transparent;
   border: 2px solid #fff;
   color: #fff;
+}
+
+.wide-card {
+  width: 558px !important;
+  height: 517px !important;
+}
+
+.wide-area {
+  width: 476px !important;
+}
+
+.blog-section {
+  width: 90em;
+  margin: auto;
+  padding-top: 5.625em;
+  margin-bottom: 100px;
+}
+
+.blog-section-title-track {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 36.8125em;
+}
+
+.blog-section-title-track .title-button {
+  align-self: center;
+}
+
+.blog-section-title-track .title-button button {
+  height: 52px;
+  width: 180px;
+  left: 1113px;
+  top: 90px;
+  border: 1px solid #000;
+  border-radius: 0px;
+  padding: 16px, 23px, 16px, 32px;
+  background: #fff;
+}
+
+.blog-section-title-track .title-button button img {
+  width: 18px;
+  height: 14px;
+  margin-left: 12px;
+}
+
+.blog-section-title {
+  width: 680px;
+  margin: auto;
+}
+
+.blog-section-title h2 {
+  font-size: 50px;
+  line-height: 59px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.blog-section-card-list {
+  display: flex;
+  flex-direction: row;
+  gap: 1.875em;
+  justify-content: center;
+  padding-top: 3.3125em;
+}
+
+.blog-section-card-list-item {
+  background: #faf9ff;
+  height: 509px;
+  width: 362px;
+}
+
+.blog-section-card-list-item-img .brand-icon, .blog-section-card-list-item-img .wide-brand-icon {
+  position: relative;
+  top: -239px;
+  left: 264px;
+}
+
+.blog-section-card-list-item-img .wide-brand-icon {
+  left: 446px;
+}
+
+.blog-section-card-list-item-title {
+  padding-left: 32px;
+  margin-bottom: 14px;
+}
+
+.blog-section-card-list-item-title h4 {
+  width: 322px;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.blog-section-card-list-item-body {
+  padding-left: 32px;
+  margin-bottom: 14px;
+}
+
+.blog-section-card-list-item-body p {
+  width: 300px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.blog-section-card-list-item .sub-text, .blog-section-card-list-item .wide-sub-text {
+  margin-top: 22px;
+  padding-left: 32px;
+  display: flex;
+  flex-direction: row;
+  gap: 200px;
+}
+
+.blog-section-card-list-item .sub-text span, .blog-section-card-list-item .wide-sub-text span {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.blog-section-card-list-item .wide-sub-text {
+  gap: 365px;
 }
 
 .navigation_section, .navigation_section-dark, .navigation_section-light, .navigation_section-purple, .navigation_section-no_bg {
