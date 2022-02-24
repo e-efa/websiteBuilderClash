@@ -1884,4 +1884,49 @@ h5, .h5 {
   text-align: center !important;
 }
 
+.faq-section {
+  width: 90em;
+  margin: auto;
+  padding-bottom: 90px;
+}
+
+.faq-section-title {
+  width: 42.5em;
+  margin: auto;
+  padding-bottom: 60px;
+  padding-top: 90px;
+}
+
+.faq-section-title h2 {
+  font-size: 50px;
+  line-height: 59px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.faq-section #faq-question-list .card {
+  margin: auto;
+  width: 754px;
+  border: none;
+}
+
+.faq-section #faq-question-list .card .card-header {
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.faq-section #faq-question-list .card .card-header .faq-question {
+  width: 800px;
+}
+
+.faq-section .bg-gray {
+  width: 950px;
+  margin: auto;
+  padding-top: 80px;
+  padding-bottom: 90px;
+  background: #FAF9FF;
+}
+
 /*# sourceMappingURL=maps/style.css.map */

@@ -1,0 +1,88 @@
+<!-- variables section -->
+{% set title = "Frequent Questions"%}
+{% set question1 = "Can I use SaaS Blocks on client projects?"%}
+{% set question2 = "How do I customize my colors and fonts?"%}
+{% set question3 = "What is the estimated timeframe for the Tailwind version?"%}
+{% set question4 = "Will you make  WordPress version too?"%}
+{% set question5 = "Who is behind this project?"%}
+{% set answer = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu nec, lobortis egestas. Sit mauris cras tempor, imperdiet porta non libero."%}
+
+<!--  -->
+<div class="faq-section">
+    <div class="faq-section-title">
+        <h2>{{title}}</h2>
+    </div>
+    <div id="faq-question-list">
+        <div class="card">
+            <div class="card-header" id="headingOne">
+                <h5 class="mb-0 faq-question">{{question1}}</h5>
+                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                    aria-controls="collapseOne">
+                    <img src="/image/svg/faq/dropdown-arrow.svg" alt="">
+                </button>
+            </div>
+
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#faq-question-list">
+                <div class="card-body">
+                    {{answer}}
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingTwo">
+                <h5 class="mb-0 faq-question">{{question2}}</h5>
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                    aria-expanded="false" aria-controls="collapseTwo">
+                    <img src="/image/svg/faq/dropdown-arrow.svg" alt="">
+                </button>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faq-question-list">
+                <div class="card-body">
+                    {{answer}}
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingThree">
+                <h5 class="mb-0 faq-question">{{question3}}</h5>
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+                    aria-expanded="false" aria-controls="collapseThree">
+                    <img src="/image/svg/faq/dropdown-arrow.svg" alt="">
+                </button>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faq-question-list">
+                <div class="card-body">
+                    {{answer}}
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingFour">
+                <h5 class="mb-0 faq-question">{{question4}}</h5>
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour"
+                    aria-expanded="false" aria-controls="collapseThree">
+                    <img src="/image/svg/faq/dropdown-arrow.svg" alt="">
+                </button>
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#faq-question-list">
+                <div class="card-body">
+                    {{answer}}
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingFive">
+                <h5 class="mb-0 faq-question">{{question5}}</h5>
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive"
+                    aria-expanded="false" aria-controls="collapseThree">
+                    <img src="/image/svg/faq/dropdown-arrow.svg" alt="">
+                </button>
+            </div>
+            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#faq-question-list">
+                <div class="card-body">
+                    {{answer}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

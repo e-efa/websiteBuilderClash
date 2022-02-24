@@ -1,0 +1,86 @@
+<!-- variables section -->
+{% set title = "Frequent Questions"%}
+{% set question1 = "Can I use SaaS Blocks on client projects?"%}
+{% set question2 = "How do I customize my colors and fonts?"%}
+{% set question3 = "What is the estimated timeframe for the Tailwind version?"%}
+{% set question4 = "Will you make  WordPress version too?"%}
+{% set question5 = "Who is behind this project?"%}
+{% set answer = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu nec, lobortis egestas. Sit mauris cras tempor, imperdiet porta non libero."%}
+<div class="faq-section">
+    <div class="faq-section-title">
+        <h2>{{title}}</h2>
+    </div>
+    <div id="faq-question-list" class="bg-gray">
+        <div class="card">
+            <div class="card-header" id="heading1">
+                <h5 class="mb-0 faq-question">{{question1}}</h5>
+                <button class="btn btn-link" data-toggle="collapse" data-target="#collapse1" aria-expanded="true"
+                    aria-controls="collapse1">
+                    <img src="/image/svg/faq/dropdown-arrow.svg" alt="">
+                </button>
+            </div>
+
+            <div id="collapse1" class="collapse show" aria-labelledby="heading1" data-parent="#faq-question-list">
+                <div class="card-body">
+                    {{answer}}
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="heading2">
+                <h5 class="mb-0 faq-question">{{question2}}</h5>
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse2"
+                    aria-expanded="false" aria-controls="collapse2">
+                    <img src="/image/svg/faq/dropdown-arrow.svg" alt="">
+                </button>
+            </div>
+            <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#faq-question-list">
+                <div class="card-body">
+                    {{answer}}
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="heading3">
+                <h5 class="mb-0 faq-question">{{question3}}</h5>
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse3"
+                    aria-expanded="false" aria-controls="collapse3">
+                    <img src="/image/svg/faq/dropdown-arrow.svg" alt="">
+                </button>
+            </div>
+            <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#faq-question-list">
+                <div class="card-body">
+                    {{answer}}
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="heading4">
+                <h5 class="mb-0 faq-question">{{question4}}</h5>
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse4"
+                    aria-expanded="false" aria-controls="collapse4">
+                    <img src="/image/svg/faq/dropdown-arrow.svg" alt="">
+                </button>
+            </div>
+            <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#faq-question-list">
+                <div class="card-body">
+                    {{answer}}
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="heading5">
+                <h5 class="mb-0 faq-question">{{question5}}</h5>
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse5"
+                    aria-expanded="false" aria-controls="collapse5">
+                    <img src="/image/svg/faq/dropdown-arrow.svg" alt="">
+                </button>
+            </div>
+            <div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#faq-question-list">
+                <div class="card-body">
+                    {{answer}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
