@@ -1,0 +1,42 @@
+<!-- var -->
+{% set subTitle="About us"%}
+{% set title="Founding Team"%}
+{% set body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae quisque id a, ac urna. Sagittis, ornare ut nibh porta adipiscing ut elit."%}
+{% set buttonName="Join our team"%}
+
+<!-- img path -->
+{% set team1ImgPath="/image/png/team/team1.png"%}
+{% set team2ImgPath="/image/png/team/team2.png"%}
+{% set team3ImgPath="/image/png/team/team3.png"%}
+{% set arrow="/image/svg/blog/arrow-right.svg"%}
+
+<div class="team-section-purple">
+    <div class="team-content-section-purple">
+        <div class="team-content-subTitle-purple">
+            <span>{{subTitle}}</span>
+        </div>
+        <div class="team-content-title-purple">
+            <h2>{{title}}</h2>
+        </div>
+        <div class="team-content-body-purple">
+            <P>{{body}}</P>
+        </div>
+        <div class="team-content-button-purple">
+            <button>{{buttonName}}<img src="{{arrow}}" alt=""></button>
+        </div>
+    </div>
+    <div class="team-img-grid-section-purple">
+        <div class="team-member">
+            <img src="{{team1ImgPath}}" alt="">
+        </div>
+        <div class="team-member">
+            <p>Robert Fox Head of Marketing</p>
+        </div>
+        <div class="team-member">
+            <img src="{{team2ImgPath}}" alt="">
+        </div>
+        <div class="team-member">
+            <img src="{{team3ImgPath}}" alt="">
+        </div>
+    </div>
+</div>

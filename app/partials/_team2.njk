@@ -1,0 +1,74 @@
+<!-- var -->
+{% set subTitle="About us"%}
+{% set title="Founding Team"%}
+{% set body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae quisque id a, ac urna. Sagittis, ornare ut nibh porta adipiscing ut elit."%}
+{% set teamMemName1="Jenny Wilson"%}
+{% set teamMemPost1="Chief Executive Officer"%}
+{% set teamMemName2="Leslie Alexander"%}
+{% set teamMemPost2="Chief Information Officer"%}
+{% set teamMemName3="Guy Hawkins"%}
+{% set teamMemPost3="Chief Creative Officer"%}
+{% set teamMemName4="Theresa Webb"%}
+{% set teamMemPost4="Chief Technology Officer"%}
+
+<!-- img path -->
+{% set team1ImgPath="/image/png/team/team1.png"%}
+{% set team2ImgPath="/image/png/team/team2.png"%}
+{% set team3ImgPath="/image/png/team/team3.png"%}
+{% set team4ImgPath="/image/png/team/team4.png"%}
+{% set arrow="/image/svg/blog/arrow-right.svg"%}
+
+<div class="team-section-horizontalView">
+    <div class="team-content-section">
+        <div class="team-content-title">
+            <h2>{{title}}</h2>
+        </div>
+        <div class="team-content-body">
+            <p>{{body}}</p>
+        </div>
+    </div>
+    <div class="team-img-grid-section">
+        <div class="team-member">
+            <img src="{{team1ImgPath}}" alt="">
+            <div class="team-member-name">
+                <h4>{{teamMemName1}}</h4>
+            </div>
+            <div class="team-member-position">
+                <p>{{teamMemPost1}}</p>
+            </div>
+        </div>
+        <div class="team-member">
+            <div class="team-member">
+                <img src="{{team2ImgPath}}" alt="">
+                <div class="team-member-name">
+                    <h4>{{teamMemName2}}</h4>
+                </div>
+                <div class="team-member-position">
+                    <p>{{teamMemPost2}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="team-member">
+            <div class="team-member">
+                <img src="{{team3ImgPath}}" alt="">
+                <div class="team-member-name">
+                    <h4>{{teamMemName3}}</h4>
+                </div>
+                <div class="team-member-position">
+                    <p>{{teamMemPost3}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="team-member">
+            <div class="team-member">
+                <img src="{{team4ImgPath}}" alt="">
+                <div class="team-member-name">
+                    <h4>{{teamMemName4}}</h4>
+                </div>
+                <div class="team-member-position">
+                    <p>{{teamMemPost4}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,46 @@
+<!-- var -->
+{% set subTitle="About us"%}
+{% set title="Founding Team"%}
+{% set body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis metus ultricies quis phasellus. Cras malesuada orci vel tincidunt diam lacus, feugiat lacus commodo."%}
+{% set teamMemName1="Jenny Wilson"%}
+{% set teamMemPost1="Chief Executive Officer"%}
+{% set teamMemName2="Leslie Alexander"%}
+{% set teamMemPost2="Chief Information Officer"%}
+
+<!-- img path -->
+{% set team1ImgPath="/image/png/team/team1wide.png"%}
+{% set team2ImgPath="/image/png/team/team2wide.png"%}
+
+
+<div class="team-section-horizontalView bg-purple">
+    <div class="team-content-section">
+        <div class="team-content-title light-text">
+            <h2>{{title}}</h2>
+        </div>
+        <div class="team-content-body light-text">
+            <p>{{body}}</p>
+        </div>
+    </div>
+    <div class="team-img-grid-section">
+        <div class="team-member">
+            <img src="{{team1ImgPath}}" alt="">
+            <div class="team-member-name light-text">
+                <h4>{{teamMemName1}}</h4>
+            </div>
+            <div class="team-member-position light-text">
+                <p>{{teamMemPost1}}</p>
+            </div>
+        </div>
+        <div class="team-member">
+            <div class="team-member">
+                <img src="{{team2ImgPath}}" alt="">
+                <div class="team-member-name light-text">
+                    <h4>{{teamMemName2}}</h4>
+                </div>
+                <div class="team-member-position light-text">
+                    <p>{{teamMemPost2}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
