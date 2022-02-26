@@ -1,0 +1,38 @@
+<!-- var -->
+{% set subTitle="The team"%}
+{% set title="About Us"%}
+{% set body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae quisque id a, ac urna. Sagittis, ornare ut nibh porta adipiscing ut elit."%}
+
+<!-- imgae path -->
+{% set img1Path="/image/png/about/aboutImg1.png"%}
+{% set img2Path="/image/png/about/aboutImg2.png"%}
+{% set img3Path="/image/png/about/aboutImg3.png"%}
+{% set img4Path="/image/png/about/aboutImg4.png"%}
+
+<div class="about-us">
+    <div class="about-us-content">
+        <div class="about-us-title">
+            <div class="about-us-subText">
+                <h5>{{subTitle}}</h5>
+            </div>
+            <h2>{{title}}</h2>
+        </div>
+        <div class="about-us-body">
+            <p>{{body}}</p>
+        </div>
+    </div>
+    <div class="about-us-img-grid">
+        <div class="aboutImg">
+            <img src="{{img1Path}}" alt="">
+        </div>
+        <div class="aboutImg">
+            <img src="{{img2Path}}" alt="">
+        </div>
+        <div class="aboutImg">
+            <img src="{{img3Path}}" alt="">
+        </div>
+        <div class="aboutImg">
+            <img src="{{img4Path}}" alt="">
+        </div>
+    </div>
+</div>

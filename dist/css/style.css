@@ -1165,6 +1165,62 @@ h5, .h5 {
   color: #fff;
 }
 
+.about-us {
+  width: 90em;
+  margin: auto;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  margin-bottom: 100px;
+}
+
+.about-us .about-us-content {
+  display: flex;
+  flex-direction: row;
+  gap: 33px;
+  justify-content: center;
+}
+
+.about-us .about-us-content .about-us-title {
+  width: 460px;
+  height: 62px;
+}
+
+.about-us .about-us-content .about-us-title .about-us-subText {
+  width: 85px;
+}
+
+.about-us .about-us-content .about-us-title .about-us-subText h5 {
+  text-transform: uppercase;
+  color: #7b61ff;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 1px;
+  text-align: left;
+}
+
+.about-us .about-us-content .about-us-body {
+  width: 555px;
+  height: 81px;
+}
+
+.about-us .about-us-content .about-us-body p {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.about-us .about-us-img-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 114px;
+}
+
 .wide-card {
   width: 558px !important;
   height: 517px !important;
