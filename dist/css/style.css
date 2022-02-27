@@ -86,7 +86,7 @@ h5, .h5 {
 
 .btn-download_gradient {
   color: #000;
-  background: linear-gradient(90deg, #EFECFF 0%, #C4B8FF 100%);
+  background: linear-gradient(90deg, #efecff 0%, #c4b8ff 100%);
 }
 
 .btn-black {
@@ -111,6 +111,11 @@ h5, .h5 {
   background: #000;
   color: #fff;
   height: 40px;
+}
+
+.btn-gradient {
+  background: linear-gradient(90deg, #EFECFF 0%, #C4B8FF 100%) !important;
+  color: #000 !important;
 }
 
 .light-task {
@@ -2405,7 +2410,7 @@ h5, .h5 {
 }
 
 .light-text {
-  color: #fff;
+  color: #fff !important;
 }
 
 .bg-purple {
@@ -2455,6 +2460,205 @@ h5, .h5 {
   padding-top: 80px;
   padding-bottom: 90px;
   background: #FAF9FF;
+}
+
+.cta-section {
+  width: 71.625em;
+  height: 487px;
+  margin: auto;
+  background: linear-gradient(90deg, #7b61ff8e 0%, #b7a9ff5d 0.01%, #7b61ff6c 100%);
+  margin-top: 90px;
+  margin-bottom: 100px;
+  padding-top: 90px;
+}
+
+.cta-section-content .subtitle {
+  width: 13.875em;
+  margin: auto;
+  text-align: center;
+}
+
+.cta-section-content .subtitle h5 {
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  text-align: center;
+  color: #7b61ff;
+  margin-bottom: 16px;
+}
+
+.cta-section-content .title {
+  width: 50.1875em;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.cta-section-content .title h2 {
+  font-size: 50px;
+  line-height: 59px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.cta-section-content .body {
+  width: 36.75em;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.cta-section-button {
+  text-align: center;
+}
+
+.cta-section-button button {
+  height: 52px;
+  width: 192px;
+  left: 624.5px;
+  top: 436px;
+  border: none;
+  padding: 16px, 32px, 16px, 32px;
+  background: #000;
+  color: #fff;
+}
+
+.cta-section .background-img {
+  text-align: right;
+}
+
+.cta-section .background-img img {
+  position: relative;
+  top: -17.4375em;
+}
+
+.light-white-text {
+  color: #ffffffbf !important;
+}
+
+.cta-main-section {
+  width: 90em;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  padding-top: 5.625em;
+  padding-bottom: 5.625em;
+  justify-content: center;
+  margin-bottom: 100px;
+  gap: 8em;
+}
+
+.cta-main-section .cta-main-content-section {
+  align-self: center;
+}
+
+.cta-main-section .cta-main-content-section .top-button {
+  margin-bottom: 24px;
+}
+
+.cta-main-section .cta-main-content-section .top-button button {
+  height: 34px;
+  width: 87px;
+  border: 1px solid #7b61ff;
+  border-radius: 104px;
+  padding: 8px, 24px, 8px, 24px;
+  background: #7b61ff;
+  color: #fff;
+}
+
+.cta-main-section .cta-main-content-section .title {
+  width: 388px;
+}
+
+.cta-main-section .cta-main-content-section .title h2 {
+  font-size: 42px;
+  line-height: 49px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.cta-main-section .cta-main-content-section .down-btn {
+  margin-top: 48px;
+}
+
+.cta-main-section .cta-main-content-section .down-btn button {
+  height: 52px;
+  width: 192px;
+  left: 0px;
+  top: 204px;
+  border: none;
+  padding: 16px, 32px, 16px, 32px;
+  background: #000;
+  color: #fff;
+}
+
+.bg-light-purple {
+  background: linear-gradient(90deg, #efecff 0%, #c4b8ff 100%);
+}
+
+.cta-main {
+  width: 90em;
+  margin: auto;
+  padding-top: 90px;
+  margin-bottom: 100px;
+}
+
+.cta-main-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 24px;
+}
+
+.cta-main-content-title {
+  margin: auto;
+  width: 35.875em;
+}
+
+.cta-main-content-title h2 {
+  font-size: 50px;
+  line-height: 59px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.cta-main-content-body {
+  margin: auto;
+  width: 35.875em;
+}
+
+.cta-main-content-body p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.cta-main-content-button {
+  margin: 16px;
+}
+
+.cta-main-content-button button {
+  height: 52px;
+  width: 176px;
+  left: 191px;
+  top: 174px;
+  border-radius: 0px;
+  padding: 16px, 32px, 16px, 32px;
+  border: none;
+  font-weight: 500;
+}
+
+.cta-main-content-button button img {
+  margin-left: 13px;
+}
+
+.cta-main-background-img {
+  margin-left: 58px;
 }
 
 /*# sourceMappingURL=maps/style.css.map */

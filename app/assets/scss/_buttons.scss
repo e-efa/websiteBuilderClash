@@ -1,40 +1,44 @@
-.btn{
-    height: 52px;
-    width: 192px;
-    left: 0px;
-    top: 0px;
-    border-radius: 0px;
-    padding: 16px, 32px, 16px, 32px;
-    @include mobile{
-        width: 327px;
+.btn {
+  height: 52px;
+  width: 192px;
+  left: 0px;
+  top: 0px;
+  border-radius: 0px;
+  padding: 16px, 32px, 16px, 32px;
+  @include mobile {
+    width: 327px;
+  }
+  &-download {
+    background-color: $Headlines;
+    color: $Background;
+    &_gradient {
+      @extend .btn-download;
+      color: #000;
+      background: linear-gradient(90deg, #efecff 0%, #c4b8ff 100%);
     }
-    &-download{
-        background-color: $Headlines;
-        color: $Background;
-        &_gradient{
-            @extend .btn-download;
-            color: #000;
-            background: linear-gradient(90deg, #EFECFF 0%, #C4B8FF 100%);
-        }
-    } 
-    &-black{
-        background-color: #000;
-        color: $Background;
-    }
-    &-trans{
-        background: transparent;
-        border: 2px solid #000;
-    }
-    &-light-h11{
-        width: 97px;
-        border: 2px solid #000;
-        height: 40px;
-    }
-    &-dark-h11{
-        width: 97px;
-        border: 2px solid #000;
-        background: #000;
-        color: #fff;
-        height: 40px;
-    }   
+  }
+  &-black {
+    background-color: #000;
+    color: $Background;
+  }
+  &-trans {
+    background: transparent;
+    border: 2px solid #000;
+  }
+  &-light-h11 {
+    width: 97px;
+    border: 2px solid #000;
+    height: 40px;
+  }
+  &-dark-h11 {
+    width: 97px;
+    border: 2px solid #000;
+    background: #000;
+    color: #fff;
+    height: 40px;
+  }
+  &-gradient {
+    background: linear-gradient(90deg, #EFECFF 0%, #C4B8FF 100%) !important;
+    color: #000 !important;
+  }
 }

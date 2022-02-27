@@ -1,0 +1,24 @@
+<!-- var -->
+{% set title="Turbocharge your sales"%}
+{% set body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisi adipiscing sollicitudin id id proin enim."%}
+{% set btnName="Get started"%}
+
+<!-- img var  -->
+{% set btnIconPath="/image/svg/cta/LightPowerIcon.svg"%}
+{% set circleImgPath="/image/svg/cta/circleWithGreenLine.svg"%}
+<div class="cta-main">
+    <div class="cta-main-content">
+        <div class="cta-main-content-title">
+            <h2>{{title}}</h2>
+        </div>
+        <div class="cta-main-content-body">
+            <p>{{body}}</p>
+        </div>
+        <div class="cta-main-content-button">
+            <button class="btn-black">{{btnName}}<img src="{{btnIconPath}}" alt=""></button>
+        </div>
+    </div>
+    <div class="cta-main-background-img">
+        <img src="{{circleImgPath}}" alt="">
+    </div>
+</div>

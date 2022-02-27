@@ -1,0 +1,180 @@
+.cta-section {
+  width: 71.625em;
+  height: 487px;
+  margin: auto;
+  background: $gradient-7;
+  margin-top: 90px;
+  margin-bottom: 100px;
+  padding-top: 90px;
+  &-content {
+    .subtitle {
+      width: 13.875em;
+      margin: auto;
+      text-align: center;
+      h5 {
+        text-transform: uppercase;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 1px;
+        font-weight: 400;
+        text-align: center;
+        color: $background-color-purple;
+        margin-bottom: 16px;
+      }
+    }
+    .title {
+      width: 50.1875em;
+      margin: auto;
+      text-align: center;
+      margin-bottom: 16px;
+      h2 {
+        font-size: 50px;
+        line-height: 59px;
+        letter-spacing: 0em;
+        text-align: center;
+      }
+    }
+    .body {
+      width: 36.75em;
+      margin: auto;
+      text-align: center;
+      margin-bottom: 32px;
+    }
+  }
+  &-button {
+    text-align: center;
+    button {
+      height: 52px;
+      width: 192px;
+      left: 624.5px;
+      top: 436px;
+      border: none;
+      padding: 16px, 32px, 16px, 32px;
+      background: $background-color-dark;
+      color: #fff;
+    }
+  }
+  .background-img {
+    text-align: right;
+    img {
+      position: relative;
+      top: -17.4375em;
+    }
+  }
+}
+
+// dark version cta
+.light-white-text {
+  color: #ffffffbf !important;
+}
+
+// cta 2
+.cta-main-section {
+  width: 90em;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  padding-top: 5.625em;
+  padding-bottom: 5.625em;
+  justify-content: center;
+  margin-bottom: 100px;
+  gap: 8em;
+
+  .cta-main-content-section {
+    align-self: center;
+    .top-button {
+      margin-bottom: 24px;
+      button {
+        height: 34px;
+        width: 87px;
+        border: 1px solid $background-color-purple;
+        border-radius: 104px;
+        padding: 8px, 24px, 8px, 24px;
+        background: $background-color-purple;
+        color: #fff;
+      }
+    }
+    .title {
+      width: 388px;
+      h2 {
+        font-size: 42px;
+        line-height: 49px;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+    }
+    .down-btn {
+      margin-top: 48px;
+      button {
+        height: 52px;
+        width: 192px;
+        left: 0px;
+        top: 204px;
+        border: none;
+        padding: 16px, 32px, 16px, 32px;
+        background: $background-color-dark;
+        color: #fff;
+      }
+    }
+  }
+}
+
+// bg light purple
+.bg-light-purple {
+  background: linear-gradient(90deg, #efecff 0%, #c4b8ff 100%);
+}
+
+// cta 3
+.cta-main {
+  width: 90em;
+  margin: auto;
+  padding-top: 90px;
+  margin-bottom: 100px;
+  &-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 24px;
+    &-title {
+      margin: auto;
+      width: 35.875em;
+      h2 {
+        font-size: 50px;
+        line-height: 59px;
+        letter-spacing: 0em;
+        text-align: center;
+      }
+    }
+    &-body {
+      margin: auto;
+      width: 35.875em;
+      p {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: center;
+      }
+    }
+    &-button {
+      margin: 16px;
+      button {
+        height: 52px;
+        width: 176px;
+        left: 191px;
+        top: 174px;
+        border-radius: 0px;
+        padding: 16px, 32px, 16px, 32px;
+        border: none;
+        font-weight: 500;
+        img {
+          margin-left: 13px;
+        }
+      }
+    }
+  }
+  &-background-img{
+    margin-left: 58px;
+  }
+}
