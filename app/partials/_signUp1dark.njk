@@ -1,0 +1,35 @@
+<!-- var -->
+{% set title="Sign up in seconds" %}
+{% set buttonText1="Sign up with Google" %}
+{% set inputTitle="Email" %}
+{% set buttonText2="Continue" %}
+{% set bottomText="Have an account?" %}
+{% set linkText="Log in" %}
+
+<!-- img path -->
+{% set googleImgPath="/image/svg/signUp/google.svg" %}
+{% set arrowImgPath="/image/svg/signUp/arrow.svg" %}
+{% set circleImgPath="/image/svg/signUp/circle.svg" %}
+<div class="signUp-section bg-dark">
+    <div class="signUp-content-section bg-light">
+        <div class="signUp-content-section-title">
+            <h2>{{title}}</h2>
+        </div>
+        <div class="signUp-Btn-With-Google">
+            <button><img src="{{googleImgPath}}" alt="">{{buttonText1}}</button>
+        </div>
+        <div class="mail-input">
+            <h5>{{inputTitle}}</h5>
+            <input type="text">
+        </div>
+        <div class="submit-btn">
+            <button>{{buttonText2}}<img src="{{arrowImgPath}}" alt=""></button>
+        </div>
+        <div class="bottom-text">
+            <h5>{{bottomText}}<a href="">{{linkText}}</a></h5>
+        </div>
+    </div>
+    <div class="signUp-img-section">
+        <img src="{{circleImgPath}}" alt="">
+    </div>
+</div>

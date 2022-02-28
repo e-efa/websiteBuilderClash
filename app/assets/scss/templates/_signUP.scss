@@ -1,0 +1,89 @@
+.signUp-section {
+  margin: auto;
+  width: 90em;
+  padding-top: 90px;
+  margin-bottom: 100px;
+  .signUp-content-section {
+    margin: auto;
+    width: 34.875em;
+    padding-top: 3.75em;
+    padding-bottom: 3.25em;
+    &-title {
+      margin: auto;
+      width: 24.4375em;
+      h2 {
+        font-size: 42px;
+        line-height: 49px;
+        letter-spacing: 0em;
+        text-align: center;
+      }
+    }
+    .signUp-Btn-With-Google {
+      text-align: center;
+      margin-top: 2em;
+      button {
+        width: 25.625em;
+        height: 3.4375em;
+        border: none;
+        background: #000;
+        color: #fff;
+        img {
+          position: relative;
+          right: 5.25em;
+        }
+      }
+    }
+    .mail-input {
+      text-align: center;
+      margin-top: 1.5em;
+      h5 {
+        padding-left: 4.5em;
+        text-align: left;
+        margin-bottom: 9px;
+      }
+      input {
+        width: 25.625em;
+        height: 3.4375em;
+        border: 2px solid #000;
+      }
+    }
+    .submit-btn {
+      text-align: center;
+      margin-top: 1.5em;
+      button {
+        width: 25.625em;
+        height: 3.4375em;
+        border: none;
+        background: #000;
+        color: #fff;
+        img {
+          margin-left: 10.83px;
+        }
+      }
+    }
+    .bottom-text{
+        margin-top: 1.5em;
+        text-align: center;
+        h5 {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 18.75px;
+        }
+        a{
+            text-decoration: none;
+            color: #000;
+        }
+    }
+  }
+  .signUp-img-section {
+    img {
+        position: relative;
+        top: -11.8125em;
+        left: 15.5em;
+    }
+  }
+}
+
+.bg-light{
+    background: #fff;
+}

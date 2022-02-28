@@ -1226,6 +1226,110 @@ h5, .h5 {
   margin-top: 114px;
 }
 
+.signUp-section {
+  margin: auto;
+  width: 90em;
+  padding-top: 90px;
+  margin-bottom: 100px;
+}
+
+.signUp-section .signUp-content-section {
+  margin: auto;
+  width: 34.875em;
+  padding-top: 3.75em;
+  padding-bottom: 3.25em;
+}
+
+.signUp-section .signUp-content-section-title {
+  margin: auto;
+  width: 24.4375em;
+}
+
+.signUp-section .signUp-content-section-title h2 {
+  font-size: 42px;
+  line-height: 49px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.signUp-section .signUp-content-section .signUp-Btn-With-Google {
+  text-align: center;
+  margin-top: 2em;
+}
+
+.signUp-section .signUp-content-section .signUp-Btn-With-Google button {
+  width: 25.625em;
+  height: 3.4375em;
+  border: none;
+  background: #000;
+  color: #fff;
+}
+
+.signUp-section .signUp-content-section .signUp-Btn-With-Google button img {
+  position: relative;
+  right: 5.25em;
+}
+
+.signUp-section .signUp-content-section .mail-input {
+  text-align: center;
+  margin-top: 1.5em;
+}
+
+.signUp-section .signUp-content-section .mail-input h5 {
+  padding-left: 4.5em;
+  text-align: left;
+  margin-bottom: 9px;
+}
+
+.signUp-section .signUp-content-section .mail-input input {
+  width: 25.625em;
+  height: 3.4375em;
+  border: 2px solid #000;
+}
+
+.signUp-section .signUp-content-section .submit-btn {
+  text-align: center;
+  margin-top: 1.5em;
+}
+
+.signUp-section .signUp-content-section .submit-btn button {
+  width: 25.625em;
+  height: 3.4375em;
+  border: none;
+  background: #000;
+  color: #fff;
+}
+
+.signUp-section .signUp-content-section .submit-btn button img {
+  margin-left: 10.83px;
+}
+
+.signUp-section .signUp-content-section .bottom-text {
+  margin-top: 1.5em;
+  text-align: center;
+}
+
+.signUp-section .signUp-content-section .bottom-text h5 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18.75px;
+}
+
+.signUp-section .signUp-content-section .bottom-text a {
+  text-decoration: none;
+  color: #000;
+}
+
+.signUp-section .signUp-img-section img {
+  position: relative;
+  top: -11.8125em;
+  left: 15.5em;
+}
+
+.bg-light {
+  background: #fff;
+}
+
 .wide-card {
   width: 558px !important;
   height: 517px !important;
