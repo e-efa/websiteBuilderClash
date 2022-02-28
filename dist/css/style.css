@@ -1330,6 +1330,98 @@ h5, .h5 {
   background: #fff;
 }
 
+.register-section {
+  width: 90em;
+  margin: auto;
+  margin-top: 38px;
+  margin-bottom: 100px;
+}
+
+.register-section .register-navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 59.125em;
+}
+
+.register-section .register-navbar .navbar-menu .list {
+  display: flex;
+  flex-direction: row;
+  gap: 48px;
+  list-style: none;
+}
+
+.register-section .register-navbar .navbar-menu .list li a {
+  color: #000;
+}
+
+.register-section .signUp-content-section {
+  margin: auto;
+  padding-top: 60px;
+  padding-bottom: 52px;
+  margin-top: 81px;
+  width: 30.125em;
+}
+
+.register-section .signUp-content-section-title {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.register-section .signUp-content-section .input-section {
+  width: 22.625em;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5em;
+}
+
+.register-section .signUp-content-section .input-section input {
+  width: 22.625em;
+  height: 3.4375em;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px;
+  text-align: left;
+}
+
+.register-section .signUp-content-section .input-section input[type="text" i] {
+  padding: 5px 24px;
+}
+
+.register-section .signUp-content-section .submit-btn {
+  margin-top: 24px;
+  text-align: center;
+}
+
+.register-section .signUp-content-section .submit-btn button {
+  width: 22.625em;
+  height: 3.25em;
+  background: #000;
+  color: #fff;
+  border: none;
+}
+
+.register-section .signUp-content-section .submit-btn button img {
+  margin-left: 12px;
+}
+
+.register-section .signUp-content-section .bottom-text {
+  text-align: center;
+  margin-top: 24px;
+}
+
+.register-section .signUp-content-section .bottom-text h5 {
+  font-weight: 400;
+}
+
+.register-section .signUp-content-section .bottom-text a {
+  font-weight: 500;
+  color: #000;
+}
+
 .wide-card {
   width: 558px !important;
   height: 517px !important;

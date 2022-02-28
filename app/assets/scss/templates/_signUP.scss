@@ -61,29 +61,113 @@
         }
       }
     }
-    .bottom-text{
-        margin-top: 1.5em;
-        text-align: center;
-        h5 {
-          font-weight: 400;
-          font-size: 16px;
-          line-height: 18.75px;
-        }
-        a{
-            text-decoration: none;
-            color: #000;
-        }
+    .bottom-text {
+      margin-top: 1.5em;
+      text-align: center;
+      h5 {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18.75px;
+      }
+      a {
+        text-decoration: none;
+        color: #000;
+      }
     }
   }
   .signUp-img-section {
     img {
-        position: relative;
-        top: -11.8125em;
-        left: 15.5em;
+      position: relative;
+      top: -11.8125em;
+      left: 15.5em;
     }
   }
 }
 
-.bg-light{
-    background: #fff;
+.bg-light {
+  background: #fff;
+}
+
+.register-section {
+  width: 90em;
+  margin: auto;
+  margin-top: 38px;
+  margin-bottom: 100px;
+  .register-navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 59.125em;
+    .navbar-menu {
+      .list {
+        display: flex;
+        flex-direction: row;
+        gap: 48px;
+        list-style: none;
+        li {
+          a {
+            color: #000;
+          }
+        }
+      }
+    }
+  }
+  .signUp-content-section {
+    margin: auto;
+    padding-top: 60px;
+    padding-bottom: 52px;
+    margin-top: 81px;
+    width: 30.125em;
+    &-title {
+      text-align: center;
+      margin-bottom: 32px;
+      h2 {
+      }
+    }
+    .input-section {
+      width: 22.625em;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 1.5em;
+      input {
+        width: 22.625em;
+        height: 3.4375em;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 19px;
+        text-align: left;
+    }
+    input[type="text" i] {
+        padding: 5px 24px;
+      }
+    }
+    .submit-btn {
+        margin-top: 24px;
+        text-align: center;
+        button{
+            width: 22.625em;
+            height: 3.25em;
+            background: #000;
+            color: #fff;
+            border: none;
+            img{
+                margin-left: 12px;
+            }
+        }
+    }
+    .bottom-text {
+        text-align: center;
+        margin-top: 24px;
+        h5{
+            font-weight: 400;
+        }
+        a{
+            font-weight: 500;
+            color: #000;
+        }
+    }
+  }
 }
