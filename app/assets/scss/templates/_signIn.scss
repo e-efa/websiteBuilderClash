@@ -1,0 +1,98 @@
+h4 {
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-top: 32px;
+  margin-bottom: 9px;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+input {
+  width: 35.875em;
+  height: 3.4375em;
+  border: 1px solid #000;
+}
+.signIn-section {
+  width: 90em;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  margin-top: 60px;
+  margin-bottom: 100px;
+  .signIn-gradient-section {
+    width: 28.75em;
+    display: flex;
+    flex-direction: column;
+    padding-left: 48px;
+    padding-top: 33px;
+    gap: 41.6875em;
+    .signIn-partners {
+      &-title {
+        margin-bottom: 36px;
+        p {
+          font-size: 16px;
+          line-height: 19px;
+          letter-spacing: 1px;
+          text-align: left;
+        }
+      }
+      &-logo-list {
+        padding-inline-start: 0px;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        gap: 45.6px;
+      }
+    }
+  }
+  .signIn-content-section {
+    width: 61.25em;
+    margin: auto;
+    padding-left: 12.625em;
+    .signIn-title {
+      h2 {
+        font-size: 42px;
+        line-height: 49px;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+    }
+    .password-input-section {
+      .password-content {
+        width: 574px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    }
+    .signIn-btn {
+        margin-top: 32px;
+      button {
+        height: 52px;
+        width: 574px;
+        left: 0px;
+        top: 0px;
+        border: 1px solid #000;
+        padding: 16px, 32px, 16px, 32px;
+        background: #000;
+        color: #fff;
+        img{
+            margin-left: 10.83px;
+        }
+      }
+    }
+    .signIn-bottom-text {
+        margin-top: 24px;
+    }
+  }
+}
+
+// bg picture
+.bg-picture{
+    background-image: url('/image/png/signIn/bg-picture.png');
+    background-repeat: no-repeat;
+}
