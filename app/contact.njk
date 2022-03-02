@@ -1,18 +1,7 @@
-
-  {% set page_class = contact %}
-  {% extends "template.njk" %}
-  {% block main %}
-
-  <!-- scroll-progress & goto-top -->
-  {% include "_scrollProgress.njk"%}
-  <!-- start of navigation -->
-  {# {% include "_header.njk"%} #}
-  <!-- end of navigation -->
-
-
-<!-- start of footer -->
-
-  {% include "_footer.njk" %}
-  
-  <!-- end of footer -->
-  {% endblock %}
+{% set page_class = testimonial %}
+{% extends "template.njk" %}
+{% block main %}
+  {% include "_contact1.njk"%}
+  {% include "_contact2.njk"%}
+  {% include "_contact3.njk"%}
+{% endblock %}

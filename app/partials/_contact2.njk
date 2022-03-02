@@ -1,0 +1,62 @@
+<!-- var -->
+{% set title="Let’s get in touch"%}
+{% set placeholderName="Full Name"%}
+{% set placeholderEmail="Email"%}
+{% set placeholderPhone="Phone"%}
+{% set placeholderMessage="Message"%}
+{% set btnName="Send form"%}
+{% set cityName1="Warsaw"%}
+{% set cityName2="Zurich"%}
+{% set cityName3="Manchester"%}
+{% set address1="Swietego Hieronima 143 Warszawa 03-243"%}
+{% set address2="Rasenstrasse 81 Gerbergasse 8000"%}
+{% set address3="East Street 72 High Brickington MX37 8XL"%}
+
+
+<div class="contact-section">
+    <div class="contact-content wide-section">
+        <div class="contact-content-text">
+            <div class="title">
+                <h2>{{title}}</h2>
+            </div>
+            <div class="address-menu">
+                <div class="address-menu-item">
+                    <div class="city-name">
+                        <h4>{{cityName1}}</h4>
+                    </div>
+                    <div class="city-full-address">
+                        <p>{{address1}}</p>
+                    </div>
+                </div>
+                <div class="address-menu-item">
+                    <div class="city-name">
+                        <h4>{{cityName2}}</h4>
+                    </div>
+                    <div class="city-full-address">
+                        <p>{{address2}}</p>
+                    </div>
+                </div>
+                <div class="address-menu-item">
+                    <div class="city-name">
+                        <h4>{{cityName3}}</h4>
+                    </div>
+                    <div class="city-full-address">
+                        <p>{{address3}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contact-content-form">
+            <input type="text" placeholder="{{placeholderName}}">
+            <div class="contact-details">
+                <input type="text" placeholder="{{placeholderEmail}}">
+                <input type="text" placeholder="{{placeholderPhone}}">
+            </div>
+            <textarea name="{{placeholderMessage}}" id="{{placeholderMessage}}" placeholder="{{placeholderMessage}}"
+                cols="44" rows="4"></textarea>
+            <div class="submit-btn">
+                <button>{{btnName}}</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,56 @@
+<!-- var -->
+{% set introContact="Got any questions? Fill out the form below even if you’s just like to say hello!"%}
+{% set placeholderName="Full Name"%}
+{% set placeholderEmail="Email"%}
+{% set placeholderPhone="Phone"%}
+{% set placeholderMessage="Message"%}
+{% set btnName="Send form"%}
+{% set addTitle="Manchester"%}
+{% set addBody="East Street 72 High Brickington MX37 8XL"%}
+{% set contactTitle="Contact Us"%}
+{% set contactBody="079 2294 2980 element@example.co.uk"%}
+
+<!-- img var -->
+{% set mapImgPath="/image/png/contact/Map.png"%}
+{% set locationImgPath="/image/svg/contact/Location.svg"%}
+{% set locationPointImgPath="/image/svg/contact/Location-Point.svg"%}
+
+<div class="contact-section">
+    <div class="map-image">
+        <img src="{{mapImgPath}}" alt="">
+    </div>
+    <img class="locationImg" src="{{locationImgPath}}" alt="">
+    <img class="locationPointImg" src="{{locationPointImgPath}}" alt="">
+    <div class="contact-intro-text">
+        <p>{{introContact}}</p>
+    </div>
+    <div class="contact-content">
+        <div class="contact-content-form">
+            <input type="text" placeholder="{{placeholderName}}">
+            <div class="contact-details">
+                <input type="text" placeholder="{{placeholderEmail}}">
+                <input type="text" placeholder="{{placeholderPhone}}">
+            </div>
+            <textarea name="{{placeholderMessage}}" id="{{placeholderMessage}}" placeholder="{{placeholderMessage}}" cols="44" rows="4"></textarea>
+            <div class="submit-btn">
+                <button>{{btnName}}</button>
+            </div>
+        </div>
+        <div class="contact-content-address">
+            <div class="title">
+                <h2>{{addTitle}}</h2>
+            </div>
+            <div class="body">
+                <p>{{addBody}}</p>
+            </div>
+        </div>
+        <div class="contact-us-section">
+            <div class="title">
+                <h2>{{contactTitle}}</h2>
+            </div>
+            <div class="body">
+                <p>{{contactBody}}</p>
+            </div>
+        </div>
+    </div>
+</div>
