@@ -1,0 +1,4 @@
+{% extends "template.njk" %}
+{% block main %}
+  @@sectionContent@@
+{% endblock %}

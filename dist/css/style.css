@@ -85,6 +85,7 @@ h5, .h5 {
 }
 
 .btn-download_gradient {
+  border: 1px solid linear-gradient(90deg, #efecff 0%, #c4b8ff 100%);
   color: #000;
   background: linear-gradient(90deg, #efecff 0%, #c4b8ff 100%);
 }
