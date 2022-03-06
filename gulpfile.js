@@ -8,10 +8,11 @@ var gulp = require("gulp"),
     browserSync = require("browser-sync").create(),
     reload = browserSync.reload,
     sass = require("gulp-sass"),
+    sourcemaps = require('gulp-sourcemaps'),
     cleanCSS = require("gulp-clean-css"),
     csso = require('gulp-csso'),
     del = require("del");
-gulpif = require('gulp-if'),
+    gulpif = require('gulp-if'),
     sourcemaps = require('gulp-sourcemaps'),
     concat = require('gulp-concat'),
     imagemin = require('gulp-imagemin'),
@@ -30,13 +31,15 @@ gulpif = require('gulp-if'),
     filter = require('gulp-filter');
 
 
-    var argv = process.argv.slice(1);
-    console.log(argv);
-    const pageName = argv[2];
-    var inputPageLayoutThemeStr = argv[4].replace(/'/g,'"');
-    const inputPageLayoutTheme = JSON.parse(inputPageLayoutThemeStr);
-    console.log(inputPageLayoutTheme);
-    console.log(inputPageLayoutTheme.sectionDetails.length);
+var argv = process.argv.slice(1);
+console.log(argv);
+const pageName = argv[2];
+console.log(pageName);
+var inputPageLayoutThemeStr = argv[4].replace(/'/g, '"');
+console.log(inputPageLayoutThemeStr);
+const inputPageLayoutTheme = JSON.parse(inputPageLayoutThemeStr);
+console.log(inputPageLayoutTheme);
+console.log(inputPageLayoutTheme.sectionDetails.length);
 
 
 
@@ -75,6 +78,7 @@ const path = {
 
 const dest = {
     css: destination + 'css/',
+    theme: destination + 'css/',
     scss: destination + 'scss/',
     js: destination + 'js/',
     fonts: destination + 'fonts/',
@@ -135,6 +139,7 @@ function customPlumber([errTitle]) {
 ===================================================== */
 function html() {
     buildDynamicPage();
+    replaceSectionTheme();
     return gulp.src([path.html])
         .pipe(rendeNun({
             path: [path._partial] // String or Array
@@ -175,6 +180,31 @@ function scss() {
             stream: true
         }));
 };
+// theme scss
+
+function buildSectionTheme() {
+    for (let i = 0; i < inputPageLayoutTheme.sectionDetails.length; i++) {
+        compileScssTheme(inputPageLayoutTheme.sectionDetails[i].sectionName, inputPageLayoutTheme.theme);
+    }
+}
+
+function buildSectionThemeTask() {
+    buildSectionTheme();
+    return gulp.src('/app/assets/scss/themed/*.scss')
+        .pipe(gulp.dest('/app/assets/scss/themed-copy'));
+}
+
+function compileScssTheme(sectionName, theme) {
+    return gulp.src('./app/assets/scss/theme/' + sectionName + '/' + theme + '.scss')
+        .pipe(sourcemaps.init())
+        .pipe(sass({
+            outputStyle: 'expanded',
+        }))
+        .on('error', sass.logError)
+        .pipe(sourcemaps.write())
+        .pipe(rename("style.css"))
+        .pipe(gulp.dest(dest.theme))
+}
 
 
 /* =====================================================
@@ -307,16 +337,7 @@ function sassCopy() {
         .pipe(gulpif(argv.pub, gulp.dest(dest.scss)))
 };
 
-// function for copy template file
-function copyPageAndRename() {
-    return gulp
-        .src("./app/page-template.njk")
-        .pipe(rendeNun({
-            path: [path._partial]
-        }))
-        .pipe(rename("./Page/Pagex.html"))
-        .pipe(gulp.dest("./dist"));
-}
+
 
 function watchFiles() {
     gulp.watch(path.html, html);
@@ -330,26 +351,50 @@ function watchFiles() {
 
 function buildDynamicPage() {
     var nunjucksIncludeString = convertInputPageLayoutThemeObjectToNujucksIncludeString(inputPageLayoutTheme);
-    // makeCopyPageTemplateToPageName(pageName);
     stringReplace(pageName, "@@sectionContent@@", nunjucksIncludeString);
 }
 
 function convertInputPageLayoutThemeObjectToNujucksIncludeString(inputPageLayoutTheme) {
-    let pageNameChoice = "";
+    let pageNameNunString = "";
     for (let i = 0; i < inputPageLayoutTheme.sectionDetails.length; i++) {
-        pageNameChoice += '{% include "_'+ inputPageLayoutTheme.sectionDetails[i].sectionName + inputPageLayoutTheme.sectionDetails[i].sectionChoiceNumber + inputPageLayoutTheme.theme + '.njk"%}' + "\n";
+        pageNameNunString += '{% include "_' + inputPageLayoutTheme.sectionDetails[i].sectionName + inputPageLayoutTheme.sectionDetails[i].sectionChoiceNumber  + '.njk"%}' + "\n";
     }
-    return pageNameChoice;
+    return pageNameNunString;
 }
 
+function genrateSectionTheme() {
+    for (let i = 0; i < inputPageLayoutTheme.sectionDetails.length; i++) {
+        makeCopyPageTemplateToPageName_scss(inputPageLayoutTheme.sectionDetails[i].sectionName);
+    }
+}
+
+function replaceSectionTheme() {
+    for (let i = 0; i < inputPageLayoutTheme.sectionDetails.length; i++) {
+        stringReplace_scss(inputPageLayoutTheme.sectionDetails[i].sectionName, '@@sectionName@@', inputPageLayoutTheme.sectionDetails[i].sectionName);
+    }
+}
+
+
+
 function makeCopyPageTemplateToPageName() {
+    genrateSectionTheme();
     console.log(pageName);
     return gulp
         .src("./app/page-template.njk.temp")
-        .pipe(rename( pageName + ".njk"))
+        .pipe(rename(pageName + ".njk"))
         .pipe(gulp.dest("./app"));
 
 }
+
+function makeCopyPageTemplateToPageName_scss(sectionName) {
+    console.log(sectionName);
+    return gulp
+        .src("./app/assets/scss/style-scss-template")
+        .pipe(rename(sectionName + "-style.scss"))
+        .pipe(gulp.dest("./app/assets/scss/themed/"));
+
+}
+
 
 function stringReplace(pageName, findStr, replaceStr) {
     return gulp.src("./app/" + pageName + ".njk")
@@ -358,17 +403,19 @@ function stringReplace(pageName, findStr, replaceStr) {
 
 }
 
-function makeCopyPageTemplateToPageNameTest() {
-    return makeCopyPageTemplateToPageName("raju");
+function stringReplace_scss(sectionName, findStr, replaceStr) {
+    return gulp.src("./app/assets/scss/themed/" + sectionName + "-style.scss")
+        .pipe(replace(new RegExp(findStr, 'g'), replaceStr))
+        .pipe(gulp.dest("./app/assets/scss/themed"));
+
 }
 
-function stringReplaceTest() {
-    return stringReplace("raju", "@@sectionContent@@", "@@hero@@");
-}
+
 
 
 const copyAssets = gulp.parallel(fonts, javascript, sassCopy, plugins, imgmin);
-const build = gulp.series(clean, makeCopyPageTemplateToPageName, html, gulp.parallel(scss, copyAssets));
+const buildTheme = gulp.series(clean, makeCopyPageTemplateToPageName, html, gulp.parallel(scss, copyAssets));
+const build = gulp.series(clean, makeCopyPageTemplateToPageName, html, buildSectionThemeTask, copyAssets);
 const buildWatch = gulp.series(build, browserReload, gulp.parallel(watchFiles));
 
 
@@ -382,6 +429,7 @@ exports.pluginCss = pluginCss;
 exports.scss = scss;
 exports.clean = clean;
 exports.build = build;
+exports.buildTheme = buildTheme;
 exports.buildWatch = buildWatch;
 exports.watchFiles = watchFiles;
 exports.watchSrc = watchSrc;

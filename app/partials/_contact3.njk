@@ -1,8 +1,41 @@
+<!-- var -->
+{% set title="Get in touch with us! We’re here to help"%}
+{% set introText="Fill out the form below and let us know how we can work together."%}
+{% set note="Please complete all fields marked with an asterisk (*) "%}
+{% set placeholderName="Full Name"%}
+{% set placeholderEmail="Email"%}
+{% set placeholderPhone="Phone"%}
+{% set placeholderMessage="Type your message here…"%}
+{% set btnName="Send Form"%}
+
+<!-- img path -->
+{% set mapImgPath="/image/png/contact/vertical-map.png"%}
+
 <div class="contact-main-section">
-    <div class="contact-img-section"></div>
-    <div class="contact-content-section">
-        <div class="title"></div>
-        <div class="intro-text"></div>
-        
+    <div class="contact-img-section">
+        <img src="{{mapImgPath}}" alt="">
+    </div>
+    <div class="contact-content">
+        <div class="title">
+            <h2>{{title}}</h2>
+        </div>
+        <div class="intro-text">
+            <h5>{{introText}}</h5>
+        </div>
+        <div class="note">
+            <p>{{note}}</p>
+        </div>
+        <div class="contact-content-form">
+            <input type="text" placeholder="{{placeholderName}}">
+            <div class="contact-details">
+                <input type="text" placeholder="{{placeholderEmail}}">
+                <input type="text" placeholder="{{placeholderPhone}}">
+            </div>
+            <textarea name="{{placeholderMessage}}" id="{{placeholderMessage}}" placeholder="{{placeholderMessage}}"
+                cols="44" rows="4"></textarea>
+            <div class="submit-btn">
+                <button>{{btnName}}</button>
+            </div>
+        </div>
     </div>
 </div>

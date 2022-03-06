@@ -1,9 +1,17 @@
+input[type="text" i] {
+  padding-left: 20px;
+}
+textarea{
+  padding-top: 16.2px;
+  padding-left: 20px;
+}
+
 .contact-section {
   width: 90em;
   margin: auto;
   text-align: center;
   padding-top: 66px;
-  margin-bottom: 100px;
+  padding-bottom: 100px;
   .locationImg {
     width: 213px;
     position: relative;
@@ -44,9 +52,6 @@
         width: 460px;
         height: 60px;
       }
-      input[type="text" i] {
-        padding-left: 20px;
-      }
       .contact-details {
         display: flex;
         flex-direction: row;
@@ -56,10 +61,6 @@
         input {
           width: 225px;
         }
-      }
-      textarea {
-        padding-top: 16.2px;
-        padding-left: 20px;
       }
       .submit-btn {
         margin-top: 32px;
@@ -175,4 +176,83 @@
   width: 90em !important  ;
   margin: auto !important;
   gap: 120px !important;
+}
+
+// contact - 3
+.contact-main-section {
+  width: 90em;
+  padding-bottom: 100px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 61px;
+  .contact-immg-section {
+    align-self: center;
+  }
+  .contact-content {
+    align-self: center;
+    .title {
+      width: 460px;
+      margin-bottom: 15px;
+      h2 {
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 54px;
+        letter-spacing: -1.4613800048828125px;
+        text-align: left;
+      }
+    }
+    .intro-text {
+      width: 460px;
+      margin-bottom: 15px;
+      h5 {
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: -0.722989022731781px;
+        text-align: left;
+      }
+    }
+    .note {
+      margin-bottom: 33px;
+      P {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 27px;
+        letter-spacing: -0.7383909225463867px;
+        text-align: left;
+      }
+    }
+    .contact-content-form {
+      input {
+        width: 460px;
+        margin-bottom: 10px;
+      }
+      .contact-details {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        margin-bottom: 10px;
+        input {
+          width: 225px;
+        }
+      }
+      .submit-btn {
+        margin-top: 15px;
+        button {
+          height: 60px;
+          width: 460px;
+          border: 1px solid #235AF9;
+          border-radius: 4px;
+          padding: 14px, 43px, 14px, 43px;
+          background: #235AF9;
+          color: #fff;
+        }
+      }
+    }
+  }
 }
