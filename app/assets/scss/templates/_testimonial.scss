@@ -5,6 +5,7 @@
 .testimonial-section {
   padding-top: 90px;
   margin-bottom: 100px;
+  background: $testimonial-bgColor;
   .testimonial-intro {
     margin-bottom: 19px;
     h5 {
@@ -13,7 +14,7 @@
       letter-spacing: 1px;
       text-align: center;
       font-weight: 400;
-      color: #7b61ff;
+      color: $testimonial-intro-textColor;
     }
   }
   .testimonial-title {
@@ -23,6 +24,7 @@
       line-height: 59px;
       letter-spacing: 0em;
       text-align: center;
+      color: $testimonial-title-textColor;
     }
   }
   .testimonial-customer-section {
@@ -41,7 +43,7 @@
         display: flex;
         flex-direction: row;
         gap: 14px;
-        background: #faf9ff;
+        background: $testimonial-customerCard-bgColor;
         padding: 20px;
         .customer-content {
           display: flex;
@@ -53,6 +55,7 @@
             font-weight: 400;
             line-height: 17px;
             text-align: left;
+            color: $testomonial-textColor;
           }
           &-position {
             p {
@@ -61,7 +64,7 @@
               font-weight: 400;
               line-height: 17px;
               text-align: left;
-              color: rgba(0, 0, 0, 0.479);
+              color: $testimonial-post-textColor;
             }
           }
         }
@@ -82,7 +85,7 @@
               position: relative;
               top: -120px;
               left: 32px;
-              color: #fff;
+              color: $testimonial-cusIntro-textColor;
             }
           }
         }

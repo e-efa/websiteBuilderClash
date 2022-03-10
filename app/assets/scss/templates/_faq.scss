@@ -2,6 +2,7 @@
   width: 90em;
   margin: auto;
   padding-bottom: 90px;
+  background: $faq-bgColor;
   &-title {
     width: 42.5em;
     margin: auto;
@@ -12,6 +13,7 @@
       line-height: 59px;
       letter-spacing: 0em;
       text-align: center;
+      color: $faq-title-color;
     }
   }
   #faq-question-list{
@@ -28,8 +30,16 @@
           width: 800px;
           padding-top: 18px;
         }
+        h5{
+          color: $faq-textColor;
+        }
       }
     }
+    width: 950px;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 90px;
+    background: $faq-list-bgColor;
   }
   .bg-gray{
     width: 950px;

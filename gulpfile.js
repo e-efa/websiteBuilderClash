@@ -1,5 +1,11 @@
+const {
+    Concat
+} = require("nunjucks/src/nodes");
+
 var gulp = require("gulp"),
+    mergeStream = require('merge-stream'),
     minimist = require('minimist'),
+    count = require('gulp-count'),
     gulpCopy = require('gulp-copy'),
     replace = require('gulp-string-replace'),
     rename = require("gulp-rename"),
@@ -12,7 +18,7 @@ var gulp = require("gulp"),
     cleanCSS = require("gulp-clean-css"),
     csso = require('gulp-csso'),
     del = require("del");
-    gulpif = require('gulp-if'),
+gulpif = require('gulp-if'),
     sourcemaps = require('gulp-sourcemaps'),
     concat = require('gulp-concat'),
     imagemin = require('gulp-imagemin'),
@@ -42,17 +48,16 @@ console.log(inputPageLayoutTheme);
 console.log(inputPageLayoutTheme.sectionDetails.length);
 
 
-
 const destination = (argv.clean) ? 'dist/demo/' : (argv.pub) ? 'dist/publish/' : 'dist/';
 const port = (argv.demo) ? 4002 : (argv.pub) ? 4003 : 4001;
 
 var sourcemap = (argv.demo) ? false : (argv.pub) ? true : true;
 var minImg = (argv.demo) ? false : (argv.pub) ? true : false;
-// All Path
+
 const path = {
     root: './',
     temp: './app/temp/',
-    html: './app/*.+(html|njk)',
+    html: './app/generated/*.+(html|njk)',
     mainPage: '/app/page-template',
     _partialFiles: './app/partials/**/*.+(htm|njk)',
     _partial: './app/partials/',
@@ -78,7 +83,7 @@ const path = {
 
 const dest = {
     css: destination + 'css/',
-    theme: destination + 'css/',
+    theme: destination + 'css/theme/',
     scss: destination + 'scss/',
     js: destination + 'js/',
     fonts: destination + 'fonts/',
@@ -92,184 +97,36 @@ const dest = {
     }
 }
 
-const watchSrc = [path.html, path.js, path.php, path.img, path.fonts, path.plugin.css, path.plugin.css, path.plugin];
-
-
-
-/* =====================================================
-   BrowserSync
-===================================================== */
-function browserReload(done) {
-    browserSync.init({
-        server: {
-            baseDir: destination + '/'
-        },
-        port: port
-    });
-    done();
+// fonts
+function fonts() {
+    return gulp.src([path.fonts])
+        .pipe(changed(dest.fonts))
+        .pipe(gulp.dest(dest.fonts));
 }
 
-
-
-
-/* =====================================================
-    CLEAN
-===================================================== */
-function clean() {
-    return del([destination]);
-}
-
-
-/*--------------------------------------
-    Gulp Custom Notifier
-----------------------------------------*/
-function customPlumber([errTitle]) {
-    return plumber({
-        errorHandler: notify.onError({
-            title: errTitle || "Error running Gulp",
-            message: "Error: <%= error.message %>",
-            sound: "Glass"
-        })
-    });
-}
-
-
-/* =====================================================
-    HTML
-===================================================== */
-function html() {
-    buildDynamicPage();
-    replaceSectionTheme();
-    return gulp.src([path.html])
-        .pipe(rendeNun({
-            path: [path._partial] // String or Array
-        }))
-        .pipe(customPlumber('Error Running Nunjucks'))
-        .pipe(beautify({
-            indent_size: 2,
-            indent_char: ' ',
-            max_preserve_newlines: 0,
-            unformatted: ['code', 'pre', 'em', 'strong', 'span', 'i', 'b', 'br']
-        }))
-        .pipe(gulp.dest(destination))
-        .pipe(browserSync.reload({
-            stream: true
-        }));
-
-};
-
-/* =====================================================
-    css
-===================================================== */
-function scss() {
-    return gulp.src([path.scss])
-        .pipe(gulpif(sourcemap, sourcemaps.init()))
-        .pipe(sass({
-            outputStyle: 'expanded'
-        }).on('error', sass.logError))
-        .pipe(autoPrefixer())
-        .pipe(gulpif(argv.demo, csso({
-            restructure: false,
-            sourceMap: true,
-            debug: true
-        })))
-        .pipe(gulpif(sourcemap, sourcemaps.write('./maps/')))
+// js
+function javascript() {
+    return gulp.src([path.js])
+        .pipe(changed(dest.js))
+        .pipe(beautify())
         .pipe(lineec())
-        .pipe(gulp.dest(dest.css))
-        .pipe(browserSync.reload({
-            stream: true
-        }));
-};
-// theme scss
-
-function buildSectionTheme() {
-    for (let i = 0; i < inputPageLayoutTheme.sectionDetails.length; i++) {
-        compileScssTheme(inputPageLayoutTheme.sectionDetails[i].sectionName, inputPageLayoutTheme.theme);
-    }
+        .pipe(gulp.dest(dest.js));
 }
 
-function buildSectionThemeTask() {
-    buildSectionTheme();
-    return gulp.src('/app/assets/scss/themed/*.scss')
-        .pipe(gulp.dest('/app/assets/scss/themed-copy'));
-}
-
-function compileScssTheme(sectionName, theme) {
-    return gulp.src('./app/assets/scss/theme/' + sectionName + '/' + theme + '.scss')
-        .pipe(sourcemaps.init())
-        .pipe(sass({
-            outputStyle: 'expanded',
-        }))
-        .on('error', sass.logError)
-        .pipe(sourcemaps.write())
-        .pipe(rename("style.css"))
-        .pipe(gulp.dest(dest.theme))
-}
-
-
-/* =====================================================
-    Bundeling JS & CSS
-===================================================== */
-function cleanTemp() {
-    return del([path.temp]);
-}
-
-function concatPluginCss() {
-    return gulp.src([path.pluginCss, "!./app/plugins/bootstrap/css/bootstrap.min.css"])
-        .pipe(concat('plugins.css'))
-        .pipe(cleanCSS({
-            compatibility: 'ie8'
-        }))
-        .pipe(gulp.dest(path.temp))
-}
-
-function concatCssFinal() {
-    return gulp.src([path.bootstrap.css, path.temp + "plugins.css"], {
-            allowEmpty: true
-        })
-        .pipe(concat('plugins.min.css'))
-        .pipe(lineec())
-        .pipe(gulp.dest(dest.bundle.css))
-}
-
-function concatPluginJs() {
-
-    return gulp.src([path.pluginJs, "!./app/plugins/bootstrap/js/bootstrap.bundle.min.js", '!app/plugins/jquery/jquery.min.js', "!app/plugins/jquery/jquery-migrate.min.js"])
-        .pipe(concat('plugins.min.js'))
-        .pipe(uglify())
-        .pipe(gulp.dest(path.temp))
-}
-
-function concatJsFinal() {
-    return gulp.src([
-            "./app/plugins/jquery/jquery.min.js",
-            "./app/plugins/jquery/jquery-migrate.min.js",
-            path.bootstrap.js,
-            path.temp + "plugins.min.js",
-        ], {
-            allowEmpty: true
-        })
-        .pipe(concat('plugins.min.js'))
-        .pipe(uglify())
-        .pipe(lineec())
-        .pipe(gulp.dest(dest.bundle.js))
-}
-
-const pluginCss = gulp.series(concatPluginCss, concatCssFinal);
-const pluginJs = gulp.series(concatPluginJs, concatJsFinal);
-const pluginminify = gulp.series(gulp.parallel(pluginCss, pluginJs), cleanTemp);
-
-/* =====================================================
-    Copy SCSS Folder
-===================================================== */
+// sassCopy
 function sassCopy() {
     return gulp.src([path.scss])
         .pipe(gulpif(argv.pub, gulp.dest(dest.scss)))
 };
 
-/* =====================================================
-    Image
-===================================================== */
+// plugins
+function plugins() {
+    return gulp.src([path.plugins])
+        .pipe(changed(dest.plugins))
+        .pipe(gulp.dest(dest.plugins));
+}
+
+// imgmin
 function imgmin() {
     return gulp.src([path.img])
         .pipe(changed(dest.img))
@@ -289,151 +146,126 @@ function imgmin() {
             stream: true
         }));
 }
-/* =====================================================
-    Javascript
-===================================================== */
-function javascript() {
-    return gulp.src([path.js])
-        .pipe(changed(dest.js))
-        .pipe(beautify())
-        .pipe(lineec())
-        .pipe(gulp.dest(dest.js));
+
+// clean
+function clean() {
+    return del([destination, "./app/generated/", "./app/assets/scss/themed/"]);
 }
 
-/* =====================================================
-    fonts
-===================================================== */
-function fonts() {
-    return gulp.src([path.fonts])
-        .pipe(changed(dest.fonts))
-        .pipe(gulp.dest(dest.fonts));
+//generateScssSectionTemplates
+function generateScssSectionTemplatesWithPush() {
+    var tasks = [];
+    for (let i = 0; i < inputPageLayoutTheme.sectionDetails.length; i++) {
+        tasks.push(
+            gulp.src("./app/assets/scss/style-scss-template")
+            .pipe(rename(inputPageLayoutTheme.sectionDetails[i].sectionName + "-style.scss"))
+            .pipe(gulp.dest("./app/assets/scss/themed/"))
+            // .pipe(gulpCopy("./app/assets/scss/themed/"))
+        );
+        console.log(tasks.length);
+
+    }
+    return mergeStream(tasks);
 }
 
+// replacePlaceHolders
+function replacePlaceHoldersStylesWithPush() {
+    var tasks = [];
+    for (let i = 0; i < inputPageLayoutTheme.sectionDetails.length; i++) {
+        tasks.push(
+            gulp.src("./app/assets/scss/themed/" + inputPageLayoutTheme.sectionDetails[i].sectionName + "-style.scss")
+            .pipe(replace(new RegExp('@@sectionName@@', 'g'), inputPageLayoutTheme.sectionDetails[i].sectionName))
+            .pipe(gulp.dest("./app/assets/scss/themed"))
+        );
 
-/* =====================================================
-    Plugin Folder Copy
-===================================================== */
-function plugins() {
-    return gulp.src([path.plugins])
-        .pipe(changed(dest.plugins))
-        .pipe(gulp.dest(dest.plugins));
+    }
+    return mergeStream(tasks);
 }
 
+// compileScssTheme
+function compileScssThemeWithPush() {
+    var tasks = [];
+    for (let i = 0; i < inputPageLayoutTheme.sectionDetails.length; i++) {
+        tasks.push(
+            gulp.src('./app/assets/scss/theme/' + inputPageLayoutTheme.sectionDetails[i].sectionName + '/' + inputPageLayoutTheme.theme + '.scss')
+            .pipe(sourcemaps.init())
+            .pipe(sass({
+                outputStyle: 'expanded',
+            }))
+            .on('error', sass.logError)
+            .pipe(sourcemaps.write())
+            .pipe(rename(inputPageLayoutTheme.sectionDetails[i].sectionName + '.css'))
+            // .pipe(concat('style.css'))
+            .pipe(gulp.dest(dest.theme))
+        );
 
-
-/* =====================================================
-    Purge Css
-===================================================== */
-gulp.task('distroy', () => {
-    return gulp.src('dist/css/**/*.css')
-        .pipe(purgecss({
-            content: ['dist/**/*.html']
-        }))
-        .pipe(gulp.dest('dist/css/purged'))
-})
-
-function sassCopy() {
-    return gulp.src([path.scss])
-        .pipe(gulpif(argv.pub, gulp.dest(dest.scss)))
-};
-
-
-
-function watchFiles() {
-    gulp.watch(path.html, html);
-    gulp.watch(path._partial, html);
-    gulp.watch([path.plugin.js, path.js, path.fonts, path.img], copyAssets);
-    gulp.watch(path.scss, scss);
-    gulp.watch(path.root, gulp.series(clean, build));
+    }
+    return mergeStream(tasks);
 }
 
-
-
-function buildDynamicPage() {
-    var nunjucksIncludeString = convertInputPageLayoutThemeObjectToNujucksIncludeString(inputPageLayoutTheme);
-    stringReplace(pageName, "@@sectionContent@@", nunjucksIncludeString);
+function combineCssInDestFolder() {
+    return gulp.src('./dist/css/theme/*.css')
+        .pipe(concat('style.css'))
+        .pipe(gulp.dest(dest.css));
 }
 
-function convertInputPageLayoutThemeObjectToNujucksIncludeString(inputPageLayoutTheme) {
+//generateNunjucksSectionTemplates
+function generateNunjucksSectionTemplates() {
+    return gulp
+        .src("./app/page-template.njk.temp")
+        .pipe(rename(pageName + ".njk"))
+        .pipe(gulp.dest("./app/generated/"));
+}
+
+// replacePlaceHoldersHtml
+function replacePlaceHoldersHtml() {
+    var nunjucksIncludeString = buildNunjucksImportStr(inputPageLayoutTheme);
+    return gulp.src('./app/generated/*.njk')
+        .pipe(replace(new RegExp('@@sectionContent@@', 'g'), nunjucksIncludeString))
+        .pipe(gulp.dest('./app/generated'));
+}
+
+function buildNunjucksImportStr(inputPageLayoutTheme) {
     let pageNameNunString = "";
     for (let i = 0; i < inputPageLayoutTheme.sectionDetails.length; i++) {
-        pageNameNunString += '{% include "_' + inputPageLayoutTheme.sectionDetails[i].sectionName + inputPageLayoutTheme.sectionDetails[i].sectionChoiceNumber  + '.njk"%}' + "\n";
+        pageNameNunString += '{% include "_' + inputPageLayoutTheme.sectionDetails[i].sectionName + inputPageLayoutTheme.sectionDetails[i].sectionChoiceNumber + '.njk"%}' + "\n";
     }
     return pageNameNunString;
 }
 
-function genrateSectionTheme() {
-    for (let i = 0; i < inputPageLayoutTheme.sectionDetails.length; i++) {
-        makeCopyPageTemplateToPageName_scss(inputPageLayoutTheme.sectionDetails[i].sectionName);
-    }
+// html
+function html() {
+    return gulp.src([path.html])
+        .pipe(rendeNun({
+            path: [path._partial] // String or Array
+        }))
+        .pipe(customPlumber('Error Running Nunjucks'))
+        .pipe(beautify({
+            indent_size: 2,
+            indent_char: ' ',
+            max_preserve_newlines: 0,
+            unformatted: ['code', 'pre', 'em', 'strong', 'span', 'i', 'b', 'br']
+        }))
+        .pipe(gulp.dest(destination))
+        .pipe(browserSync.reload({
+            stream: true
+        }));
+
+};
+
+function customPlumber([errTitle]) {
+    return plumber({
+        errorHandler: notify.onError({
+            title: errTitle || "Error running Gulp",
+            message: "Error: <%= error.message %>",
+            sound: "Glass"
+        })
+    });
 }
-
-function replaceSectionTheme() {
-    for (let i = 0; i < inputPageLayoutTheme.sectionDetails.length; i++) {
-        stringReplace_scss(inputPageLayoutTheme.sectionDetails[i].sectionName, '@@sectionName@@', inputPageLayoutTheme.sectionDetails[i].sectionName);
-    }
-}
-
-
-
-function makeCopyPageTemplateToPageName() {
-    genrateSectionTheme();
-    console.log(pageName);
-    return gulp
-        .src("./app/page-template.njk.temp")
-        .pipe(rename(pageName + ".njk"))
-        .pipe(gulp.dest("./app"));
-
-}
-
-function makeCopyPageTemplateToPageName_scss(sectionName) {
-    console.log(sectionName);
-    return gulp
-        .src("./app/assets/scss/style-scss-template")
-        .pipe(rename(sectionName + "-style.scss"))
-        .pipe(gulp.dest("./app/assets/scss/themed/"));
-
-}
-
-
-function stringReplace(pageName, findStr, replaceStr) {
-    return gulp.src("./app/" + pageName + ".njk")
-        .pipe(replace(new RegExp(findStr, 'g'), replaceStr))
-        .pipe(gulp.dest("./app"));
-
-}
-
-function stringReplace_scss(sectionName, findStr, replaceStr) {
-    return gulp.src("./app/assets/scss/themed/" + sectionName + "-style.scss")
-        .pipe(replace(new RegExp(findStr, 'g'), replaceStr))
-        .pipe(gulp.dest("./app/assets/scss/themed"));
-
-}
-
-
-
 
 const copyAssets = gulp.parallel(fonts, javascript, sassCopy, plugins, imgmin);
-const buildTheme = gulp.series(clean, makeCopyPageTemplateToPageName, html, gulp.parallel(scss, copyAssets));
-const build = gulp.series(clean, makeCopyPageTemplateToPageName, html, buildSectionThemeTask, copyAssets);
-const buildWatch = gulp.series(build, browserReload, gulp.parallel(watchFiles));
+const generateStyles = gulp.series(generateScssSectionTemplatesWithPush, replacePlaceHoldersStylesWithPush, compileScssThemeWithPush, combineCssInDestFolder);
+const generateHtml = gulp.series(generateNunjucksSectionTemplates, replacePlaceHoldersHtml, html);
+const build = gulp.series(clean, gulp.parallel(generateStyles, generateHtml), copyAssets);
 
-
-
-
-exports.html = html;
-exports.imgmin = imgmin;
-exports.browserReload = browserReload;
-exports.pluginJs = pluginJs;
-exports.pluginCss = pluginCss;
-exports.scss = scss;
-exports.clean = clean;
-exports.build = build;
-exports.buildTheme = buildTheme;
-exports.buildWatch = buildWatch;
-exports.watchFiles = watchFiles;
-exports.watchSrc = watchSrc;
-exports.default = buildWatch;
-exports.copyAssets = copyAssets;
-exports.pluginminify = pluginminify;
-exports.buildDynamicPage = buildDynamicPage;
+exports.default = build;

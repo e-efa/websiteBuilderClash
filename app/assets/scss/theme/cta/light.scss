@@ -1,0 +1,32 @@
+$cta-bgColor: linear-gradient(90deg, #efecff 0%, #c4b8ff 100%);
+$cta-subTitleColor: #7b61ff;
+$cta-titleColor: #000000;
+$cta-bodyColor: #000000;
+$cta-btnBgColor: #000000;
+$cta-btnTextColor: #FFFFFF;
+
+// cta 2
+$cta2-bgColor:#FFFFFF;
+$cta2-topBtn-bgColor:#7B61FF;
+$cta2-topBtn-TextColor:#FFFFFF;
+$cta2-textColor: #000000;
+$cta2-bottomBtn-bgColor: #000000;
+$cta2-bottomBtn-TextColor:#FFFFFF;
+
+$cta2-heroImg: url('/image/png/cta/imgWithPurpleBackground.png');
+
+// cta 3
+$cta3-bgColor:#FFFFFF;
+$cta3-TitletextColor:#000000;
+$cta3-bodyTextColor:#000000;
+$cta3-btn-bgColor:#000000;
+$cta3-btn-textColor:#FFFFFF;
+
+$cta3-btnImg:url('/image/svg/cta/LightPowerIcon.svg');
+$cta3-bottomImg:url('/image/svg/cta/circleWithGreenLine.svg');
+
+
+
+
+// Import basic theme
+@import '../../themed/cta-style.scss';

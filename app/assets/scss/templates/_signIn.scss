@@ -5,15 +5,16 @@ h4 {
   text-align: left;
   margin-top: 32px;
   margin-bottom: 9px;
+  color: $signIn-textColor;
 }
 a{
     text-decoration: none;
-    color: #000;
+    color: $signIn-textColor;
 }
 input {
   width: 35.875em;
   height: 3.4375em;
-  border: 1px solid #000;
+  border: 1px solid $signIn-input-borderColor;
 }
 .signIn-section {
   width: 90em;
@@ -30,6 +31,7 @@ input {
     padding-left: 48px;
     padding-top: 33px;
     gap: 41.6875em;
+    background: $signIn-gradient-bg;
     .signIn-partners {
       &-title {
         margin-bottom: 36px;
@@ -38,6 +40,7 @@ input {
           line-height: 19px;
           letter-spacing: 1px;
           text-align: left;
+          color: $signIn-gradient-titleColor;
         }
       }
       &-logo-list {
@@ -53,12 +56,14 @@ input {
     width: 61.25em;
     margin: auto;
     padding-left: 12.625em;
+    background: $signIn-form-bg;
     .signIn-title {
       h2 {
         font-size: 42px;
         line-height: 49px;
         letter-spacing: 0em;
         text-align: left;
+        color: $signIn-form-titleColor;
       }
     }
     .password-input-section {
@@ -76,10 +81,10 @@ input {
         width: 574px;
         left: 0px;
         top: 0px;
-        border: 1px solid #000;
+        border: 1px solid $signIn-btn-borderColor;
         padding: 16px, 32px, 16px, 32px;
-        background: #000;
-        color: #fff;
+        background: $signIn-btn-bg;
+        color: $signIn-btn-textColor;
         img{
             margin-left: 10.83px;
         }

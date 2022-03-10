@@ -7,6 +7,7 @@
   justify-content: center;
   gap: 128px;
   margin-bottom: 100px;
+  background: $feature1-bgColor;
   @include mobile {
     width: 327px;
     flex-direction: column;
@@ -14,7 +15,7 @@
   .feature-img {
     width: 558px;
     height: 557.87px;
-    background: $gradient-7;
+    background: $feature1-img-bgColor;
     img {
       position: relative;
       width: 526px;
@@ -32,7 +33,7 @@
         line-height: 59px;
         letter-spacing: 0em;
         text-align: left;
-        color: #000;
+        color: $feature1-title-color;
       }
     }
     &-body {
@@ -46,6 +47,7 @@
         line-height: 27px;
         letter-spacing: 0em;
         text-align: left;
+        color: $features2-text-color;
       }
     }
     &-services {
@@ -63,13 +65,23 @@
           gap: 16px;
           align-items: center;
           justify-content: left;
-          color: #000;
+          color: $feature1-item-textColor;
           img {
             width: 48px;
             height: 48px;
             align-items: center;
           }
         }
+      }
+    }
+    &-button {
+      button {
+        height: 52px;
+        width: 192px;
+        border-radius: 0px;
+        padding: 16px, 32px, 16px, 32px;
+        background: $feature1-btn-bgColor;
+        color: $feature1-btn-textColor;
       }
     }
   }
@@ -82,6 +94,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   gap: 89px;
+  background: $feature2-card-bgColor;
   &-item {
     width: 183.23809814453125px;
     margin-top: 57.61px;
@@ -104,6 +117,7 @@
   padding-top: 120px;
   padding-left: 147px;
   margin-bottom: 100px;
+  background: $feature3-bgColor;
   &-text-content {
     margin-bottom: 66px;
     &-title {
@@ -113,6 +127,7 @@
         line-height: 59px;
         letter-spacing: 0em;
         text-align: left;
+        color: $feature3-textColor;
       }
     }
     &-body {
@@ -125,6 +140,7 @@
         line-height: 27px;
         letter-spacing: 0em;
         text-align: left;
+        color: $feature3-textColor;
       }
     }
   }
@@ -140,8 +156,11 @@
       }
       &-title {
         margin-bottom: 16px;
+        h5{
+          color: $feature3-textColor;
+        }
       }
-      &-body{
+      &-body {
         width: 300px;
       }
     }
@@ -149,31 +168,31 @@
 }
 
 // feature 4
-.m-top{
+.m-top {
   margin-top: 200px !important;
 }
-.g-30{
+.g-30 {
   gap: 30px !important;
 }
-.card-item-width{
+.card-item-width {
   width: 300px !important;
 }
-.title-width{
+.title-width {
   width: 768px !important ;
 }
-.body-width{
+.body-width {
   width: 600px !important;
 }
-.card-width{
+.card-width {
   width: 696px !important;
 }
-.left-padding{
+.left-padding {
   padding-left: 121px !important;
   gap: 0 !important;
 }
 
 // feature 5
-.position-center{
+.position-center {
   margin: auto !important;
   text-align: center !important;
 }

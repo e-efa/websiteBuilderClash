@@ -1,0 +1,14 @@
+$team1-bgColor: #000000;
+$team1-subTitle-textColor: #7B61FF;
+$team1-textColor: #FFFFFF;
+$team1-btn-bgColor: linear-gradient(90deg, #EFECFF 0%, #C4B8FF 100%);
+$team1-btn-borderColor: linear-gradient(90deg, #EFECFF 0%, #C4B8FF 100%);
+$team1-btn-textColor: #000;
+$team1-teamGrid-bgColor: linear-gradient(90deg, #7B61FF 0%, #B7A9FF 0.01%, #7B61FF 100%);
+$team1-teamGrid-textColor: #FFFFFF;
+
+$team2-bgColor: #000;
+$team2-titleColor: #fff;
+$team2-textColor: #fff;
+
+@import '../../themed/team-style.scss';

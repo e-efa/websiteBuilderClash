@@ -13,7 +13,6 @@ $gradient-purple: linear-gradient(
 $gradient-purple-light: linear-gradient(90deg, #efecff 0%, #c4b8ff 100%);
 
 // team 1
-
 .team-section {
   width: 90em;
   margin: auto;
@@ -23,7 +22,7 @@ $gradient-purple-light: linear-gradient(90deg, #efecff 0%, #c4b8ff 100%);
   padding-top: 90px;
   padding-bottom: 90px;
   gap: 128px;
-  background: $background-color;
+  background: $team1-bgColor;
   margin-bottom: 100px;
   .team-content-section {
     width: 460px;
@@ -35,7 +34,7 @@ $gradient-purple-light: linear-gradient(90deg, #efecff 0%, #c4b8ff 100%);
         line-height: 19px;
         letter-spacing: 1px;
         text-align: left;
-        color: #7b61ff;
+        color: $team1-subTitle-textColor;
         text-transform: uppercase;
       }
     }
@@ -46,7 +45,7 @@ $gradient-purple-light: linear-gradient(90deg, #efecff 0%, #c4b8ff 100%);
         line-height: 59px;
         letter-spacing: 0em;
         text-align: left;
-        color: $text-color;
+        color: $team1-textColor;
       }
     }
     .team-content-body {
@@ -58,16 +57,16 @@ $gradient-purple-light: linear-gradient(90deg, #efecff 0%, #c4b8ff 100%);
         line-height: 27px;
         letter-spacing: 0em;
         text-align: left;
-        color: $text-color;
+        color: $team1-textColor;
       }
     }
     .team-content-button {
       button {
         width: 184px;
         height: 52px;
-        background: transparent;
-        border: 1px solid #000;
-        color: $text-color;
+        background: $team1-btn-bgColor;
+        border: 1px solid $team1-btn-borderColor;
+        color: $team1-btn-textColor;
         img {
           width: 18.33px;
           height: 14.02px;
@@ -85,186 +84,14 @@ $gradient-purple-light: linear-gradient(90deg, #efecff 0%, #c4b8ff 100%);
     .team-member {
       width: 264px;
       height: 264px;
-      background: $background-color-dark;
+      background: $team1-teamGrid-bgColor;
       p {
         width: 191px;
         height: 48px;
         padding-top: 109px;
         padding-left: 62px;
         text-align: center;
-        color: $text-color-light;
-      }
-    }
-  }
-}
-
-// team 1 dark mode
-
-.team-section-dark {
-  width: 90em;
-  margin: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding-top: 90px;
-  padding-bottom: 90px;
-  gap: 128px;
-  background: $background-color-dark;
-  margin-bottom: 100px;
-  .team-content-section-dark {
-    width: 460px;
-    align-self: center;
-    .team-content-subTitle-dark {
-      margin-bottom: 24px;
-      span {
-        font-size: 16px;
-        line-height: 19px;
-        letter-spacing: 1px;
-        text-align: left;
-        color: #7b61ff;
-        text-transform: uppercase;
-      }
-    }
-    .team-content-title-dark {
-      margin-bottom: 24px;
-      h2 {
-        font-size: 50px;
-        line-height: 59px;
-        letter-spacing: 0em;
-        text-align: left;
-        color: $text-color-light;
-      }
-    }
-    .team-content-body-dark {
-      margin-bottom: 48px;
-      p {
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 27px;
-        letter-spacing: 0em;
-        text-align: left;
-        color: $text-color-light;
-      }
-    }
-    .team-content-button-dark {
-      button {
-        width: 184px;
-        height: 52px;
-        background: $gradient-purple-light;
-        border: 1px solid #000;
-        color: $text-color;
-        img {
-          width: 18.33px;
-          height: 14.02px;
-          margin-left: 14px;
-        }
-      }
-    }
-  }
-  .team-img-grid-section-dark {
-    width: 559px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 30px;
-    .team-member {
-      width: 264px;
-      height: 264px;
-      background: $gradient-purple;
-      p {
-        width: 191px;
-        height: 48px;
-        padding-top: 109px;
-        padding-left: 62px;
-        text-align: center;
-        color: $text-color-light;
-      }
-    }
-  }
-}
-
-//   team 1 purple mode
-
-.team-section-purple {
-  width: 90em;
-  margin: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding-top: 90px;
-  padding-bottom: 90px;
-  gap: 128px;
-  background: $background-color-purple;
-  margin-bottom: 100px;
-  .team-content-section-purple {
-    width: 460px;
-    align-self: center;
-    .team-content-subTitle-purple {
-      margin-bottom: 24px;
-      span {
-        font-size: 16px;
-        line-height: 19px;
-        letter-spacing: 1px;
-        text-align: left;
-        color: #fff;
-        text-transform: uppercase;
-      }
-    }
-    .team-content-title-purple {
-      margin-bottom: 24px;
-      h2 {
-        font-size: 50px;
-        line-height: 59px;
-        letter-spacing: 0em;
-        text-align: left;
-        color: $text-color-light;
-      }
-    }
-    .team-content-body-purple {
-      margin-bottom: 48px;
-      p {
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 27px;
-        letter-spacing: 0em;
-        text-align: left;
-        color: $text-color-light;
-      }
-    }
-    .team-content-button-purple {
-      button {
-        width: 184px;
-        height: 52px;
-        background: $gradient-purple-light;
-        border: none;
-        color: $text-color;
-        img {
-          width: 18.33px;
-          height: 14.02px;
-          margin-left: 14px;
-        }
-      }
-    }
-  }
-  .team-img-grid-section-purple {
-    width: 559px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 30px;
-    .team-member {
-      width: 264px;
-      height: 264px;
-      background: $background-color-dark;
-      p {
-        width: 191px;
-        height: 48px;
-        padding-top: 109px;
-        padding-left: 62px;
-        text-align: center;
-        color: $text-color-light;
+        color: $team1-teamGrid-textColor;
       }
     }
   }
@@ -277,6 +104,7 @@ $gradient-purple-light: linear-gradient(90deg, #efecff 0%, #c4b8ff 100%);
   padding-top: 94px;
   padding-bottom: 91px;
   margin-bottom: 100px;
+  background: $team2-bgColor;
   .team-content-section {
     display: flex;
     flex-direction: row;
@@ -291,6 +119,7 @@ $gradient-purple-light: linear-gradient(90deg, #efecff 0%, #c4b8ff 100%);
         line-height: 59px;
         letter-spacing: 0em;
         text-align: left;
+        color: $team2-titleColor;
       }
     }
     .team-content-body {
@@ -303,6 +132,7 @@ $gradient-purple-light: linear-gradient(90deg, #efecff 0%, #c4b8ff 100%);
         line-height: 27px;
         letter-spacing: 0em;
         text-align: left;
+        color: $team2-textColor;
       }
     }
   }
@@ -314,6 +144,14 @@ $gradient-purple-light: linear-gradient(90deg, #efecff 0%, #c4b8ff 100%);
     .team-member {
       &-name {
         margin-top: 28px;
+        h4{
+          color: $team2-textColor;
+        }
+      }
+      &-position{
+        p{
+          color: $team2-textColor;
+        }
       }
     }
   }

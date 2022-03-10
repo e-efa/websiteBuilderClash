@@ -3,11 +3,13 @@
   width: 90em;
   padding-top: 90px;
   margin-bottom: 100px;
+  background: $signUp-bgColor;
   .signUp-content-section {
     margin: auto;
     width: 34.875em;
     padding-top: 3.75em;
     padding-bottom: 3.25em;
+    background: $signUp-form-bgColor;
     &-title {
       margin: auto;
       width: 24.4375em;
@@ -16,6 +18,7 @@
         line-height: 49px;
         letter-spacing: 0em;
         text-align: center;
+        color: $signUp-TextColor;
       }
     }
     .signUp-Btn-With-Google {
@@ -25,8 +28,8 @@
         width: 25.625em;
         height: 3.4375em;
         border: none;
-        background: #000;
-        color: #fff;
+        background: $signUp-btn-bgColor;
+        color: $signUp-btn-textColor;
         img {
           position: relative;
           right: 5.25em;
@@ -40,11 +43,12 @@
         padding-left: 4.5em;
         text-align: left;
         margin-bottom: 9px;
+        color: $signUp-TextColor;
       }
       input {
         width: 25.625em;
         height: 3.4375em;
-        border: 2px solid #000;
+        border: 2px solid $signUp-input-borderColor;
       }
     }
     .submit-btn {
@@ -54,8 +58,8 @@
         width: 25.625em;
         height: 3.4375em;
         border: none;
-        background: #000;
-        color: #fff;
+        background: $signUp-btn-bgColor;
+        color: $signUp-btn-textColor;
         img {
           margin-left: 10.83px;
         }
@@ -71,7 +75,7 @@
       }
       a {
         text-decoration: none;
-        color: #000;
+        color: $signUp-TextColor;
       }
     }
   }

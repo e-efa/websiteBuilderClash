@@ -1,0 +1,11 @@
+$signIn-textColor: #000000;
+$signIn-input-borderColor: #000;
+$signIn-gradient-bg: linear-gradient(90deg, #EFECFF 0%, #C4B8FF 100%);;
+$signIn-gradient-titleColor: #000000;
+$signIn-form-bg: #fff;
+$signIn-form-titleColor: #000;
+$signIn-btn-borderColor: #000;
+$signIn-btn-bg: #000;
+$signIn-btn-textColor: #fff;
+
+@import '../../themed/signIn-style.scss';

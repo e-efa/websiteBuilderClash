@@ -10,6 +10,7 @@
   margin: auto;
   padding-top: 5.625em;
   margin-bottom: 100px;
+  background: $blog1-bgColor;
   &-title-track {
     display: flex;
     flex-direction: row;
@@ -23,10 +24,10 @@
           width: 180px;
           left: 1113px;
           top: 90px;
-          border: 1px solid #000;
+          border: 1px solid $blog2-btn-border-color;
           border-radius: 0px;
           padding: 16px, 23px, 16px, 32px;
-          background: #fff;
+          background: $blog2-btn-bgColor;
           img {
             width: 18px;
             height: 14px;
@@ -34,6 +35,7 @@
           }
         }
       }
+      color: $blog2-title-color;
     }
   }
   &-title {
@@ -44,6 +46,7 @@
       line-height: 59px;
       letter-spacing: 0em;
       text-align: center;
+      color: $blog1-titleColor;
     }
   }
   &-card-list {
@@ -53,7 +56,7 @@
     justify-content: center;
     padding-top: 3.3125em;
     &-item {
-      background: #faf9ff;
+      background: $blog1-card-bgColor;
       height: 556px;
       width: 362px;
       &-img {
@@ -76,6 +79,7 @@
           line-height: 28px;
           letter-spacing: 0em;
           text-align: left;
+          color: $blog1-cardTitle-color;
         }
       }
       &-body {
@@ -89,6 +93,7 @@
           line-height: 24px;
           letter-spacing: 0em;
           text-align: left;
+          color: $blog1-cardBody-textColor;
         }
       }
       .sub-text {
@@ -100,6 +105,7 @@
         span {
           font-size: 16px;
           font-weight: 600;
+          color: $blog1-textColor;
         }
       }
       .wide-sub-text{

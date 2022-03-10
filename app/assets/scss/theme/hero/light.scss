@@ -1,0 +1,79 @@
+$hero1-bgColor: #ffffff;
+$hero1-textColor: #000000;
+$hero1-btn-bgColor: #000000;
+$hero1-btn-textColor: #ffffff;
+$hero1-testimonial-bgColor: #faf9ff;
+$hero1-testimonial-textColor: #000000;
+$hero1-testimonial-postTextColor: #000000;
+$hero1-imgSection-bgColor: linear-gradient(90deg, #efecff 0%, #c4b8ff 100%);
+
+$hero2-bgColor: #ffffff;
+$hero2-titleColor: #000000;
+$hero2-textColor: #000000;
+$hero2-btn-bgColor: #000000;
+$hero2-btn-textColor: #ffffff;
+$hero2-imgSection-bgColor: linear-gradient(90deg, #efecff 0%, #c4b8ff 100%);
+
+$hero3-input-borderColor: #000;
+$hero3-input-textColor: #000;
+
+$hero4-bgColor: #FFFFFF;
+$hero4-titleColor: #000000;
+$hero4-body-textColor: #000000;
+$hero4-btn-bgColor: #000000;
+$hero4-btn-textColor: #FFFFFF;
+$hero4-span-textColor: #000000;
+$hero4-testi-borderColor: #FFFFFF;
+$hero4-testi-bgColor: #FFFFFF;
+$hero4-textColor: #000000;
+
+$hero5-bgImg: url('/image/png/hero5/bg-h5.png');
+$hero5-bgColor: #7B61FF;
+$hero5-imgSection-bgColor: transparent;
+$hero5-testi-bgColor: transparent;
+
+$hero6-bgColor: #fff;
+$hero6-titleColor: #000000;
+$hero6-body-textColor: #000000;
+$hero6-btn-bgColor: #000000;
+$hero6-btn-textColor: #FFFFFF;
+
+$hero9-content-bgColor: linear-gradient(90deg, #EFECFF 0%, #C4B8FF 100%);
+$hero9-title-color: #000000;
+$hero9-body-textColor: #000000;
+$hero9-btn1-borderColor: #000000;
+$hero9-btn1-bgColor: #000000;
+$hero9-btn1-textColor: #fff;
+$hero9-btn2-borderColor: #000000;
+$hero9-btn2-bgColor: #FFFFFF;
+$hero9-btn2-textColor: #000000;
+$hero9-lightPurple-bg:rgba(255, 255, 255, 0.7);
+
+$hero10-bgColor: #fff;
+$hero10-titleColor: #000;
+$hero10-body-textColor: #000000;
+$hero10-btn-borderColor: #000000;
+$hero10-btn-bgColor: #000000;
+$hero10-btn-textColor: #fff;
+
+$hero11-bgColor: #FFFFFF;
+$hero11-titleColor: #000000;
+$hero11-body-textColor: #000000;
+$hero11-btn1-bgColor: #000000;
+$hero11-btn1-textColor: #fff;
+$hero11-btn1-borderColor: #000000;
+$hero11-btn2-bgColor: #fff;
+$hero11-btn2-textColor: #000;
+$hero11-btn2-borderColor: #000;
+
+$hero12-bgColor : #fff;
+$hero12-titleColor: #000000;
+$hero12-btn1-bgColor: #000000;
+$hero12-btn1-textColor: #FFFFFF;
+$hero12-btn1-borderColor: #000000;
+$hero12-btn2-bgColor: #fff;
+$hero12-btn2-textColor: #000000;
+$hero12-btn2-borderColor: #000000;
+
+@import '../../themed/hero-style.scss';
+

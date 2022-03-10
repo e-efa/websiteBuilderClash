@@ -31,8 +31,10 @@
   },
   "dependencies": {
     "gulp-copy": "^4.0.1",
+    "gulp-count": "^1.0.0",
     "gulp-nunjucks-render": "^2.2.2",
     "gulp-string-replace": "^1.1.2",
+    "merge-stream": "^2.0.0",
     "node-gyp": "^8.4.1",
     "nunjucks": "^3.2.0"
   }

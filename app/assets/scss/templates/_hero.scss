@@ -1,0 +1,991 @@
+// dark - text
+.light-task {
+  color: $Background !important;
+}
+// hero4
+.hero_section {
+  padding-top: 90px;
+  padding-left: 147px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 190px;
+  background: $hero4-bgColor;
+  margin-bottom: 30px;
+  @include mobile {
+    width: 390px;
+    flex-direction: column;
+    padding-left: 35px;
+    padding-right: 12px;
+    gap: 48px;
+  }
+  .hero_section-content {
+    @include mobile {
+      order: 2;
+    }
+    .title {
+      padding-top: 93px;
+      width: 600px;
+      @include mobile {
+        padding-top: 0;
+        width: 327px;
+        text-align: center;
+      }
+      h2 {
+        color: $hero4-titleColor;
+        @include mobile {
+          font-size: 38px;
+          line-height: 45px;
+          letter-spacing: 0em;
+          text-align: left;
+        }
+      }
+    }
+    .body {
+      margin-top: 22px;
+      margin-bottom: 42px;
+      width: 523px;
+      @include mobile {
+        width: 327px;
+        text-align: center;
+      }
+      p {
+        color: $hero4-body-textColor;
+        @include mobile {
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 27px;
+          letter-spacing: 0em;
+          text-align: left;
+        }
+      }
+    }
+    .button {
+      button {
+        height: 52px;
+        width: 192px;
+        border-radius: 0px;
+        padding: 16px, 32px, 16px, 32px;
+        background: $hero4-btn-bgColor;
+        color: $hero4-btn-textColor;
+        @include mobile {
+          width: 327px;
+        }
+      }
+    }
+    .sub-text {
+      margin-top: 13px;
+      span {
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: $hero4-span-textColor;
+      }
+      @include mobile {
+        display: none;
+      }
+    }
+    .testimonial-section {
+      margin-top: 55px;
+      width: 531px;
+      height: 139px;
+      display: flex;
+      flex-direction: row;
+      gap: 28px;
+      border: 2px solid $hero4-testi-borderColor;
+      box-sizing: border-box;
+      padding-left: 29px;
+      padding-top: 21px;
+      background: $hero4-testi-bgColor;
+      @include mobile {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        width: 327px;
+        height: 242px;
+        border: none;
+        padding-bottom: 80px;
+        padding-left: 10px;
+      }
+      .customer_content {
+        .details {
+          p {
+            color: $hero4-textColor;
+          }
+        }
+        .position {
+          margin-top: 10px;
+          span {
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 17px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: $hero4-textColor;
+          }
+        }
+      }
+      &-light {
+        @extend .testimonial-section;
+        border: 2px solid #fff;
+        @include mobile {
+          border: none;
+        }
+      }
+      &-no_border {
+        @extend .testimonial-section;
+        border: none;
+      }
+    }
+    .circle {
+      position: relative;
+      top: -85px;
+      right: 47px;
+      z-index: 9999;
+      &-light {
+        @extend .circle;
+        z-index: 999;
+      }
+      @include mobile {
+        display: none;
+      }
+    }
+  }
+  &-dark {
+    @extend .hero_section;
+    background: #000000;
+    color: $Background;
+  }
+  &-light {
+    @extend .hero_section;
+    background: $Background;
+  }
+  &-purple {
+    @extend .hero_section;
+    background: $Highlight-2;
+  }
+  .hero_section-img {
+    img {
+      @include mobile {
+        margin: auto;
+        width: 327px;
+      }
+    }
+  }
+}
+
+// hero1
+.h1-hero_section {
+  margin: auto;
+  margin-bottom: 100px;
+  margin-top: 119px;
+  width: 1440px;
+  height: 903px;
+  display: flex;
+  flex-direction: row;
+  padding-left: 95px;
+  gap: 70px;
+  background: $hero1-bgColor;
+  @include mobile {
+    width: 327px;
+    height: 1160px;
+    margin: auto;
+    text-align: center;
+    flex-direction: column;
+    padding-left: 0;
+    padding-top: 80px;
+    margin-bottom: 100px;
+  }
+  .content-section {
+    width: 531px;
+    padding-top: 48px;
+    @include mobile {
+      width: 327px;
+      text-align: left;
+    }
+    .title {
+      margin-bottom: 22px;
+      h2 {
+        color: $hero1-textColor;
+        @include mobile {
+          font-size: 38px;
+          line-height: 45px;
+          letter-spacing: 0em;
+          text-align: left;
+        }
+      }
+    }
+    .body {
+      width: 523px;
+      margin-bottom: 46.5px;
+      @include mobile {
+        width: 327px;
+      }
+      p {
+        color: $hero1-textColor;
+        @include mobile {
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 27px;
+          letter-spacing: 0em;
+          text-align: left;
+        }
+      }
+    }
+    button {
+      height: 52px;
+      width: 192px;
+      border-radius: 0px;
+      padding: 16px, 32px, 16px, 32px;
+      background: $hero1-btn-bgColor;
+      color: $hero1-btn-textColor;
+    }
+    .sub-body {
+      span {
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: $hero1-textColor;
+        @include mobile {
+          display: none;
+        }
+      }
+      margin-bottom: 47px;
+    }
+    .testimonial-section {
+      display: flex;
+      flex-direction: row;
+      width: 531px;
+      height: 139px;
+      padding-top: 20px;
+      padding-left: 29px;
+      background: $hero1-testimonial-bgColor;
+      gap: 19px;
+      @include mobile {
+        margin: auto;
+        width: 327px;
+        height: 242px;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 0;
+      }
+      .testi-person_img {
+        @include mobile {
+          text-align: center;
+        }
+      }
+      .testi-content {
+        width: 380px;
+        @include mobile {
+          margin: auto;
+          margin-top: 0px;
+          width: 310px;
+        }
+        .testi-body {
+          p {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: $hero1-testimonial-textColor;
+            @include mobile {
+              text-align: center;
+              margin-bottom: 16px;
+            }
+          }
+        }
+        .testi-position {
+          @include mobile {
+            text-align: center;
+          }
+          span {
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 17px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: $hero1-testimonial-postTextColor;
+          }
+        }
+      }
+    }
+    @include mobile {
+      order: 2;
+    }
+  }
+  .image_section {
+    width: 560px;
+    height: 560px;
+    background: $hero1-imgSection-bgColor;
+    @include mobile {
+      width: 327px;
+      height: 311.96px;
+      order: 1;
+    }
+    img {
+      position: relative;
+      width: 500px;
+      top: -63px;
+      left: 37px;
+      @include mobile {
+        margin: auto;
+        width: 280px;
+        top: -23px;
+        left: 0px;
+      }
+    }
+  }
+}
+
+// hero2
+.h2-hero_section {
+  width: 1240px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  padding-top: 118px;
+  margin-bottom: 100px;
+  background: $hero2-bgColor;
+  @include mobile {
+    padding-top: 49px;
+    width: 327px;
+  }
+  .content-section {
+    margin: auto;
+    width: 754px;
+    @include mobile {
+      order: 2;
+      width: 327px;
+      margin-top: 48px;
+    }
+    .title {
+      margin-bottom: 22px;
+      h2 {
+        text-align: center;
+        color: $hero2-titleColor;
+        @include mobile {
+          font-size: 38px;
+          line-height: 45px;
+          letter-spacing: 0em;
+          text-align: center;
+        }
+      }
+    }
+    .body {
+      margin: auto;
+      width: 754px;
+      @include mobile {
+        width: 327px;
+      }
+      p {
+        color: $hero2-textColor;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 27px;
+        letter-spacing: 0em;
+        text-align: center;
+        margin-bottom: 32px;
+      }
+    }
+    .btn_container {
+      margin: auto;
+      width: 754px;
+      text-align: center;
+      @include mobile {
+        width: 327px;
+      }
+      button {
+        height: 52px;
+        width: 192px;
+        border-radius: 0px;
+        padding: 16px, 32px, 16px, 32px;
+        background: $hero2-btn-bgColor;
+        color: $hero2-btn-textColor;
+      }
+      .sub-body {
+        margin-top: 27px;
+        span {
+          color: $hero2-textColor;
+        }
+      }
+    }
+  }
+  .image_section {
+    margin: auto;
+    width: 1146px;
+    height: 680px;
+    background: $hero2-imgSection-bgColor;
+    margin-top: 103px;
+    padding-left: 142px;
+    @include mobile {
+      order: 1;
+      width: 327px;
+      height: 194.15px;
+      padding-left: 0;
+      margin-top: 0;
+    }
+    img {
+      position: relative;
+      top: 140px;
+      width: 364px;
+      left: 12px;
+      @include mobile {
+        width: 88.31px;
+        top: 32px;
+        left: 64px;
+      }
+      &:nth-child(1) {
+        width: 435px;
+        @include mobile {
+          width: 105.19px;
+        }
+      }
+    }
+  }
+}
+
+// hero3
+.h3-input {
+  display: flex;
+  flex-direction: row;
+  width: 401px;
+  height: 55px;
+  gap: 189px;
+  border: 2px solid $hero3-input-borderColor;
+  margin-bottom: 76px;
+  @include mobile {
+    width: 327px;
+    gap: 117px;
+  }
+  span {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: $hero3-input-textColor;
+    opacity: 0.3;
+    align-self: center;
+    padding-left: 28px;
+  }
+  button {
+    height: 52px;
+    width: 192px;
+    border-radius: 0px;
+    padding: 16px, 32px, 16px, 32px;
+    background: $hero2-btn-bgColor;
+    color: $hero2-btn-textColor;
+  }
+  .h3-btn {
+    width: 130px;
+    height: 40px;
+    align-self: center;
+  }
+}
+
+// hero5
+.hero-5 {
+  margin: auto;
+  width: 100%;
+  background-image: $hero5-bgImg;
+  background-repeat: no-repeat;
+  .bg-purple {
+    position: relative;
+    background: $hero5-bgColor;
+    opacity: 0.93;
+  }
+  .image_section {
+    background: $hero5-imgSection-bgColor;
+  }
+  .testi-h5 {
+    background: $hero5-testi-bgColor;
+  }
+}
+
+// hero 6
+.hero_section-h6 {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 1100px;
+  text-align: center;
+  background: $hero6-bgColor;
+  @include mobile {
+    width: 327px;
+  }
+  .content_section {
+    margin: 8% auto 30%;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    @include mobile {
+      width: 327px;
+    }
+    .title {
+      margin-top: 134px;
+      h2 {
+        color: $hero6-titleColor;
+        @include mobile {
+          font-size: 38px;
+          line-height: 45px;
+          letter-spacing: 0em;
+          text-align: center;
+        }
+      }
+    }
+    .body {
+      margin-top: 22px;
+      margin-bottom: 48px;
+      P {
+        color: $hero6-body-textColor;
+      }
+    }
+    .button_section {
+      button {
+        height: 52px;
+        width: 192px;
+        padding: 16px, 32px, 16px, 32px;
+        background-color: $hero6-btn-bgColor;
+        color: $hero6-btn-textColor;
+      }
+    }
+  }
+  .image_section {
+    @include mobile {
+      margin-top: 59px;
+    }
+    .circle-bg {
+      img {
+        &:nth-child(1) {
+          width: 952px;
+          @include mobile {
+            width: 750px;
+            position: relative;
+            left: -217px;
+          }
+        }
+        &:nth-child(2) {
+          position: relative;
+          width: 551px;
+          top: -671px;
+          @include mobile {
+            width: 352px;
+            top: -457px;
+            left: -16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// hero7
+.flex-btn {
+  @include mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+// hero 8
+.h8-hero_section {
+  @extend .h1-hero_section;
+  margin-top: 181px;
+  padding-left: 134px;
+  gap: 86px;
+  @include mobile {
+    width: 327px;
+    margin-top: 49px;
+    padding-left: 0;
+  }
+}
+.image_section-circle {
+  @extend .image_section;
+  border-radius: 1000px;
+  img {
+    top: -22px !important;
+    left: 56px !important;
+    @include mobile {
+      left: 8px !important;
+    }
+  }
+}
+
+// hero 9
+.hero_section-h9 {
+  .content-section {
+    margin: auto;
+    background: $hero9-content-bgColor;
+    text-align: center;
+    .title {
+      margin: auto;
+      width: 600px;
+      padding-top: 134px;
+      @include mobile {
+        width: 327px;
+      }
+      h2 {
+        color: $hero9-title-color;
+        @include mobile {
+          font-size: 38px;
+          line-height: 45px;
+          letter-spacing: 0em;
+          text-align: center;
+        }
+      }
+    }
+    .body {
+      margin: auto;
+      width: 523px;
+      padding-top: 32px;
+      @include mobile {
+        width: 327px;
+      }
+      p {
+        color: $hero9-body-textColor;
+        @include mobile {
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 27px;
+          letter-spacing: 0em;
+          text-align: center;
+        }
+      }
+    }
+    .button_section {
+      display: flex;
+      flex-direction: row;
+      gap: 22px;
+      justify-content: center;
+      padding-top: 40px;
+      @include mobile {
+        flex-direction: column;
+        margin-left: 32px;
+      }
+      .btn-1 {
+        border: 1px solid $hero9-btn1-borderColor;
+        background: $hero9-btn1-bgColor;
+        color: $hero9-btn1-textColor;
+      }
+      .btn-2 {
+        border: 1px solid $hero9-btn2-borderColor;
+        background: $hero9-btn2-bgColor;
+        color: $hero9-btn2-textColor;
+      }
+    }
+    .light_purple-bg {
+      margin: auto;
+      width: 1146px;
+      height: 340px;
+      background: $hero9-lightPurple-bg;
+      margin-top: 135px;
+      @include mobile {
+        width: 360px;
+        height: 168px;
+      }
+    }
+    &_bottom {
+      margin: auto;
+      width: 1146px;
+      height: 400px;
+      @include mobile {
+        width: 327px;
+      }
+      img {
+        position: relative;
+        top: -71%;
+        left: 10%;
+        @include mobile {
+          top: -36%;
+          left: 0%;
+        }
+        @include mobile {
+          width: 170px;
+        }
+        &:nth-child(2) {
+          @include mobile {
+            width: 146px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.h10-hero_section {
+  @extend .h1-hero_section;
+  vertical-align: center;
+  gap: 155px;
+  background: $hero10-bgColor;
+  .content-section {
+    .title {
+      h2 {
+        color: $hero10-titleColor;
+        @include mobile {
+          text-align: center;
+        }
+      }
+    }
+    .body {
+      p {
+        color: $hero10-body-textColor;
+        @include mobile {
+          text-align: center;
+        }
+      }
+    }
+    .btn-h1-{
+      border: 1px solid $hero10-btn-borderColor;
+      background: $hero10-btn-bgColor;
+      color: $hero10-btn-textColor;
+    }
+  }
+  .image_section {
+    width: 722px;
+    height: 500px;
+    overflow: hidden;
+    @include mobile {
+      width: 327px;
+    }
+    img {
+      top: 12px;
+      left: 100px;
+      @include mobile {
+        left: 7px;
+      }
+    }
+  }
+}
+
+// hero 11 
+.hero-section {
+  margin-bottom: 100px;
+  background: $hero11-bgColor;
+  .hero-section-title {
+    margin: auto;
+    width: 948px;
+    text-align: center;
+    margin-top: 98px;
+    h2{
+      color: $hero11-titleColor;
+    }
+  }
+  .hero-section-body {
+    margin: auto;
+    width: 523px;
+    text-align: center;
+    margin-top: 32px;
+    p{
+      color: $hero11-body-textColor;
+    }
+  }
+  .hero-section-buttons {
+    margin-top: 48px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    .btn {
+      width: 113px;
+      height: 52px;
+    }
+    .btn1-h11{
+      background: $hero11-btn1-bgColor;
+      color: $hero11-btn1-textColor;
+      border: 2px solid $hero11-btn1-borderColor;
+    }
+    .btn2-h11{
+      background: $hero11-btn2-bgColor;
+      color: $hero11-btn2-textColor;
+      border: 2px solid $hero11-btn2-borderColor;
+    }
+  }
+  .hero-section-img {
+    margin-top: 59px;
+    text-align: center;
+  }
+}
+
+// hero 11 dark version
+.hero-section-dark {
+  width: 1440px;
+  margin: auto;
+  background-color: #000000;
+  margin-bottom: 100px;
+  .hero-title-dark {
+    width: 948px;
+    margin: auto;
+    padding-top: 98px;
+    text-align: center;
+    color: #fff;
+  }
+  .hero-body-dark {
+    width: 523px;
+    margin: auto;
+    text-align: center;
+    margin-top: 32px;
+    color: #fff;
+  }
+  .hero-buttons-dark {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 48px;
+    .btn-dark-h11 {
+      background: linear-gradient(90deg, #efecff 0%, #c4b8ff 100%);
+      color: #000000;
+    }
+    .btn-light-h11 {
+      border: 2px solid #fff;
+      color: #fff;
+    }
+  }
+  .hero-img-dark {
+    text-align: center;
+    margin-top: 59px;
+  }
+}
+
+// hero 11 purple version
+.hero-section-purple {
+  width: 1440px;
+  margin: auto;
+  text-align: center;
+  padding-top: 48px;
+  background-color: $Highlight-2;
+  margin-bottom: 100px;
+  .hero-title-purple {
+    width: 948px;
+    margin: auto;
+    color: #fff;
+  }
+  .hero-body-purple {
+    width: 523px;
+    margin: auto;
+    padding-top: 32px;
+    color: #fff;
+  }
+  .hero-section-buttons-purple {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-top: 48px;
+    justify-content: center;
+    .btn-dark-h11 {
+      background: linear-gradient(90deg, #efecff 0%, #c4b8ff 100%);
+      border: none;
+      color: #000000;
+    }
+    .btn-light-h11 {
+      border: 2px solid #fff;
+      color: #fff;
+    }
+  }
+  .hero-img-purple {
+    margin-top: 59px;
+  }
+}
+
+// hero 12 light version
+.hero-section-h12 {
+  margin: auto;
+  width: 1440px;
+  margin-bottom: 100px;
+  background: $hero12-bgColor;
+  .h12-title {
+    margin: auto;
+    width: 948px;
+    height: 138px;
+    text-align: center;
+    margin-top: 117px;
+    h2{
+      color: $hero12-titleColor;
+    }
+  }
+  .h12-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    justify-content: center;
+    margin-top: 48px;
+    .btn1-h12 {
+      width: 113px;
+      background: $hero12-btn1-bgColor;
+      color: $hero12-btn1-textColor;
+      border: 2px solid $hero12-btn1-borderColor;
+    }
+    .btn2-h12 {
+      width: 113px;
+      background: $hero12-btn2-bgColor;
+      color: $hero12-btn2-textColor;
+      border: 2px solid $hero12-btn2-borderColor;
+    }
+  }
+  .h12-hero-img {
+    text-align: center;
+    margin-top: 64px;
+  }
+}
+
+// hero 12 dark
+.hero-section-h12-light {
+  @extend .hero-section-h12;
+  margin-top: 0;
+  padding-top: 117px;
+  background-color: $Headlines;
+  .h12-buttons {
+    .btn-download_gradient {
+      width: 113px;
+    }
+    .btn-light {
+      background-color: #000;
+      color: #fff;
+      border: 2px solid #fff;
+    }
+  }
+}
+
+// hero 12 purple version
+.hero-section-h12-purple {
+  @extend .hero-section-h12-light;
+  background-color: $Highlight-2;
+  .h12-buttons-purple {
+    display: flex;
+    flex-direction: row;
+    margin-top: 48px;
+    justify-content: center;
+    gap: 15px;
+    button {
+      width: 113px;
+      height: 40px;
+    }
+    .btn-dark {
+      background-color: #000;
+    }
+    .btn-light {
+      background-color: transparent;
+      border: 2px solid #fff;
+      color: #fff;
+    }
+  }
+}
