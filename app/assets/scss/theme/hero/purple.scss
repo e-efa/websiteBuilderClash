@@ -1,18 +1,20 @@
-$hero1-bgColor: #ffffff;
-$hero1-textColor: #000000;
+$hero1-bgColor: #7B61FF;
+$hero1-textColor: #fff;
+$hero1-borderColor: #000;
 $hero1-btn-bgColor: #000000;
 $hero1-btn-textColor: #ffffff;
-$hero1-testimonial-bgColor: #faf9ff;
-$hero1-testimonial-textColor: #000000;
-$hero1-testimonial-postTextColor: #000000;
+$hero1-testimonial-borderColor: #fff;
+$hero1-testimonial-bgColor: #7B61FF;
+$hero1-testimonial-textColor: #fff;
+$hero1-testimonial-postTextColor: #FFF;
 $hero1-imgSection-bgColor: linear-gradient(90deg, #efecff 0%, #c4b8ff 100%);
 
-$hero2-bgColor: #ffffff;
-$hero2-titleColor: #000000;
-$hero2-textColor: #000000;
-$hero2-btn-bgColor: #000000;
-$hero2-btn-textColor: #ffffff;
-$hero2-imgSection-bgColor: linear-gradient(90deg, #efecff 0%, #c4b8ff 100%);
+$hero2-bgColor:#7B61FF;
+$hero2-titleColor: #fff;
+$hero2-textColor: #fff;
+$hero2-btn-bgColor: #fff;
+$hero2-btn-textColor: #000;
+$hero2-imgSection-bgColor: #fff;
 
 $hero3-input-borderColor: #000;
 $hero3-input-textColor: #000;
@@ -27,7 +29,7 @@ $hero4-testi-borderColor: #FFFFFF;
 $hero4-testi-bgColor: #7B61FF;
 $hero4-textColor: #fff;
 
-$hero5-bgImg: url('/image/png/hero5/bg-h5.png');
+$hero5-bgImg: url('image/png/hero5/bg-h5.png');
 $hero5-bgColor: #7B61FF;
 $hero5-imgSection-bgColor: transparent;
 $hero5-testi-bgColor: transparent;

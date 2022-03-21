@@ -87,7 +87,7 @@ const dest = {
     scss: destination + 'scss/',
     js: destination + 'js/',
     fonts: destination + 'fonts/',
-    img: destination + 'image/',
+    img: destination + 'css/image/',
     plugins: destination + 'plugins/',
     temp: destination + 'temp/',
     mainPageDist: destination + 'page/',

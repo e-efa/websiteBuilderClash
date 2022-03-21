@@ -7,9 +7,9 @@ $hero1-testimonial-textColor: #000000;
 $hero1-testimonial-postTextColor: #000000;
 $hero1-imgSection-bgColor: linear-gradient(90deg, #efecff 0%, #c4b8ff 100%);
 
-$hero2-bgColor: #ffffff;
-$hero2-titleColor: #000000;
-$hero2-textColor: #000000;
+$hero2-bgColor: linear-gradient(90deg, #efecff 0%, #c4b8ff 100%);
+$hero2-titleColor: #fff;
+$hero2-textColor: #fff;
 $hero2-btn-bgColor: #000000;
 $hero2-btn-textColor: #ffffff;
 $hero2-imgSection-bgColor: linear-gradient(90deg, #efecff 0%, #c4b8ff 100%);
@@ -27,7 +27,7 @@ $hero4-testi-borderColor: #000000;
 $hero4-testi-bgColor: #E6E1FF;
 $hero4-textColor: #000000;
 
-$hero5-bgImg: url('/image/png/hero5/bg-h5.png');
+$hero5-bgImg: url('image/png/hero5/bg-h5.png');
 $hero5-bgColor: #7B61FF;
 $hero5-imgSection-bgColor: transparent;
 $hero5-testi-bgColor: transparent;

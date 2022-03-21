@@ -1,17 +1,27 @@
-// hero4header
+.body {
+  width: 100%;
+  background: $header2-bgColor;
+  padding-bottom: 100px;
+}
+// 4header
 .navigation_section {
   margin: auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 234px;
+  gap: 195px;
   padding-top: 38.04px;
-  padding-left: 147px;
-  background: $gradient-7;
-  @include mobile {
-    width: 390px;
-    padding-left: 0;
-    gap: 230px;
+  width: 280px;
+  padding-left: 0;
+  @include mobile-lg {
+    width: 45.75em;
+  }
+  @include desktops {
+    width: 70.5em;
+  }
+  @include large-desktops-mid {
+    width: 90em;
+    gap: 234px;
   }
   &-dark {
     @extend .navigation_section;
@@ -26,7 +36,14 @@
     background: $Highlight-2;
     color: #fff;
   }
+  .navbar_logo {
+    height: 53.92355728149414px;
+    width: 100%;
+    background: $header2-logoImg;
+    background-repeat: no-repeat;
+  }
   .navbar_menu {
+    display: none;
     .list {
       list-style: none;
       display: flex;
@@ -40,25 +57,31 @@
           line-height: 19px;
           letter-spacing: 0em;
           text-align: right;
-          color: $Headlines;
+          color: $header2-colorText;
         }
       }
     }
-    @include mobile {
-      display: none;
+    @include desktops {
+      display: block;
     }
   }
   .navbar_btn {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    padding-top: 8px;
+    display: none;
+    @include desktops {
+      display: block;
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      padding-top: 8px;
+    }
     .android_app-btn,
     .ioS_app-btn {
       width: 138px;
       height: 40px;
-      border: 2px solid #000;
+      border: 2px solid $header2-btn-borderColor;
       box-sizing: border-box;
+      background: $header2-btn-bgColor;
+      color: $header2-btn-textColor;
       &_light {
         @extend .android_app-btn;
         border: 2px solid #000;
@@ -90,43 +113,46 @@
         width: 105px;
       }
     }
-    @include mobile {
-      display: none;
-    }
   }
   .hamburger {
-    @include mobile {
-      width: 30px;
-      height: 30px;
-      padding-top: 12px;
+    width: 30px;
+    height: 30px;
+    padding-top: 12px;
+    @include desktops {
+      display: none;
     }
     ul {
       padding-inline-start: 0px;
       list-style: none;
     }
     .bar {
-      @include mobile {
-        width: 20px;
-        height: 3px;
-        background-color: #000;
+      width: 20px;
+      height: 4px;
+      border-radius: 20px;
+      background: $header2-barColor;
+      @include desktops {
+        display: none;
       }
       &:nth-child(1) {
-        @include mobile {
-          width: 35px;
-          margin-bottom: 6px;
+        width: 35px;
+        margin-bottom: 8px;
+        @include desktops{
+          display: none;
         }
       }
       &:nth-child(2) {
-        @include mobile {
-          width: 35px;
-          margin-bottom: 6px;
+        width: 35px;
+        margin-bottom: 8px;
+        @include desktops {
+          display: none;
         }
       }
       &:nth-child(3) {
-        @include mobile {
-          position: relative;
-          width: 20px;
-          left: 13px;
+        position: relative;
+        width: 20px;
+        left: 13px;
+        @include desktops {
+          display: none;
         }
       }
     }
@@ -134,29 +160,42 @@
       background-color: #fff !important;
     }
   }
-  &-no_bg {
-    @extend .navigation_section;
-    background: transparent;
-  }
 }
 
 // hero1
 .h1-navigation_section {
   display: flex;
   flex-direction: row;
-  padding-left: 147px;
-  padding-top: 38.04px;
-  gap: 80%;
-  @include mobile {
-    width: 343px;
-    padding-left: 26px;
-    padding-top: 40.03px;
+  justify-content: center;
+  width: 280px;
+  margin: auto;
+  justify-content: space-around;
+  padding-top: 40.03px;
+  gap: 70%;
+  @include mobile-lg {
+    width: 48.75em;
+  }
+  @include desktops {
+    width: 70.5em;
+  }
+  @include large-desktops-mid {
+    width: 90em;
+    padding-top: 2.3775em;
+    background: $header1-bgColor;
   }
   .nav-logo {
     align-self: flex-start;
+    background-image: $header1-logoImg;
+    background-repeat: no-repeat;
+    height: 53.92px;
+    width: 53.91px;
   }
   .nav-menu {
     align-self: center;
+    background-image: $header1-hamburgerImg;
+    background-repeat: no-repeat;
+    height: 32px;
+    width: 32px;
   }
 }
 
@@ -169,13 +208,16 @@
   }
 }
 
-// hero 11 light
-.hero-navigation-lightmode {
-  width: 1440px;
+// header 4 
+.header4-section {
+  width: 280px;
   margin: auto;
   display: flex;
   flex-direction: row;
   gap: 24%;
+  @include large-desktops-mid{
+    width: 90em;
+  }
   .hero-nav-menu-lightmode {
     .hero-nav-list-lightmode {
       list-style: none;
@@ -198,69 +240,10 @@
   }
 }
 
-// hero 11 dark
-.hero-navigation-darkMode {
-  @extend .hero-navigation-lightmode;
-  padding-top: 55px;
-  background-color: #000;
-  .hero-nav-menu-darkMode {
-    .hero-nav-list-darkMode {
-      list-style: none;
-      display: flex;
-      flex-direction: row;
-      gap: 48px;
-      .hero-nav-item-darkMode {
-        a {
-          color: #fff;
-        }
-      }
-    }
-  }
-  .hero-nav-buttons-darkMode {
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-    .btn-light {
-      width: 97px;
-      height: 40px;
-      background: #000;
-      border: 2px solid #fff;
-      color: #fff;
-    }
-  }
-}
+
 
 // hero 11 purple
-.hero-navigation-purple {
-  @extend .hero-navigation-lightmode;
-  background-color: $Highlight-2;
-  padding-top: 55px;
-  .hero-nav-menu-purple {
-    .hero-nav-list-purple {
-      list-style: none;
-      display: flex;
-      flex-direction: row;
-      gap: 48px;
-      .hero-nav-item-purple {
-        a {
-          color: #fff;
-        }
-      }
-    }
-  }
-  .hero-nav-buttons-purple {
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-    .btn-light {
-      width: 97px;
-      height: 40px;
-      background-color: $Highlight-2;
-      border: 2px solid #fff;
-      color: #fff;
-    }
-  }
-}
+
 
 // hero 12 light version
 .hero_navigation {

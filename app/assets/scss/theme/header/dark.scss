@@ -1,2 +1,14 @@
+$header1-bgColor: #000;
+$header1-logoImg: url("image/svg/navbar/logo-dark.svg");
+$header1-hamburgerImg: url("image/svg/navbar/hamburger-light.svg");
+
+
+$header2-bgColor: #000;
+$header2-logoImg: url('image/svg/navbar/logo-dark.svg');
+$header2-colorText: #fff;
+$header2-btn-borderColor: #fff;
+$header2-btn-bgColor: #000;
+$header2-btn-textColor: #fff;
+$header2-barColor: #fff;
 
 @import '../../themed/header-style.scss';

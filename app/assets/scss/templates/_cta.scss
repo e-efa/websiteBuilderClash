@@ -2,7 +2,7 @@
   width: 71.625em;
   height: 487px;
   margin: auto;
-  background: $gradient-7;
+  background: $cta-bgColor;
   margin-top: 90px;
   margin-bottom: 100px;
   padding-top: 90px;
@@ -18,7 +18,7 @@
         letter-spacing: 1px;
         font-weight: 400;
         text-align: center;
-        color: $background-color-purple;
+        color: $cta-subTitleColor;
         margin-bottom: 16px;
       }
     }
@@ -32,6 +32,7 @@
         line-height: 59px;
         letter-spacing: 0em;
         text-align: center;
+        color: $cta-titleColor;
       }
     }
     .body {
@@ -39,6 +40,9 @@
       margin: auto;
       text-align: center;
       margin-bottom: 32px;
+      P{
+        color: $cta-bodyColor;
+      }
     }
   }
   &-button {
@@ -50,8 +54,8 @@
       top: 436px;
       border: none;
       padding: 16px, 32px, 16px, 32px;
-      background: $background-color-dark;
-      color: #fff;
+      background: $cta-btnBgColor;
+      color: $cta-btnTextColor;
     }
   }
   .background-img {
@@ -79,7 +83,7 @@
   justify-content: center;
   margin-bottom: 100px;
   gap: 8em;
-
+  background: $cta2-bgColor;
   .cta-main-content-section {
     align-self: center;
     .top-button {
@@ -87,11 +91,11 @@
       button {
         height: 34px;
         width: 87px;
-        border: 1px solid $background-color-purple;
+        border: 1px solid $cta2-topBtn-bgColor;
         border-radius: 104px;
         padding: 8px, 24px, 8px, 24px;
-        background: $background-color-purple;
-        color: #fff;
+        background: $cta2-topBtn-bgColor;
+        color: $cta2-topBtn-TextColor;
       }
     }
     .title {
@@ -101,6 +105,7 @@
         line-height: 49px;
         letter-spacing: 0em;
         text-align: left;
+        color: $cta2-textColor;
       }
     }
     .down-btn {
@@ -112,8 +117,8 @@
         top: 204px;
         border: none;
         padding: 16px, 32px, 16px, 32px;
-        background: $background-color-dark;
-        color: #fff;
+        background: $cta2-bottomBtn-bgColor;
+        color: $cta2-bottomBtn-TextColor;
       }
     }
   }

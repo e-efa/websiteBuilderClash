@@ -1,0 +1,14 @@
+$header1-bgColor: linear-gradient(90deg, #EFECFF 0%, #C4B8FF 100%);
+$header1-logoImg: url('image/svg/navbar/logo.svg');
+$header1-hamburgerImg: url("image/svg/navbar/hamburger-black.svg");
+
+
+$header2-bgColor: linear-gradient(90deg, #EFECFF 0%, #C4B8FF 100%);
+$header2-logoImg: url('image/svg/navbar/logo.svg');
+$header2-colorText: #000;
+$header2-btn-borderColor: #000;
+$header2-btn-bgColor: transparent;
+$header2-btn-textColor: #000;
+$header2-barColor: #000;
+
+@import '../../themed/header-style.scss';

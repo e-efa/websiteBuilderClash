@@ -1,40 +1,71 @@
-@mixin mobile-xs {
-  @media(max-width:420px) {
+/*=== Media Query ===*/
+
+@mixin brk-point($mw) {
+  @media (min-width: $mw) {
     @content;
   }
 }
-
-@mixin mobile-md {
-  @media(max-width:480px) {
+@mixin mobile-xs {
+  @media (min-width: $screen-xxs) {
     @content;
   }
 }
 
 @mixin mobile {
-  @media(max-width:575px) {
+  @media (min-width: $screen-xs) {
+    @content;
+  }
+}
+
+@mixin mobile-lg {
+  @media (min-width: $screen-sm) {
+    @content;
+  }
+}
+@mixin mobile-lg-only {
+  @media (min-width: $screen-sm) and (max-width: $screen-md) {
     @content;
   }
 }
 
 @mixin tablet {
-  @media(max-width:767px) {
+  @media (min-width: $screen-md) {
+    @content;      
+  }
+}
+
+@mixin desktops {
+  @media (min-width: $screen-lg) {
+    @content;
+  }
+}
+@mixin till-desktop {
+  @media (min-width: $screen-xxs) and (max-width: $screen-lg) {
     @content;
   }
 }
 
-@mixin desktop {
-  @media(max-width:991px) {
+@mixin large-desktops {
+  @media (min-width: $screen-xl) {
     @content;
   }
 }
 
-@mixin desktop-lg {
-  @media(max-width:1200px) {
+@mixin large-desktops-mid {
+  @media (min-width: $screen-xxl) {
     @content;
   }
 }
 
-@mixin size($size) {
-  width: $size;
-  height: $size;
+@mixin extra-large-desktops {
+  @media (min-width: $screen-xxxl) {
+    @content;
+  }
+}
+
+@mixin section-padding {
+  padding: 50px 0;
+  @include mobile-lg {
+    padding: 120px 0;
+  }
 }
