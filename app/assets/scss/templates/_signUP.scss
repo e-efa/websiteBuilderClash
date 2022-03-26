@@ -23,7 +23,10 @@
     background: $signUp-form-bgColor;
     &-title {
       margin: auto;
-      width: 24.4375em;
+      width: 327px;
+      @include mobile-lg {
+        width: 24.4375em;
+      }
       h2 {
         font-size: 32px;
         line-height: 38px;
@@ -39,7 +42,7 @@
       text-align: center;
       margin-top: 2em;
       button {
-        width: 327px;
+        width: 298px;
         height: 3.4375em;
         @include mobile-lg {
           width: 25.625em;
@@ -49,7 +52,10 @@
         color: $signUp-btn-textColor;
         img {
           position: relative;
-          right: 5.25em;
+          right: 2.25em;
+          @include mobile-lg {
+            right: 5.25em;
+          }
         }
       }
     }
@@ -57,13 +63,16 @@
       text-align: center;
       margin-top: 1.5em;
       h5 {
-        padding-left: 4.5em;
+        padding-left: 1em;
         text-align: left;
         margin-bottom: 9px;
         color: $signUp-TextColor;
+        @include mobile-lg {
+          padding-left: 4.5em;
+        }
       }
       input {
-        width: 327px;
+        width: 298px;
         height: 3.4375em;
         @include mobile-lg {
           width: 25.625em;
@@ -75,7 +84,7 @@
       text-align: center;
       margin-top: 1.5em;
       button {
-        width: 327px;
+        width: 298px;
         height: 3.4375em;
         @include mobile-lg {
           width: 25.625em;
@@ -103,10 +112,19 @@
     }
   }
   .signUp-img-section {
+    display: none;
+    @include desktops {
+      display: block;
+    }
     img {
       position: relative;
       top: -11.8125em;
-      left: 15.5em;
+      @include desktops {
+        left: 3.5em;
+      }
+      @include large-desktops-mid {
+        left: 15.5em;
+      }
     }
   }
 }
