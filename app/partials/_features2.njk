@@ -8,48 +8,50 @@
 {% set buttonTitle="Primary"%}
 
 <!-- img path -->
-{% set featureImgPath="/image/png/hero4/clash-hero-img.png"%}
-{% set serviceIconPath1="/image/svg/features/shopping-cart.svg"%}
-{% set serviceIconPath2="/image/svg/features/meter.svg"%}
-{% set arrowIcon="/image/svg/features/arrow.svg"%}
+{% set featureImgPath="css/image/png/hero4/clash-hero-img.png"%}
+{% set serviceIconPath1="css/image/svg/features/shopping-cart.svg"%}
+{% set serviceIconPath2="css/image/svg/features/meter.svg"%}
+{% set arrowIcon="css/image/svg/features/arrow.svg"%}
 <!-- features 2 -->
-<div class="features-section">
-    <div class="feature-img">
-        <img src="{{featureImgPath}}" alt="">
-    </div>
-    <div class="feature-content">
-        <div class="feature-content-title">
-            <h2>{{title}}</h2>
+<section class="body">
+    <div class="features-section">
+        <div class="feature-img">
+            <img src="{{featureImgPath}}" alt="">
         </div>
-        <div class="feature-content-body">
-            <p>{{bodyText}}</p>
-        </div>
-        <div class="feature-content-service-card">
-            <div class="feature-content-service-card-item">
-                <div class="feature-content-service-card-item-icon">
-                    <img src="{{serviceIconPath1}}" alt="shoppingCart">
+        <div class="feature-content">
+            <div class="feature-content-title">
+                <h2>{{title}}</h2>
+            </div>
+            <div class="feature-content-body">
+                <p>{{bodyText}}</p>
+            </div>
+            <div class="feature-content-service-card">
+                <div class="feature-content-service-card-item">
+                    <div class="feature-content-service-card-item-icon">
+                        <img src="{{serviceIconPath1}}" alt="shoppingCart">
+                    </div>
+                    <div class="feature-content-service-card-item-title">
+                        <h5>{{serviceTitle1}}</h5>
+                    </div>
+                    <div class="feature-content-service-card-item-body">
+                        <p>{{serviceBody1}}</p>
+                    </div>
                 </div>
-                <div class="feature-content-service-card-item-title">
-                    <h5>{{serviceTitle1}}</h5>
-                </div>
-                <div class="feature-content-service-card-item-body">
-                    <p>{{serviceBody1}}</p>
+                <div class="feature-content-service-card-item">
+                    <div class="feature-content-service-card-item-icon">
+                        <img src="{{serviceIconPath2}}" alt="meter">
+                    </div>
+                    <div class="feature-content-service-card-item-title">
+                        <h5>{{serviceTitle2}}</h5>
+                    </div>
+                    <div class="feature-content-service-card-item-body">
+                        <p>{{serviceBody2}}</p>
+                    </div>
                 </div>
             </div>
-            <div class="feature-content-service-card-item">
-                <div class="feature-content-service-card-item-icon">
-                    <img src="{{serviceIconPath2}}" alt="meter">
-                </div>
-                <div class="feature-content-service-card-item-title">
-                    <h5>{{serviceTitle2}}</h5>
-                </div>
-                <div class="feature-content-service-card-item-body">
-                    <p>{{serviceBody2}}</p>
-                </div>
+            <div class="feature-content-button">
+                <button>{{buttonTitle}} <img src="{{arrowIcon}}" alt="arrow"></button>
             </div>
         </div>
-        <div class="feature-content-button">
-            <button>{{buttonTitle}} <img src="{{arrowIcon}}" alt="arrow"></button>
-        </div>
     </div>
-</div>
+</section>

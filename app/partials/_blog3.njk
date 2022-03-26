@@ -5,57 +5,59 @@
 {% set subText="Read more"%}
 
 <!-- img path -->
-{% set imgPath1="/image/png/blog/buildingGradient.png"%}
-{% set imgPath2="/image/png/blog/leafGradient.png"%}
-{% set imgPath3="/image/png/blog/coding.png"%}
-{% set logo="/image/svg/blog/logo-bg-purple.svg"%}
-{% set arrow="/image/svg/blog/arrow-right.svg"%}
+{% set imgPath1="css/image/png/blog/buildingGradient.png"%}
+{% set imgPath2="css/image/png/blog/leafGradient.png"%}
+{% set imgPath3="css/image/png/blog/coding.png"%}
+{% set logo="css/image/svg/blog/logo-bg-purple.svg"%}
+{% set arrow="css/image/svg/blog/arrow-right.svg"%}
 
-<div class="blog-section">
-    <div class="blog-section-title-track">
-        <div class="title">
-            <h2>{{title}}</h2>
+<section class="body">
+    <div class="blog-section">
+        <div class="blog-section-title-track">
+            <div class="title">
+                <h2>{{title}}</h2>
+            </div>
+            <div class="title-button">
+                <button>More articles <img src="{{arrow}}" alt=""></button>
+            </div>
         </div>
-        <div class="title-button">
-            <button>More articles <img src="{{arrow}}" alt=""></button>
-        </div>
-    </div>
-    <div class="blog-section-card-list">
-        <div class="blog-section-card-list-item wide-card">
-            <div class="blog-section-card-list-item-img">
-                <img src="{{imgPath1}}" alt="">
-                <div class="wide-brand-icon">
-                    <img src="{{logo}}" alt="">
+        <div class="blog-section-card-list">
+            <div class="blog-section-card-list-item wide-card">
+                <div class="blog-section-card-list-item-img">
+                    <img src="{{imgPath1}}" alt="">
+                    <div class="wide-brand-icon">
+                        <img src="{{logo}}" alt="">
+                    </div>
+                </div>
+                <div class="blog-section-card-list-item-title">
+                    <h4 class="wide-area">{{cardTitle}}</h4>
+                </div>
+                <div class="blog-section-card-list-item-body">
+                    <p class="wide-area">{{cardBody}}</p>
+                </div>
+                <div class="wide-sub-text">
+                    <span>{{subText}}</span>
+                    <img src="{{arrow}}" alt="">
                 </div>
             </div>
-            <div class="blog-section-card-list-item-title">
-                <h4 class="wide-area">{{cardTitle}}</h4>
-            </div>
-            <div class="blog-section-card-list-item-body">
-                <p class="wide-area">{{cardBody}}</p>
-            </div>
-            <div class="wide-sub-text">
-                <span>{{subText}}</span>
-                <img src="{{arrow}}" alt="">
-            </div>
-        </div>
-        <div class="blog-section-card-list-item wide-card">
-            <div class="blog-section-card-list-item-img">
-                <img src="{{imgPath2}}" alt="">
-                <div class="wide-brand-icon">
-                    <img src="{{logo}}" alt="">
+            <div class="blog-section-card-list-item wide-card">
+                <div class="blog-section-card-list-item-img">
+                    <img src="{{imgPath2}}" alt="">
+                    <div class="wide-brand-icon">
+                        <img src="{{logo}}" alt="">
+                    </div>
                 </div>
-            </div>
-            <div class="blog-section-card-list-item-title wide-area">
-                <h4 class="wide-area">{{cardTitle}}</h4>
-            </div>
-            <div class="blog-section-card-list-item-body wide-area">
-                <p class="wide-area">{{cardBody}}</p>
-            </div>
-            <div class="wide-sub-text">
-                <span>{{subText}}</span>
-                <img src="{{arrow}}" alt="">
+                <div class="blog-section-card-list-item-title wide-area">
+                    <h4 class="wide-area">{{cardTitle}}</h4>
+                </div>
+                <div class="blog-section-card-list-item-body wide-area">
+                    <p class="wide-area">{{cardBody}}</p>
+                </div>
+                <div class="wide-sub-text">
+                    <span>{{subText}}</span>
+                    <img src="{{arrow}}" alt="">
+                </div>
             </div>
         </div>
     </div>
-</div>
+</section>

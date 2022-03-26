@@ -4,177 +4,270 @@
 }
 // hero4
 .hero_section {
-  padding-top: 90px;
-  padding-left: 147px;
+  margin: auto;
+  width: 280px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
-  gap: 190px;
+  gap: 48px;
   background: $hero4-bgColor;
-  margin-bottom: 30px;
-  @include mobile {
-    width: 390px;
-    flex-direction: column;
-    padding-left: 35px;
-    padding-right: 12px;
-    gap: 48px;
+  @include mobile-lg {
+    width: 46.75em;
+  }
+  @include desktops {
+    width: 70.5em;
+    flex-direction: row;
+    gap: 89px;
+  }
+  @include large-desktops-mid {
+    width: 90em;
+    gap: 200px;
   }
   .hero_section-content {
-    @include mobile {
-      order: 2;
+    order: 2;
+    @include mobile-lg {
+      width: 46.75em;
+    }
+    @include desktops {
+      order: 1;
+      width: 531px;
+    }
+    @include large-desktops-mid {
+      padding-top: 100px;
     }
     .title {
-      padding-top: 93px;
-      width: 600px;
-      @include mobile {
-        padding-top: 0;
-        width: 327px;
-        text-align: center;
+      width: 327px;
+      @include mobile-lg {
+        margin: auto;
+        width: 29.75em;
+        padding-bottom: 33px;
       }
-      h2 {
-        color: $hero4-titleColor;
-        @include mobile {
-          font-size: 38px;
-          line-height: 45px;
-          letter-spacing: 0em;
-          text-align: left;
-        }
+      @include desktops {
+        width: 531px;
+        padding-bottom: 21px;
       }
     }
-    .body {
-      margin-top: 22px;
-      margin-bottom: 42px;
-      width: 523px;
-      @include mobile {
-        width: 327px;
-        text-align: center;
-      }
-      p {
-        color: $hero4-body-textColor;
-        @include mobile {
-          font-size: 18px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: 27px;
-          letter-spacing: 0em;
-          text-align: left;
-        }
-      }
-    }
-    .button {
-      button {
-        height: 52px;
-        width: 192px;
-        border-radius: 0px;
-        padding: 16px, 32px, 16px, 32px;
-        background: $hero4-btn-bgColor;
-        color: $hero4-btn-textColor;
-        @include mobile {
-          width: 327px;
-        }
-      }
-    }
-    .sub-text {
-      margin-top: 13px;
-      span {
-        font-size: 13px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 17px;
+    h2 {
+      color: $hero4-titleColor;
+      font-size: 38px;
+      line-height: 45px;
+      letter-spacing: 0em;
+      text-align: left;
+      @include mobile-lg {
+        font-size: 56px;
+        line-height: 66px;
         letter-spacing: 0em;
         text-align: left;
-        color: $hero4-span-textColor;
-      }
-      @include mobile {
-        display: none;
       }
     }
-    .testimonial-section {
+  }
+  .body {
+    margin-top: 24px;
+    margin-bottom: 32px;
+    width: 280px;
+    @include mobile-lg {
+      margin: auto;
+      width: 29.75em;
+      padding-bottom: 91px;
+    }
+    @include desktops {
+      width: 523px;
+      margin: auto;
+      padding-bottom: 42px;
+    }
+    p {
+      color: $hero4-body-textColor;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 27px;
+      text-align: left;
+      @include mobile-lg {
+        text-align: center;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 27px;
+      }
+      @include desktops {
+        text-align: left;
+      }
+    }
+  }
+  .button {
+    @include mobile-lg {
+      margin: auto;
+      width: 29.75em;
+      text-align: center;
+      margin-bottom: 105px;
+    }
+    @include desktops {
+      width: 192px;
+      text-align: left;
+      margin-left: 0;
+      margin-bottom: 0;
+    }
+    button {
+      height: 52px;
+      width: 280px;
+      border-radius: 0px;
+      background: $hero4-btn-bgColor;
+      color: $hero4-btn-textColor;
+      @include mobile-lg {
+        width: 29.75em;
+      }
+      @include desktops {
+        width: 192px;
+      }
+    }
+  }
+  .sub-text {
+    display: none;
+    margin-top: 13px;
+    @include desktops {
+      display: block;
+    }
+    span {
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 17px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: $hero4-span-textColor;
+    }
+  }
+  .testimonial-section {
+    margin-top: 55px;
+    width: 280px;
+    height: 242px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 28px;
+    border: 2px solid $hero4-testi-borderColor;
+    box-sizing: border-box;
+    background: $hero4-testi-bgColor;
+    @include mobile-lg {
+      margin: auto;
+      width: 29.75em;
+    }
+    @include desktops {
       margin-top: 55px;
       width: 531px;
       height: 139px;
-      display: flex;
       flex-direction: row;
-      gap: 28px;
-      border: 2px solid $hero4-testi-borderColor;
-      box-sizing: border-box;
       padding-left: 29px;
-      padding-top: 21px;
-      background: $hero4-testi-bgColor;
-      @include mobile {
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        width: 327px;
-        height: 242px;
-        border: none;
-        padding-bottom: 80px;
-        padding-left: 10px;
+      padding-top: 20px;
+    }
+    .person-face {
+      width: 280px;
+      text-align: center;
+      @include mobile-lg {
+        width: 29.75em;
       }
-      .customer_content {
-        .details {
-          p {
-            color: $hero4-textColor;
-          }
-        }
-        .position {
-          margin-top: 10px;
-          span {
-            font-size: 13px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 17px;
-            letter-spacing: 0em;
+      @include desktops {
+        width: 64px;
+        align-self: center;
+      }
+    }
+    .customer_content {
+      padding-left: 16px;
+      padding-right: 16px;
+      align-self: center;
+      @include desktops {
+        padding-left: 0;
+        padding-right: 0;
+        align-self: flex-start;
+      }
+      .details {
+        p {
+          color: $hero4-textColor;
+          text-align: center;
+          @include desktops {
             text-align: left;
-            color: $hero4-textColor;
           }
         }
       }
-      &-light {
-        @extend .testimonial-section;
-        border: 2px solid #fff;
-        @include mobile {
-          border: none;
+      .position {
+        margin-top: 10px;
+        text-align: center;
+        @include desktops {
+          text-align: left;
+          padding-left: 2px;
+        }
+        span {
+          font-size: 13px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 17px;
+          letter-spacing: 0em;
+          color: $hero4-textColor;
+          text-align: center;
+          @include desktops {
+            text-align: left;
+          }
         }
       }
-      &-no_border {
-        @extend .testimonial-section;
+    }
+    &-light {
+      @extend .testimonial-section;
+      border: 2px solid #fff;
+      @include mobile {
         border: none;
       }
     }
-    .circle {
-      position: relative;
-      top: -85px;
-      right: 47px;
-      z-index: 9999;
-      &-light {
-        @extend .circle;
-        z-index: 999;
-      }
-      @include mobile {
-        display: none;
-      }
+    &-no_border {
+      @extend .testimonial-section;
+      border: none;
     }
   }
-  &-dark {
-    @extend .hero_section;
-    background: #000000;
-    color: $Background;
+  .circle {
+    display: none;
+    position: relative;
+    top: -85px;
+    right: 47px;
+    z-index: 9999;
+    @include mobile-lg {
+      display: block;
+      right: -30px;
+    }
+    @include desktops {
+      right: 40px;
+    }
+    &-light {
+      @extend .circle;
+      z-index: 999;
+    }
   }
-  &-light {
-    @extend .hero_section;
-    background: $Background;
+}
+// &-dark {
+//   @extend .hero_section;
+//   background: #000000;
+//   color: $Background;
+// }
+// &-light {
+//   @extend .hero_section;
+//   background: $Background;
+// }
+// &-purple {
+//   @extend .hero_section;
+//   background: $Highlight-2;
+// }
+.hero_section-img {
+  order: 1;
+  @include desktops {
+    order: 2;
   }
-  &-purple {
-    @extend .hero_section;
-    background: $Highlight-2;
-  }
-  .hero_section-img {
-    img {
-      @include mobile {
-        margin: auto;
-        width: 327px;
-      }
+  img {
+    width: 280px;
+    @include mobile-lg {
+      width: 46.75em;
+    }
+    @include desktops {
+      width: 420px;
+    }
+    @include large-desktops-mid {
+      width: 500px;
     }
   }
 }
@@ -636,34 +729,45 @@
 .h3-input {
   display: flex;
   flex-direction: column;
-  width: 401px;
-  height: 55px;
-  gap: 189px;
-  border: 2px solid $hero3-input-borderColor;
+  gap: 16px;
   margin-bottom: 76px;
-  @include mobile {
-    width: 327px;
-    gap: 117px;
+  @include desktops {
+    margin-bottom: 0;
   }
-  span {
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 19px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: $hero3-input-textColor;
-    opacity: 0.3;
-    align-self: center;
-    padding-left: 28px;
+  input {
+    width: 280px;
+    height: 55px;
+    border-radius: 8px;
+    border: 2px solid $hero3-input-borderColor;
+    @include mobile-lg {
+      height: 76px;
+      width: 586px;
+    }
+    @include desktops {
+      border-radius: 0px;
+    }
   }
-  button {
-    height: 52px;
-    width: 192px;
-    border-radius: 0px;
-    padding: 16px, 32px, 16px, 32px;
-    background: $hero2-btn-bgColor;
-    color: $hero2-btn-textColor;
+  input[type="text" i] {
+    padding: 13px 25px;
+    @include mobile-lg {
+      font-size: 27px;
+      text-align: center;
+    }
+    @include desktops {
+      text-align: left;
+      font-size: 17px;
+      width: 530px;
+    }
+  }
+  .hero3-btn {
+    border-radius: 8px !important;
+    @include desktops {
+      border-radius: 0 !important;
+      width: 8em !important;
+      position: relative;
+      right: -392px;
+      top: -79px;
+    }
   }
   .h3-btn {
     width: 130px;
@@ -696,73 +800,96 @@
   display: flex;
   flex-direction: column;
   margin: auto;
-  width: 1100px;
+  width: 327px;
   text-align: center;
   background: $hero6-bgColor;
-  @include mobile {
-    width: 327px;
+  @include mobile-lg {
+    width: 668px;
   }
   .content_section {
-    margin: 8% auto 30%;
-    width: 600px;
+    width: 327px;
     display: flex;
     flex-direction: column;
     text-align: center;
-    @include mobile {
-      width: 327px;
+    @include mobile-lg {
+      margin: auto;
+      width: 600px;
     }
     .title {
-      margin-top: 134px;
+      margin-top: 49px;
+      width: 327px;
+      @include mobile-lg {
+        height: 69px;
+        width: 600px;
+      }
       h2 {
         color: $hero6-titleColor;
-        @include mobile {
-          font-size: 38px;
-          line-height: 45px;
+        font-size: 38px;
+        line-height: 45px;
+        text-align: center;
+        @include mobile-lg {
+          font-size: 56px;
+          line-height: 66px;
           letter-spacing: 0em;
           text-align: center;
         }
       }
     }
     .body {
-      margin-top: 22px;
-      margin-bottom: 48px;
+      margin-top: 24px;
+      margin-bottom: 32px;
+      @include mobile-lg {
+        margin: auto;
+        margin-top: 22px;
+        margin-bottom: 48px;
+        width: 523px;
+      }
       P {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 27px;
+        text-align: center;
         color: $hero6-body-textColor;
       }
     }
     .button_section {
       button {
         height: 52px;
-        width: 192px;
-        padding: 16px, 32px, 16px, 32px;
+        width: 327px;
         background-color: $hero6-btn-bgColor;
         color: $hero6-btn-textColor;
+        @include mobile-lg {
+          height: 52px;
+          width: 192px;
+        }
       }
     }
   }
   .image_section {
-    @include mobile {
-      margin-top: 59px;
-    }
     .circle-bg {
+      width: 327px;
+      height: 450px;
+      @include mobile-lg {
+        margin: auto;
+        width: 600px;
+      }
       img {
         &:nth-child(1) {
-          width: 952px;
-          @include mobile {
-            width: 750px;
-            position: relative;
-            left: -217px;
+          position: relative;
+          width: 705px;
+          left: -187px;
+          top: 167px;
+          border-radius: 0px;
+          @include mobile-lg {
+            left: -63px;
           }
         }
         &:nth-child(2) {
           position: relative;
-          width: 551px;
-          top: -671px;
-          @include mobile {
-            width: 352px;
-            top: -457px;
-            left: -16px;
-          }
+          top: -254px;
+          left: 5px;
+          width: 312.42215px;
         }
       }
     }
@@ -771,22 +898,29 @@
 
 // hero7
 .flex-btn {
-  @include mobile {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  @include mobile-lg {
+    flex-direction: row;
+    gap: 12px;
+  }
+  .btn {
+    @include desktops {
+      width: 10em !important;
+    }
   }
 }
 // hero 8
 .h8-hero_section {
   @extend .h1-hero_section;
-  margin-top: 181px;
-  padding-left: 134px;
-  gap: 86px;
-  @include mobile {
-    width: 327px;
-    margin-top: 49px;
-    padding-left: 0;
+  // width: 327px;
+  margin-top: 49px;
+  padding-left: 0;
+  @include desktops {
+    margin-top: 181px;
+    padding-left: 134px;
+    gap: 86px;
   }
 }
 .image_section-circle {
@@ -794,9 +928,9 @@
   border-radius: 1000px;
   img {
     top: -22px !important;
-    left: 56px !important;
-    @include mobile {
-      left: 8px !important;
+    left: 8px !important;
+    @include mobile-lg {
+      // left: 56px !important;
     }
   }
 }
@@ -804,21 +938,27 @@
 // hero 9
 .hero_section-h9 {
   .content-section {
+    width: 100%;
     margin: auto;
     background: $hero9-content-bgColor;
+    margin-top: 49px;
     text-align: center;
     .title {
       margin: auto;
-      width: 600px;
-      padding-top: 134px;
-      @include mobile {
-        width: 327px;
+      width: 327px;
+      margin-bottom: 24px;
+      @include mobile-lg {
+        width: 600px;
       }
       h2 {
         color: $hero9-title-color;
-        @include mobile {
-          font-size: 38px;
-          line-height: 45px;
+        font-size: 38px;
+        line-height: 45px;
+        letter-spacing: 0em;
+        text-align: center;
+        @include mobile-lg {
+          font-size: 56px;
+          line-height: 66px;
           letter-spacing: 0em;
           text-align: center;
         }
@@ -826,76 +966,101 @@
     }
     .body {
       margin: auto;
-      width: 523px;
-      padding-top: 32px;
-      @include mobile {
-        width: 327px;
+      width: 327px;
+      padding-bottom: 32px;
+      @include mobile-lg {
+        width: 523px;
+        padding-bottom: 40px;
       }
       p {
         color: $hero9-body-textColor;
-        @include mobile {
-          font-size: 18px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: 27px;
-          letter-spacing: 0em;
-          text-align: center;
-        }
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 27px;
+        text-align: center;
       }
     }
     .button_section {
+      width: 329px;
+      margin: auto;
       display: flex;
-      flex-direction: row;
-      gap: 22px;
+      flex-direction: column;
+      gap: 8px;
       justify-content: center;
-      padding-top: 40px;
-      @include mobile {
-        flex-direction: column;
-        margin-left: 32px;
+      @include mobile-lg {
+        flex-direction: row;
+        gap: 16px;
       }
       .btn-1 {
+        width: 327px;
         border: 1px solid $hero9-btn1-borderColor;
         background: $hero9-btn1-bgColor;
         color: $hero9-btn1-textColor;
+        @include mobile-lg {
+          width: 173px;
+          height: 52px;
+        }
       }
       .btn-2 {
+        width: 327px;
         border: 1px solid $hero9-btn2-borderColor;
         background: $hero9-btn2-bgColor;
         color: $hero9-btn2-textColor;
+        @include mobile-lg {
+          width: 183px;
+          height: 52px;
+        }
       }
     }
     .light_purple-bg {
       margin: auto;
-      width: 1146px;
-      height: 340px;
+      height: 194.03143310546875px;
+      width: 327px;
       background: $hero9-lightPurple-bg;
-      margin-top: 135px;
-      @include mobile {
-        width: 360px;
-        height: 168px;
+      margin-top: 48px;
+      @include mobile-lg {
+        margin-top: 95px;
+        height: 230.031433px;
+        width: 600px;
+      }
+      @include desktops {
+        height: 340px;
+        width: 1146px;
       }
     }
     &_bottom {
       margin: auto;
-      width: 1146px;
-      height: 400px;
-      @include mobile {
-        width: 327px;
+      width: 327px;
+      height: 40px;
+      @include mobile-lg {
+        width: 600px;
+        height: 200px;
+      }
+      @include desktops {
+        width: 1146px;
+        height: 301px;
       }
       img {
         position: relative;
-        top: -71%;
-        left: 10%;
-        @include mobile {
-          top: -36%;
-          left: 0%;
+        top: -386%;
+        left: 4%;
+        width: 158.83px;
+        @include mobile-lg {
+          top: -99%;
+          left: 15%;
+          width: 237.83px;
         }
-        @include mobile {
-          width: 170px;
+        @include desktops {
+          width: 431px;
         }
         &:nth-child(2) {
-          @include mobile {
-            width: 146px;
+          width: 133.86px;
+          @include mobile-lg {
+            width: 202.86px;
+          }
+          @include desktops {
+            width: 364px;
           }
         }
       }
@@ -912,17 +1077,11 @@
     .title {
       h2 {
         color: $hero10-titleColor;
-        @include mobile {
-          text-align: center;
-        }
       }
     }
     .body {
       p {
         color: $hero10-body-textColor;
-        @include mobile {
-          text-align: center;
-        }
       }
     }
     .btn-h1- {
@@ -932,17 +1091,17 @@
     }
   }
   .image_section {
-    width: 722px;
+    width: 327px;
     height: 500px;
     overflow: hidden;
-    @include mobile {
-      width: 327px;
+    @include mobile-lg {
+      width: 640px;
     }
     img {
       top: 12px;
-      left: 100px;
-      @include mobile {
-        left: 7px;
+      left: 7px;
+      @include mobile-lg {
+        left: 100px;
       }
     }
   }
@@ -950,22 +1109,40 @@
 
 // hero 11
 .hero-section {
+  margin: auto;
   margin-bottom: 100px;
   background: $hero11-bgColor;
+  width: 320px;
+  @include mobile-lg {
+    width: 600px;
+  }
+  @include desktops {
+    width: 1200px;
+  }
   .hero-section-title {
     margin: auto;
-    width: 948px;
-    text-align: center;
-    margin-top: 98px;
+    width: 320px;
+    @include mobile-lg {
+      width: 600px;
+      text-align: center;
+    }
+    @include desktops {
+      width: 948px;
+      text-align: center;
+      margin-top: 98px;
+    }
     h2 {
       color: $hero11-titleColor;
     }
   }
   .hero-section-body {
     margin: auto;
-    width: 523px;
-    text-align: center;
-    margin-top: 32px;
+    width: 320px;
+    @include mobile-lg {
+      width: 523px;
+      text-align: center;
+      margin-top: 32px;
+    }
     p {
       color: $hero11-body-textColor;
     }
@@ -974,12 +1151,18 @@
     margin-top: 48px;
     text-align: center;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     gap: 15px;
+    @include mobile-lg {
+      flex-direction: row;
+    }
     .btn {
-      width: 113px;
+      width: 320px;
       height: 52px;
+      @include mobile-lg {
+        width: 113px;
+      }
     }
     .btn1-h11 {
       background: $hero11-btn1-bgColor;
@@ -995,6 +1178,22 @@
   .hero-section-img {
     margin-top: 59px;
     text-align: center;
+    height: 0;
+    @include mobile-lg {
+      height: 200px;
+    }
+    @include desktops {
+      height: 300px;
+    }
+    img {
+      width: 320px;
+      @include mobile-lg {
+        width: 600px;
+      }
+      @include desktops {
+        width: 1200px;
+      }
+    }
   }
 }
 

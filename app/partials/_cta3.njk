@@ -4,21 +4,24 @@
 {% set btnName="Get started"%}
 
 <!-- img var  -->
-{% set btnIconPath="/image/svg/cta/LightPowerIcon.svg"%}
-{% set circleImgPath="/image/svg/cta/circleWithGreenLine.svg"%}
-<div class="cta-main">
-    <div class="cta-main-content">
-        <div class="cta-main-content-title">
-            <h2>{{title}}</h2>
+{% set btnIconPath="css/image/svg/cta/LightPowerIcon.svg"%}
+{% set circleImgPath="css/image/svg/cta/circleWithGreenLine.svg"%}
+
+<section class="body">
+    <div class="cta-main">
+        <div class="cta-main-content">
+            <div class="cta-main-content-title">
+                <h2>{{title}}</h2>
+            </div>
+            <div class="cta-main-content-body">
+                <p>{{body}}</p>
+            </div>
+            <div class="cta-main-content-button">
+                <button class="btn-black">{{btnName}}<img src="{{btnIconPath}}" alt=""></button>
+            </div>
         </div>
-        <div class="cta-main-content-body">
-            <p>{{body}}</p>
-        </div>
-        <div class="cta-main-content-button">
-            <button class="btn-black">{{btnName}}<img src="{{btnIconPath}}" alt=""></button>
+        <div class="cta-main-background-img">
+            <img src="{{circleImgPath}}" alt="">
         </div>
     </div>
-    <div class="cta-main-background-img">
-        <img src="{{circleImgPath}}" alt="">
-    </div>
-</div>
+</section>

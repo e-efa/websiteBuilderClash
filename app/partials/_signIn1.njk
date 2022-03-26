@@ -9,53 +9,55 @@
 {% set bottomLink="Sign in"%}
 
 <!-- img var -->
-{% set brandLogo="/image/svg/navbar/logo.svg"%}
-{% set teamlogoImgPath1="/image/svg/signIn/twitter.svg"%}
-{% set teamlogoImgPath2="/image/svg/signIn/slack.svg"%}
-{% set teamlogoImgPath3="/image/svg/signIn/dropbox.svg"%}
-{% set teamlogoImgPath4="/image/svg/signIn/github.svg"%}
-{% set teamlogoImgPath5="/image/svg/signIn/airtable.svg"%}
-{% set arrowImg="/image/svg/features/arrow.svg"%}
-{% set lineImg="/image/svg/signIn/line.svg"%}
+{% set brandLogo="css/image/svg/navbar/logo.svg"%}
+{% set teamlogoImgPath1="css/image/svg/signIn/twitter.svg"%}
+{% set teamlogoImgPath2="css/image/svg/signIn/slack.svg"%}
+{% set teamlogoImgPath3="css/image/svg/signIn/dropbox.svg"%}
+{% set teamlogoImgPath4="css/image/svg/signIn/github.svg"%}
+{% set teamlogoImgPath5="css/image/svg/signIn/airtable.svg"%}
+{% set arrowImg="css/image/svg/features/arrow.svg"%}
+{% set lineImg="css/image/svg/signIn/line.svg"%}
 
-<div class="signIn-section">
-    <div class="signIn-gradient-section bg-light-purple">
-        <div class="signIn-logo">
-            <img src="{{brandLogo}}" alt="">
-        </div>
-        <div class="signIn-partners">
-            <div class="signIn-partners-title">
-                <p>{{teamIntroText}} <img src="{{lineImg}}" alt=""></p>
+<section class="body">
+    <div class="signIn-section">
+        <div class="signIn-gradient-section bg-light-purple">
+            <div class="signIn-logo">
+                <img src="{{brandLogo}}" alt="">
             </div>
-            <ul class="signIn-partners-logo-list">
-                <li class="logo"><img src="{{teamlogoImgPath1}}" alt=""></li>
-                <li class="logo"><img src="{{teamlogoImgPath2}}" alt=""></li>
-                <li class="logo"><img src="{{teamlogoImgPath3}}" alt=""></li>
-                <li class="logo"><img src="{{teamlogoImgPath4}}" alt=""></li>
-                <li class="logo"><img src="{{teamlogoImgPath5}}" alt=""></li>
-            </ul>
+            <div class="signIn-partners">
+                <div class="signIn-partners-title">
+                    <p>{{teamIntroText}} <img src="{{lineImg}}" alt=""></p>
+                </div>
+                <ul class="signIn-partners-logo-list">
+                    <li class="logo"><img src="{{teamlogoImgPath1}}" alt=""></li>
+                    <li class="logo"><img src="{{teamlogoImgPath2}}" alt=""></li>
+                    <li class="logo"><img src="{{teamlogoImgPath3}}" alt=""></li>
+                    <li class="logo"><img src="{{teamlogoImgPath4}}" alt=""></li>
+                    <li class="logo"><img src="{{teamlogoImgPath5}}" alt=""></li>
+                </ul>
+            </div>
+        </div>
+        <div class="signIn-content-section">
+            <div class="signIn-title">
+                <h2>{{title}}</h2>
+            </div>
+            <div class="email-input-section">
+                <h4>{{inputTitle1}}</h4>
+                <input type="text">
+            </div>
+            <div class="password-input-section">
+                <div class="password-content">
+                    <h4>{{inputTitle2}}</h4>
+                    <h4><a href="">{{inputTitle3}}</a></h4>
+                </div>
+                <input type="text">
+            </div>
+            <div class="signIn-btn">
+                <button>{{btnName}} <img src="{{arrowImg}}" alt=""></button>
+            </div>
+            <div class="signIn-bottom-text">
+                <p>{{bottomText}} <a href="">{{bottomLink}}</a></p>
+            </div>
         </div>
     </div>
-    <div class="signIn-content-section">
-        <div class="signIn-title">
-            <h2>{{title}}</h2>
-        </div>
-        <div class="email-input-section">
-            <h4>{{inputTitle1}}</h4>
-            <input type="text">
-        </div>
-        <div class="password-input-section">
-            <div class="password-content">
-                <h4>{{inputTitle2}}</h4>
-                <h4><a href="">{{inputTitle3}}</a></h4>
-            </div>
-            <input type="text">
-        </div>
-        <div class="signIn-btn">
-            <button>{{btnName}} <img src="{{arrowImg}}" alt=""></button>
-        </div>
-        <div class="signIn-bottom-text">
-            <p>{{bottomText}} <a href="">{{bottomLink}}</a></p>
-        </div>
-    </div>
-</div>
+</section>

@@ -6,63 +6,65 @@
 {% set customerIntroText="“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc.”"%}
 
 <!-- img var -->
-{% set backgroundImgPath1="/image/png/testimonial/bg-1.png"%}
-{% set playIconPath="/image/svg/testimonial/playIcon.svg"%}
-{% set backgroundImgPath2="/image/png/testimonial/bg-2.png"%}
-{% set backgroundImgPath3="/image/png/testimonial/bg-3.png"%}
-{% set backgroundImgPath4="/image/png/testimonial/bg-4.png"%}
+{% set backgroundImgPath1="css/image/png/testimonial/bg-1.png"%}
+{% set playIconPath="css/image/svg/testimonial/playIcon.svg"%}
+{% set backgroundImgPath2="css/image/png/testimonial/bg-2.png"%}
+{% set backgroundImgPath3="css/image/png/testimonial/bg-3.png"%}
+{% set backgroundImgPath4="css/image/png/testimonial/bg-4.png"%}
 
-<div class="testimonial-section">
-    <div class="testimonial-intro">
-        <h5>{{introTitle}}</h5>
-    </div>
-    <div class="testimonial-title">
-        <h2>{{title}}</h2>
-    </div>
-    <div class="testimonial-customer-section">
-        <!-- column 1 -->
-        <div class="customer-review-column">
-            <div class="customer-video-card">
-                <div class="customer-background-img">
-                    <img src="{{backgroundImgPath1}}" alt="">
-                    <div class="play-icon">
-                        <img src="{{playIconPath}}" alt="">
+<section class="body">
+    <div class="testimonial-section">
+        <div class="testimonial-intro">
+            <h5>{{introTitle}}</h5>
+        </div>
+        <div class="testimonial-title">
+            <h2>{{title}}</h2>
+        </div>
+        <div class="testimonial-customer-section">
+            <!-- column 1 -->
+            <div class="customer-review-column">
+                <div class="customer-video-card">
+                    <div class="customer-background-img">
+                        <img src="{{backgroundImgPath1}}" alt="">
+                        <div class="play-icon">
+                            <img src="{{playIconPath}}" alt="">
+                        </div>
+                        <div class="customer-intro-text">
+                            <p>{{customerIntroText}}</p>
+                        </div>
                     </div>
-                    <div class="customer-intro-text">
-                        <p>{{customerIntroText}}</p>
+                </div>
+            </div>
+
+            <!-- column 2 -->
+            <div class="customer-review-column">
+                <div class="customer-video-card">
+                    <img src="{{backgroundImgPath2}}" alt="">
+                    <div class="customer-background-img">
+                        <div class="play-icon">
+                            <img src="{{playIconPath}}" alt="">
+                        </div>
+                        <div class="customer-intro-text">
+                            <p>{{customerIntroText}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- column 3 -->
+            <div class="customer-review-column">
+                <div class="customer-video-card">
+                    <div class="customer-background-img">
+                        <img src="{{backgroundImgPath4}}" alt="">
+                        <div class="play-icon">
+                            <img src="{{playIconPath}}" alt="">
+                        </div>
+                        <div class="customer-intro-text">
+                            <p>{{customerIntroText}}</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
-        <!-- column 2 -->
-        <div class="customer-review-column">
-            <div class="customer-video-card">
-                <img src="{{backgroundImgPath2}}" alt="">
-                <div class="customer-background-img">
-                    <div class="play-icon">
-                        <img src="{{playIconPath}}" alt="">
-                    </div>
-                    <div class="customer-intro-text">
-                        <p>{{customerIntroText}}</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- column 3 -->
-        <div class="customer-review-column">
-            <div class="customer-video-card">
-                <div class="customer-background-img">
-                    <img src="{{backgroundImgPath4}}" alt="">
-                    <div class="play-icon">
-                        <img src="{{playIconPath}}" alt="">
-                    </div>
-                    <div class="customer-intro-text">
-                        <p>{{customerIntroText}}</p>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
-</div>
+</section>

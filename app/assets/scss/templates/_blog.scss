@@ -1,24 +1,39 @@
-.wide-card{
+.wide-card {
   width: 558px !important;
   height: 568px !important;
 }
-.wide-area{
+.wide-area {
   width: 476px !important;
 }
 .blog-section {
-  width: 90em;
   margin: auto;
+  width: 327px;
+  @include mobile-lg {
+    width: 668px;
+  }
+  @include desktops {
+    width: 70.5em;
+  }
+  @include large-desktops-mid {
+    width: 90em;
+  }
   padding-top: 5.625em;
-  margin-bottom: 100px;
   background: $blog1-bgColor;
   &-title-track {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    gap: 36.8125em;
+    gap: 20px;
+    @include desktops {
+      gap: 36.8125em;
+      flex-direction: row;
+    }
     .title {
       &-button {
-        align-self: center;
+        align-self: flex-start;
+        @include desktops {
+          align-self: center;
+        }
         button {
           height: 52px;
           width: 180px;
@@ -39,12 +54,21 @@
     }
   }
   &-title {
-    width: 680px;
     margin: auto;
+    width: 327px;
+    @include mobile-lg {
+      width: 668px;
+    }
+    @include desktops {
+      width: 680px;
+    }
     h2 {
-      font-size: 50px;
-      line-height: 59px;
-      letter-spacing: 0em;
+      font-size: 32px;
+      line-height: 38px;
+      @include mobile-lg {
+        font-size: 50px;
+        line-height: 59px;
+      }
       text-align: center;
       color: $blog1-titleColor;
     }
@@ -53,8 +77,14 @@
     display: flex;
     flex-direction: row;
     gap: 1.875em;
-    justify-content: center;
+    justify-content: flex-start;
     padding-top: 3.3125em;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    @include desktops {
+      overflow-x: hidden;
+      justify-content: center;
+    }
     &-item {
       background: $blog1-card-bgColor;
       height: 556px;
@@ -65,7 +95,7 @@
           top: -239px;
           left: 264px;
         }
-        .wide-brand-icon{
+        .wide-brand-icon {
           @extend .brand-icon;
           left: 446px;
         }
@@ -108,7 +138,7 @@
           color: $blog1-textColor;
         }
       }
-      .wide-sub-text{
+      .wide-sub-text {
         @extend .sub-text;
         gap: 365px;
       }

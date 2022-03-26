@@ -1,44 +1,89 @@
 .column-1,
 .column-3 {
-  padding-top: 13.5em;
+  @include desktops {
+    padding-top: 13.5em;
+  }
 }
 .testimonial-section {
-  padding-top: 90px;
-  margin-bottom: 100px;
+  margin: auto;
+  width: 327px;
+  padding-top: 48px;
+  @include mobile-lg {
+    width: 668px;
+  }
+  @include desktops {
+    padding-top: 90px;
+    width: 70.5em;
+  }
+  @include large-desktops-mid {
+    width: 90em;
+  }
   background: $testimonial-bgColor;
   .testimonial-intro {
-    margin-bottom: 19px;
+    margin-bottom: 16px;
+    @include mobile-lg {
+      margin-bottom: 19px;
+    }
     h5 {
       font-size: 16px;
-      line-height: 19px;
-      letter-spacing: 1px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 21px;
+      letter-spacing: 0.4000000059604645px;
       text-align: center;
-      font-weight: 400;
+      @include mobile-lg {
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 1px;
+        font-weight: 400;
+      }
+      text-align: center;
       color: $testimonial-intro-textColor;
     }
   }
   .testimonial-title {
-    margin-bottom: 68px;
+    margin-bottom: 32px;
+    @include mobile-lg {
+      margin-bottom: 68px;
+    }
     h2 {
-      font-size: 50px;
-      line-height: 59px;
-      letter-spacing: 0em;
+      font-size: 32px;
+      line-height: 38px;
       text-align: center;
+      @include mobile-lg {
+        font-size: 50px;
+        line-height: 59px;
+        letter-spacing: 0em;
+      }
       color: $testimonial-title-textColor;
     }
   }
   .testimonial-customer-section {
-    width: 90em;
     margin: auto;
+    width: 327px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    @include mobile-lg {
+      width: 668px;
+    }
+    @include desktops {
+      width: 70.5em;
+      flex-direction: row;
+    }
+    @include large-desktops-mid {
+      width: 90em;
+    }
     justify-content: center;
     gap: 30px;
     .customer-review-column {
-      width: 362px;
+      width: 327px;
       display: flex;
       flex-direction: column;
-      gap: 30px;
+      gap: 20px;
+      @include desktops {
+        width: 362px;
+        gap: 30px;
+      }
       .customer-card {
         display: flex;
         flex-direction: row;
@@ -70,7 +115,16 @@
         }
       }
       .customer-video-card {
+        height: 432px;
+        @include desktops{
           height: 500px;
+        }
+        .video-img {
+          width: 327px;
+          @include desktops {
+            width: 362px;
+          }
+        }
         .customer-background-img {
           .play-icon {
             img {
@@ -82,9 +136,13 @@
           }
           .customer-intro-text {
             p {
+              width: 307px;
               position: relative;
               top: -120px;
               left: 32px;
+              @include desktops {
+                width: 327px;
+              }
               color: $testimonial-cusIntro-textColor;
             }
           }

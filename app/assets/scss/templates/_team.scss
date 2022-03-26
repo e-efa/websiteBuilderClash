@@ -14,19 +14,32 @@ $gradient-purple-light: linear-gradient(90deg, #efecff 0%, #c4b8ff 100%);
 
 // team 1
 .team-section {
-  width: 90em;
   margin: auto;
+  width: 327px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  @include mobile-lg {
+    width: 668px;
+  }
+  @include desktops {
+    width: 70.5em;
+    flex-direction: row;
+    padding-top: 90px;
+  }
+  @include large-desktops-mid {
+    width: 90em;
+  }
   justify-content: center;
-  padding-top: 90px;
   padding-bottom: 90px;
   gap: 128px;
   background: $team1-bgColor;
-  margin-bottom: 100px;
   .team-content-section {
-    width: 460px;
+    width: 327px;
     align-self: center;
+    @include mobile-lg {
+      width: 460px;
+      align-self: flex-start;
+    }
     .team-content-subTitle {
       margin-bottom: 24px;
       span {
@@ -76,13 +89,16 @@ $gradient-purple-light: linear-gradient(90deg, #efecff 0%, #c4b8ff 100%);
     }
   }
   .team-img-grid-section {
-    width: 559px;
+    width: 327px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 30px;
+    @include mobile-lg {
+      width: 559px;
+    }
     .team-member {
-      width: 264px;
+      width: 259px;
       height: 264px;
       background: $team1-teamGrid-bgColor;
       p {
@@ -99,32 +115,53 @@ $gradient-purple-light: linear-gradient(90deg, #efecff 0%, #c4b8ff 100%);
 
 // team 2
 .team-section-horizontalView {
-  width: 90em;
   margin: auto;
+  width: 327px;
+  @include mobile-lg {
+    width: 668px;
+  }
+  @include desktops {
+    width: 70.5em;
+  }
+  @include large-desktops-mid {
+    width: 90em;
+  }
   padding-top: 94px;
-  padding-bottom: 91px;
-  margin-bottom: 100px;
   background: $team2-bgColor;
   .team-content-section {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    gap: 138px;
+    gap: 30px;
     margin-bottom: 92px;
+    @include mobile-lg {
+      flex-direction: row;
+      gap: 138px;
+    }
     .team-content-title {
-      height: 62px;
-      width: 460px;
+      width: 327px;
+      @include mobile-lg {
+        height: 62px;
+        width: 460px;
+      }
       h2 {
-        font-size: 50px;
-        line-height: 59px;
+        font-size: 32px;
+        line-height: 38px;
         letter-spacing: 0em;
         text-align: left;
         color: $team2-titleColor;
+        @include mobile-lg {
+          font-size: 50px;
+          line-height: 59px;
+        }
       }
     }
     .team-content-body {
-      height: 81px;
-      width: 555px;
+      width: 327px;
+      @include mobile-lg {
+        width: 555px;
+        height: 81px;
+      }
       p {
         font-size: 18px;
         font-style: normal;
@@ -140,16 +177,26 @@ $gradient-purple-light: linear-gradient(90deg, #efecff 0%, #c4b8ff 100%);
     display: flex;
     flex-direction: row;
     gap: 30px;
-    justify-content: center;
+    justify-content: flex-start;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    @include desktops {
+      width: 70.5em;
+      justify-content: center;
+      overflow-x: hidden;
+    }
+    @include large-desktops-mid{
+      width: 90em;
+    }
     .team-member {
       &-name {
         margin-top: 28px;
-        h4{
+        h4 {
           color: $team2-textColor;
         }
       }
-      &-position{
-        p{
+      &-position {
+        p {
           color: $team2-textColor;
         }
       }
@@ -169,6 +216,3 @@ $gradient-purple-light: linear-gradient(90deg, #efecff 0%, #c4b8ff 100%);
 .bg-purple {
   background: #7b61ff;
 }
-
-
-

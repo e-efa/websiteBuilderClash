@@ -1,44 +1,70 @@
 //  features 1
 .features-section {
+  margin: auto;
   display: flex;
+  width: 327px;
   padding-top: 121px;
+  flex-direction: column;
   align-items: center;
-  flex-direction: row;
   justify-content: center;
   gap: 128px;
   margin-bottom: 100px;
   background: $feature1-bgColor;
-  @include mobile {
-    width: 327px;
-    flex-direction: column;
+  @include desktops {
+    flex-direction: row;
+    gap: 80px;
   }
   .feature-img {
-    width: 558px;
-    height: 557.87px;
+    height: 328.0916748046875px;
+    width: 327px;
     background: $feature1-img-bgColor;
+    @include mobile-lg {
+      width: 586px;
+      height: 528.0916748046875px;
+    }
     img {
       position: relative;
-      width: 526px;
+      width: 321.28904724121094px;
       top: -56px;
       left: 12px;
       z-index: 999;
       overflow: hidden;
+      @include mobile-lg {
+        width: 500px;
+        left: 56px;
+      }
+      @include desktops {
+        left: 4px;
+      }
     }
   }
   .feature-content {
     &-title {
-      width: 496px;
+      margin: auto;
+      width: 327px;
+      @include mobile-lg {
+        width: 586px;
+      }
       h2 {
-        font-size: 50px;
-        line-height: 59px;
+        font-size: 32px;
+        line-height: 38px;
         letter-spacing: 0em;
         text-align: left;
         color: $feature1-title-color;
+        @include mobile-lg {
+          font-size: 50px;
+          line-height: 59px;
+        }
       }
     }
     &-body {
+      margin: auto;
       margin-top: 32px;
-      width: 455.6190490722656px;
+      width: 327px;
+      @include mobile-lg {
+        margin-left: 0;
+        width: 455.6190490722656px;
+      }
 
       p {
         font-size: 18px;
@@ -59,6 +85,9 @@
         flex-direction: column;
         gap: 23px;
         margin-bottom: 48px;
+        @include mobile-lg {
+          gap: 45px;
+        }
         &-item {
           display: flex;
           flex-direction: row;
@@ -66,22 +95,40 @@
           align-items: center;
           justify-content: left;
           color: $feature1-item-textColor;
+          @include mobile-lg {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0em;
+            text-align: left;
+            gap: 20px;
+          }
           img {
             width: 48px;
             height: 48px;
             align-items: center;
+            @include mobile-lg {
+              width: 80px;
+              height: 60px;
+            }
           }
         }
       }
     }
     &-button {
       button {
-        height: 52px;
-        width: 192px;
-        border-radius: 0px;
-        padding: 16px, 32px, 16px, 32px;
+        height: 55px;
+        width: 327px;
+        top: 370px;
+        border-radius: 100px;
         background: $feature1-btn-bgColor;
         color: $feature1-btn-textColor;
+        @include mobile-lg {
+          width: 240px;
+          font-size: 16px;
+          border-radius: 0px;
+        }
       }
     }
   }
@@ -89,12 +136,17 @@
 
 // features 2
 .feature-content-service-card {
-  width: 536px;
+  margin: auto;
+  width: 327px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
-  gap: 89px;
   background: $feature2-card-bgColor;
+  @include mobile-lg {
+    gap: 89px;
+    width: 536px;
+    flex-direction: row;
+  }
   &-item {
     width: 183.23809814453125px;
     margin-top: 57.61px;
@@ -112,16 +164,33 @@
 
 // feature 3
 .feature-section-column-view {
-  width: 1440px;
+  margin: auto;
+  width: 327px;
   margin: auto;
   padding-top: 120px;
-  padding-left: 147px;
   margin-bottom: 100px;
   background: $feature3-bgColor;
+  @include mobile-lg {
+    width: 586px;
+  }
+  @include desktops {
+    padding-left: 54px;
+    width: 70.5em;
+  }
+  @include large-desktops-mid {
+    padding-left: 147px;
+    width: 90em;
+  }
   &-text-content {
     margin-bottom: 66px;
     &-title {
-      width: 721px;
+      width: 327px;
+      @include mobile-lg {
+        width: 586px;
+      }
+      @include desktops {
+        width: 721px;
+      }
       h2 {
         font-size: 50px;
         line-height: 59px;
@@ -132,7 +201,10 @@
     }
     &-body {
       margin-top: 18px !important;
-      width: 562px;
+      width: 327px;
+      @include mobile-lg {
+        width: 562px;
+      }
       p {
         font-size: 18px;
         font-style: normal;
@@ -146,17 +218,32 @@
   }
   &-list-content {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 100px;
+    flex-direction: column;
+    gap: 20px;
+    @include mobile-lg {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    @include desktops {
+      gap: 38px;
+    }
+    @include large-desktops-mid {
+      gap: 100px;
+    }
     &-item {
       width: 350px;
+      @include mobile-lg {
+        width: 281px;
+      }
+      @include desktops {
+        width: 300px;
+      }
       &-icon {
         margin-bottom: 16px;
       }
       &-title {
         margin-bottom: 16px;
-        h5{
+        h5 {
           color: $feature3-textColor;
         }
       }
@@ -169,19 +256,36 @@
 
 // feature 4
 .m-top {
-  margin-top: 200px !important;
+  @include desktops{
+    margin-top: 200px !important;
+  }
 }
 .g-30 {
   gap: 30px !important;
 }
 .card-item-width {
-  width: 300px !important;
+  width: 350px !important;
+  @include mobile-lg {
+    width: 281px !important;
+  }
+  @include desktops {
+    width: 300px !important;
+  }
 }
 .title-width {
-  width: 768px !important ;
+  width: 327px !important;
+  @include mobile-lg {
+    width: 586px !important;
+  }
+  @include desktops {
+    width: 721px !important;
+  }
 }
 .body-width {
-  width: 600px !important;
+  width: 327px !important;
+  @include mobile-lg {
+    width: 562px !important;
+  }
 }
 .card-width {
   width: 696px !important;

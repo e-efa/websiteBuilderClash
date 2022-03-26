@@ -4,13 +4,10 @@
 {% set downBtnName="Download for free" %}
 
 <!-- img path -->
-{% set ctaMainImgPath="css/image/png/cta/imgWithPurpleBackground.png"%}
+{% set ctaMainImgPath="css/image/png/cta/imgPurpleBackground.png"%}
 
 <section class="body">
     <div class="cta-main-section">
-        <div class="cta-main-img-section">
-            <img src="{{ctaMainImgPath}}" alt="">
-        </div>
         <div class="cta-main-content-section">
             <div class="top-button">
                 <button>{{topBtnName}}</button>
@@ -21,6 +18,9 @@
             <div class="down-btn">
                 <button>{{downBtnName}}</button>
             </div>
+        </div>
+        <div class="cta-main-img-section">
+            <img src="{{ctaMainImgPath}}" alt="">
         </div>
     </div>
 </section>

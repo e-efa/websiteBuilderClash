@@ -1,11 +1,21 @@
 .cta-section {
-  width: 71.625em;
-  height: 487px;
   margin: auto;
+  width: 327px;
+  height: 506px;
+  @include mobile-lg {
+    width: 668px;
+    height: 487px;
+  }
+  @include desktops {
+    width: 70.5em;
+  }
+  @include large-desktops-mid {
+    width: 90em;
+  }
   background: $cta-bgColor;
   margin-top: 90px;
-  margin-bottom: 100px;
   padding-top: 90px;
+  margin-bottom: 100px;
   &-content {
     .subtitle {
       width: 13.875em;
@@ -23,24 +33,41 @@
       }
     }
     .title {
-      width: 50.1875em;
       margin: auto;
+      width: 327px;
+      @include mobile-lg {
+        width: 668px;
+      }
+      @include desktops {
+        width: 50.1875em;
+      }
       text-align: center;
       margin-bottom: 16px;
       h2 {
-        font-size: 50px;
-        line-height: 59px;
+        font-size: 32px;
+        line-height: 38px;
+        @include mobile-lg {
+          font-size: 50px;
+          line-height: 59px;
+        }
         letter-spacing: 0em;
         text-align: center;
         color: $cta-titleColor;
       }
     }
     .body {
-      width: 36.75em;
       margin: auto;
+      width: 327px;
+      @include mobile-lg {
+        width: 36.75em;
+      }
       text-align: center;
       margin-bottom: 32px;
-      P{
+      P {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
         color: $cta-bodyColor;
       }
     }
@@ -74,18 +101,48 @@
 
 // cta 2
 .cta-main-section {
-  width: 90em;
   margin: auto;
+  width: 327px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   padding-top: 5.625em;
   padding-bottom: 5.625em;
-  justify-content: center;
-  margin-bottom: 100px;
-  gap: 8em;
+  gap: 6em;
+  @include mobile-lg {
+    width: 668px;
+  }
+  @include desktops {
+    width: 70.5em;
+    flex-direction: row;
+    justify-content: center;
+    gap: 8em;
+  }
+  @include large-desktops-mid {
+    width: 90em;
+  }
   background: $cta2-bgColor;
+  .cta-main-img-section {
+    img {
+      width: 327px;
+      @include mobile-lg {
+        width: 586px;
+      }
+    }
+    order: 2;
+    @include desktops {
+      order: 1;
+    }
+  }
   .cta-main-content-section {
-    align-self: center;
+    align-self: flex-start;
+    order: 1;
+    @include mobile-lg {
+      padding-left: 33px;
+    }
+    @include desktops {
+      order: 2;
+      align-self: center;
+    }
     .top-button {
       margin-bottom: 24px;
       button {
@@ -99,10 +156,17 @@
       }
     }
     .title {
-      width: 388px;
+      width: 327px;
+      @include mobile-lg {
+        width: 388px;
+      }
       h2 {
-        font-size: 42px;
-        line-height: 49px;
+        font-size: 32px;
+        line-height: 38px;
+        @include mobile-lg {
+          font-size: 42px;
+          line-height: 49px;
+        }
         letter-spacing: 0em;
         text-align: left;
         color: $cta2-textColor;
@@ -131,10 +195,18 @@
 
 // cta 3
 .cta-main {
-  width: 90em;
   margin: auto;
+  width: 327px;
+  @include mobile-lg{
+    width: 668px;
+  }
+  @include desktops{
+    width: 70.5em;
+  }
+  @include large-desktops-mid{
+    width: 90em;
+  }
   padding-top: 90px;
-  margin-bottom: 100px;
   &-content {
     display: flex;
     flex-direction: column;
@@ -142,17 +214,27 @@
     gap: 24px;
     &-title {
       margin: auto;
-      width: 35.875em;
+      width: 327px;
+      @include mobile-lg{
+        width: 35.875em;
+      }
       h2 {
-        font-size: 50px;
-        line-height: 59px;
+        font-size: 32px;
+        line-height: 38px;
+        @include mobile-lg{
+          font-size: 50px;
+          line-height: 59px;
+        }
         letter-spacing: 0em;
         text-align: center;
       }
     }
     &-body {
       margin: auto;
-      width: 35.875em;
+      width: 327px;
+      @include mobile-lg{
+        width: 35.875em;
+      }
       p {
         font-size: 16px;
         font-style: normal;
@@ -179,7 +261,7 @@
       }
     }
   }
-  &-background-img{
+  &-background-img {
     margin-left: 58px;
   }
 }

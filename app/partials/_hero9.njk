@@ -1,27 +1,28 @@
-{% include "_hero9header.njk"%}
 {% set title= "Billing simplified." %}
 {% set bodyText= "A subheading that addresses the what, the why we should care and hopefully some social proof." %}
 {% set blackBtnText= "Sign up for free" %}
 {% set transBtnContentText= "Product preview" %}
-{% set imgPath1= "/image/png/hero2/Mobile-Mockup.png" %}
-{% set imgPath2= "/image/png/hero2/Mobile-Mockup-2.png" %}
+{% set imgPath1= "css/image/png/hero2/Mobile-Mockup.png" %}
+{% set imgPath2= "css/image/png/hero2/Mobile-Mockup-2.png" %}
 <!-- main-content h9 -->
-<div class="hero_section-h9">
-    <div class="content-section">
-        <div class="title">
-            <h2>{{ title }}</h2>
+<section class="body">
+    <div class="hero_section-h9">
+        <div class="content-section">
+            <div class="title">
+                <h2>{{ title }}</h2>
+            </div>
+            <div class="body">
+                <p>{{ bodyText }}</p>
+            </div>
+            <div class="button_section">
+                <button class="btn btn-1">{{blackBtnText}}</button>
+                <button class="btn btn-2">{{transBtnContentText}}</button>
+            </div>
+            <div class="light_purple-bg"></div>
         </div>
-        <div class="body">
-            <p>{{ bodyText }}</p>
+        <div class="content-section_bottom">
+            <img src="{{imgPath1}}" alt="">
+            <img src="{{imgPath2}}" alt="">
         </div>
-        <div class="button_section">
-            <button class="btn btn-1">{{blackBtnText}}</button>
-            <button class="btn btn-2">{{transBtnContentText}}</button>
-        </div>
-        <div class="light_purple-bg"></div>
     </div>
-    <div class="content-section_bottom">
-        <img src="{{imgPath1}}" alt="">
-        <img src="{{imgPath2}}" alt="">
-    </div>
-</div>
+</section>

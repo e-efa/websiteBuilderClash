@@ -7,30 +7,56 @@ h4 {
   margin-bottom: 9px;
   color: $signIn-textColor;
 }
-a{
-    text-decoration: none;
-    color: $signIn-textColor;
+a {
+  text-decoration: none;
+  color: $signIn-textColor;
 }
 input {
-  width: 35.875em;
+  width: 327px;
   height: 3.4375em;
+  @include mobile-lg {
+    width: 35.875em;
+  }
   border: 1px solid $signIn-input-borderColor;
 }
 .signIn-section {
-  width: 90em;
-  height: 100vh;
+  width: 327px;
+  height: 50vh;
   margin: auto;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  @include mobile-lg {
+    width: 668px;
+  }
+  @include desktops {
+    width: 70.5em;
+    height: 100vh;
+    flex-direction: row;
+  }
+  @include large-desktops-mid {
+    width: 90em;
+  }
   margin-top: 60px;
   margin-bottom: 100px;
   .signIn-gradient-section {
-    width: 28.75em;
+    width: 327px;
     display: flex;
     flex-direction: column;
-    padding-left: 48px;
-    padding-top: 33px;
-    gap: 41.6875em;
+    padding-left: 16px;
+    padding-top: 19px;
+    gap: 20px;
+    @include mobile-lg {
+      width: 35.75em;
+      padding-left: 48px;
+      padding-top: 33px;
+    }
+    @include desktops {
+      gap: 33.6875em;
+    }
+    @include large-desktops-mid {
+      // gap: 41.6875em;
+      gap: 24.6875em;
+    }
     background: $signIn-gradient-bg;
     .signIn-partners {
       &-title {
@@ -48,15 +74,27 @@ input {
         list-style: none;
         display: flex;
         flex-direction: row;
-        gap: 45.6px;
+        gap: 26.6px;
+        @include mobile-lg {
+          gap: 45.6px;
+        }
       }
     }
   }
   .signIn-content-section {
-    width: 61.25em;
+    width: 327px;
     margin: auto;
-    padding-left: 12.625em;
     background: $signIn-form-bg;
+    @include mobile-lg {
+      width: 668px;
+    }
+    @include desktops {
+      width: 61.25em;
+      padding-left: 4.625em;
+    }
+    @include large-desktops-mid {
+      padding-left: 12.625em;
+    }
     .signIn-title {
       h2 {
         font-size: 42px;
@@ -68,36 +106,40 @@ input {
     }
     .password-input-section {
       .password-content {
-        width: 574px;
+        width: 327px;
+        @include mobile-lg {
+          width: 574px;
+        }
         display: flex;
         flex-direction: row;
         justify-content: space-between;
       }
     }
     .signIn-btn {
-        margin-top: 32px;
+      margin-top: 32px;
       button {
+        width: 327px;
         height: 52px;
-        width: 574px;
-        left: 0px;
-        top: 0px;
+        @include mobile-lg {
+          width: 574px;
+        }
         border: 1px solid $signIn-btn-borderColor;
         padding: 16px, 32px, 16px, 32px;
         background: $signIn-btn-bg;
         color: $signIn-btn-textColor;
-        img{
-            margin-left: 10.83px;
+        img {
+          margin-left: 10.83px;
         }
       }
     }
     .signIn-bottom-text {
-        margin-top: 24px;
+      margin-top: 24px;
     }
   }
 }
 
 // bg picture
-.bg-picture{
-    background-image: url('image/png/signIn/bg-picture.png');
-    background-repeat: no-repeat;
+.bg-picture {
+  background-image: url("image/png/signIn/bg-picture.png");
+  background-repeat: no-repeat;
 }

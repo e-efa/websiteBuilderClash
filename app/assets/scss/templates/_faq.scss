@@ -1,51 +1,85 @@
 .faq-section {
-  width: 90em;
   margin: auto;
+  width: 327px;
+  @include mobile-lg {
+    width: 668px;
+  }
+  @include desktops {
+    width: 70.5em;
+  }
+  @include large-desktops-mid {
+    width: 90em;
+  }
   padding-bottom: 90px;
   background: $faq-bgColor;
   &-title {
-    width: 42.5em;
+    width: 327px;
+    @include mobile-lg {
+      width: 42.5em;
+    }
     margin: auto;
     padding-bottom: 60px;
     padding-top: 90px;
     h2 {
-      font-size: 50px;
-      line-height: 59px;
+      font-size: 32px;
+      line-height: 38px;
+      @include mobile-lg {
+        font-size: 50px;
+        line-height: 59px;
+      }
       letter-spacing: 0em;
       text-align: center;
       color: $faq-title-color;
     }
   }
-  #faq-question-list{
-    .card{
+  #faq-question-list {
+    .card {
       margin: auto;
-      width: 754px;
+      width: 327px;
+      @include mobile-lg {
+        width: 668px;
+      }
+      @include desktops {
+        width: 754px;
+      }
       border: none;
-      .card-header{
+      .card-header {
         background-color: transparent;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        .faq-question{
+        .faq-question {
           width: 800px;
           padding-top: 18px;
         }
-        h5{
+        h5 {
           color: $faq-textColor;
         }
       }
     }
-    width: 950px;
     margin: auto;
+    width: 327px;
+    @include mobile-lg {
+      width: 668px;
+    }
+    @include desktops {
+      width: 950px;
+    }
     padding-top: 80px;
     padding-bottom: 90px;
     background: $faq-list-bgColor;
   }
-  .bg-gray{
-    width: 950px;
+  .bg-gray {
     margin: auto;
+    width: 327px;
+    @include mobile-lg {
+      width: 668px;
+    }
+    @include desktops {
+      width: 950px;
+    }
     padding-top: 80px;
     padding-bottom: 90px;
-    background: #FAF9FF;
+    background: #faf9ff;
   }
 }

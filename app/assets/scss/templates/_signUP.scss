@@ -1,12 +1,23 @@
 .signUp-section {
   margin: auto;
-  width: 90em;
+  width: 327px;
+  @include mobile-lg {
+    width: 668px;
+  }
+  @include desktops {
+    width: 70.5em;
+  }
+  @include large-desktops-mid {
+    width: 90em;
+  }
   padding-top: 90px;
-  margin-bottom: 100px;
   background: $signUp-bgColor;
   .signUp-content-section {
     margin: auto;
-    width: 34.875em;
+    width: 327px;
+    @include mobile-lg {
+      width: 34.875em;
+    }
     padding-top: 3.75em;
     padding-bottom: 3.25em;
     background: $signUp-form-bgColor;
@@ -14,9 +25,12 @@
       margin: auto;
       width: 24.4375em;
       h2 {
-        font-size: 42px;
-        line-height: 49px;
-        letter-spacing: 0em;
+        font-size: 32px;
+        line-height: 38px;
+        @include mobile-lg {
+          font-size: 42px;
+          line-height: 49px;
+        }
         text-align: center;
         color: $signUp-TextColor;
       }
@@ -25,8 +39,11 @@
       text-align: center;
       margin-top: 2em;
       button {
-        width: 25.625em;
+        width: 327px;
         height: 3.4375em;
+        @include mobile-lg {
+          width: 25.625em;
+        }
         border: none;
         background: $signUp-btn-bgColor;
         color: $signUp-btn-textColor;
@@ -46,8 +63,11 @@
         color: $signUp-TextColor;
       }
       input {
-        width: 25.625em;
+        width: 327px;
         height: 3.4375em;
+        @include mobile-lg {
+          width: 25.625em;
+        }
         border: 2px solid $signUp-input-borderColor;
       }
     }
@@ -55,8 +75,11 @@
       text-align: center;
       margin-top: 1.5em;
       button {
-        width: 25.625em;
+        width: 327px;
         height: 3.4375em;
+        @include mobile-lg {
+          width: 25.625em;
+        }
         border: none;
         background: $signUp-btn-bgColor;
         color: $signUp-btn-textColor;
@@ -141,35 +164,35 @@
         font-weight: 400;
         line-height: 19px;
         text-align: left;
-    }
-    input[type="text" i] {
+      }
+      input[type="text" i] {
         padding: 5px 24px;
       }
     }
     .submit-btn {
-        margin-top: 24px;
-        text-align: center;
-        button{
-            width: 22.625em;
-            height: 3.25em;
-            background: #000;
-            color: #fff;
-            border: none;
-            img{
-                margin-left: 12px;
-            }
+      margin-top: 24px;
+      text-align: center;
+      button {
+        width: 22.625em;
+        height: 3.25em;
+        background: #000;
+        color: #fff;
+        border: none;
+        img {
+          margin-left: 12px;
         }
+      }
     }
     .bottom-text {
-        text-align: center;
-        margin-top: 24px;
-        h5{
-            font-weight: 400;
-        }
-        a{
-            font-weight: 500;
-            color: #000;
-        }
+      text-align: center;
+      margin-top: 24px;
+      h5 {
+        font-weight: 400;
+      }
+      a {
+        font-weight: 500;
+        color: #000;
+      }
     }
   }
 }

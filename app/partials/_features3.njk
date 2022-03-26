@@ -5,90 +5,92 @@
 {% set itemBody="Lorem ipsum dolor sit amet, consectetur adipiscing elit."%}
 
 <!-- img path -->
-{% set icon1Path="/image/svg/features/shopping-cart.svg"%}
-{% set icon2Path="/image/svg/features/meter.svg"%}
-{% set icon3Path="/image/svg/features/software.svg"%}
-{% set icon4Path="/image/svg/features/chat.svg"%}
-{% set icon5Path="/image/svg/features/apple.svg"%}
-{% set icon6Path="/image/svg/features/toggle-icon.svg"%}
+{% set icon1Path="css/image/svg/features/shopping-cart.svg"%}
+{% set icon2Path="css/image/svg/features/meter.svg"%}
+{% set icon3Path="css/image/svg/features/software.svg"%}
+{% set icon4Path="css/image/svg/features/chat.svg"%}
+{% set icon5Path="css/image/svg/features/apple.svg"%}
+{% set icon6Path="css/image/svg/features/toggle-icon.svg"%}
 
 
 <!-- feature 3 -->
-<div class="feature-section-column-view">
-    <div class="feature-section-column-view-text-content">
-        <div class="feature-section-column-view-text-content-title">
-            <h2>{{title}}</h2>
+<section class="body">
+    <div class="feature-section-column-view">
+        <div class="feature-section-column-view-text-content">
+            <div class="feature-section-column-view-text-content-title">
+                <h2>{{title}}</h2>
+            </div>
+            <div class="feature-section-column-view-text-content-body">
+                <p>{{body}}</p>
+            </div>
         </div>
-        <div class="feature-section-column-view-text-content-body">
-            <p>{{body}}</p>
+        <div class="feature-section-column-view-list-content">
+            <div class="feature-section-column-view-list-content-item">
+                <div class="feature-section-column-view-list-content-item-icon">
+                    <img src="{{icon1Path}}" alt="icon">
+                </div>
+                <div class="feature-section-column-view-list-content-item-title">
+                    <h5>{{itemTitle}}</h5>
+                </div>
+                <div class="feature-section-column-view-list-content-item-body">
+                    <p> {{itemBody}}</p>
+                </div>
+            </div>
+            <div class="feature-section-column-view-list-content-item">
+                <div class="feature-section-column-view-list-content-item-icon">
+                    <img src="{{icon2Path}}" alt="icon">
+                </div>
+                <div class="feature-section-column-view-list-content-item-title">
+                    <h5>{{itemTitle}}</h5>
+                </div>
+                <div class="feature-section-column-view-list-content-item-body">
+                    <p> {{itemBody}}</p>
+                </div>
+            </div>
+            <div class="feature-section-column-view-list-content-item">
+                <div class="feature-section-column-view-list-content-item-icon">
+                    <img src="{{icon3Path}}" alt="icon">
+                </div>
+                <div class="feature-section-column-view-list-content-item-title">
+                    <h5>{{itemTitle}}</h5>
+                </div>
+                <div class="feature-section-column-view-list-content-item-body">
+                    <p> {{itemBody}}</p>
+                </div>
+            </div>
+            <div class="feature-section-column-view-list-content-item">
+                <div class="feature-section-column-view-list-content-item-icon">
+                    <img src="{{icon4Path}}" alt="icon">
+                </div>
+                <div class="feature-section-column-view-list-content-item-title">
+                    <h5>{{itemTitle}}</h5>
+                </div>
+                <div class="feature-section-column-view-list-content-item-body">
+                    <p> {{itemBody}}</p>
+                </div>
+            </div>
+            <div class="feature-section-column-view-list-content-item">
+                <div class="feature-section-column-view-list-content-item-icon">
+                    <img src="{{icon5Path}}" alt="icon">
+                </div>
+                <div class="feature-section-column-view-list-content-item-title">
+                    <h5>{{itemTitle}}</h5>
+                </div>
+                <div class="feature-section-column-view-list-content-item-body">
+                    <p> {{itemBody}}</p>
+                </div>
+            </div>
+            <div class="feature-section-column-view-list-content-item">
+                <div class="feature-section-column-view-list-content-item-icon">
+                    <img src="{{icon6Path}}" alt="icon">
+                </div>
+                <div class="feature-section-column-view-list-content-item-title">
+                    <h5>{{itemTitle}}</h5>
+                </div>
+                <div class="feature-section-column-view-list-content-item-body">
+                    <p> {{itemBody}}</p>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="feature-section-column-view-list-content">
-        <div class="feature-section-column-view-list-content-item">
-            <div class="feature-section-column-view-list-content-item-icon">
-                <img src="{{icon1Path}}" alt="icon">
-            </div>
-            <div class="feature-section-column-view-list-content-item-title">
-                <h5>{{itemTitle}}</h5>
-            </div>
-            <div class="feature-section-column-view-list-content-item-body">
-                <p> {{itemBody}}</p>
-            </div>
-        </div>
-        <div class="feature-section-column-view-list-content-item">
-            <div class="feature-section-column-view-list-content-item-icon">
-                <img src="{{icon2Path}}" alt="icon">
-            </div>
-            <div class="feature-section-column-view-list-content-item-title"> 
-                <h5>{{itemTitle}}</h5>
-            </div>
-            <div class="feature-section-column-view-list-content-item-body"> 
-                <p> {{itemBody}}</p>
-            </div>
-        </div>
-        <div class="feature-section-column-view-list-content-item">
-            <div class="feature-section-column-view-list-content-item-icon">
-                <img src="{{icon3Path}}" alt="icon">
-            </div>
-            <div class="feature-section-column-view-list-content-item-title"> 
-                <h5>{{itemTitle}}</h5>
-            </div>
-            <div class="feature-section-column-view-list-content-item-body"> 
-                <p> {{itemBody}}</p>
-            </div>
-        </div>
-        <div class="feature-section-column-view-list-content-item">
-            <div class="feature-section-column-view-list-content-item-icon">
-                <img src="{{icon4Path}}" alt="icon">
-            </div>
-            <div class="feature-section-column-view-list-content-item-title"> 
-                <h5>{{itemTitle}}</h5>
-            </div>
-            <div class="feature-section-column-view-list-content-item-body"> 
-                <p> {{itemBody}}</p>
-            </div>
-        </div>
-        <div class="feature-section-column-view-list-content-item">
-            <div class="feature-section-column-view-list-content-item-icon">
-                <img src="{{icon5Path}}" alt="icon">
-            </div>
-            <div class="feature-section-column-view-list-content-item-title"> 
-                <h5>{{itemTitle}}</h5>
-            </div>
-            <div class="feature-section-column-view-list-content-item-body"> 
-                <p> {{itemBody}}</p>
-            </div>
-        </div>
-        <div class="feature-section-column-view-list-content-item">
-            <div class="feature-section-column-view-list-content-item-icon">
-                <img src="{{icon6Path}}" alt="icon">
-            </div>
-            <div class="feature-section-column-view-list-content-item-title"> 
-                <h5>{{itemTitle}}</h5>
-            </div>
-            <div class="feature-section-column-view-list-content-item-body"> 
-                <p> {{itemBody}}</p>
-            </div>
-        </div>
-    </div>
-</div>
+</section>

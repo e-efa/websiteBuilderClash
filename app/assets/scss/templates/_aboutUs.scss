@@ -1,18 +1,31 @@
 .about-us {
-  width: 90em;
   margin: auto;
+  width: 327px;
+  @include mobile-lg {
+    width: 668px;
+  }
+  @include desktops {
+    width: 70.5em;
+  }
+  @include large-desktops-mid {
+    width: 90em;
+  }
   padding-top: 90px;
-  padding-bottom: 90px;
-  margin-bottom: 100px;
   background-color: $aboutUs-bgColor;
   .about-us-content {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 33px;
     justify-content: center;
+    @include mobile-lg {
+      flex-direction: row;
+    }
     .about-us-title {
-      width: 460px;
-      height: 62px;
+      width: 327px;
+      @include mobile-lg {
+        width: 460px;
+        height: 62px;
+      }
       .about-us-subText {
         width: 85px;
         h5 {
@@ -26,8 +39,11 @@
       }
     }
     .about-us-body {
-      width: 555px;
-      height: 81px;
+      width: 327px;
+      @include mobile-lg {
+        width: 555px;
+        height: 81px;
+      }
       p {
         font-size: 18px;
         font-style: normal;
@@ -48,5 +64,3 @@
     margin-top: 114px;
   }
 }
-
-

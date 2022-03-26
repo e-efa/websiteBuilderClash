@@ -5,24 +5,26 @@
 {% set btnTitle="Download for free"%}
 
 <!-- var img -->
-{% set bkgLogo="/image/svg/cta/backgroundLogo.svg"%}
+{% set bkgLogo="css/image/svg/cta/backgroundLogo.svg"%}
 
-<div class="cta-section">
-    <div class="cta-section-content">
-        <div class="subtitle">
-            <h5>{{subTitle}}</h5>
+<secction class="body">
+    <div class="cta-section">
+        <div class="cta-section-content">
+            <div class="subtitle">
+                <h5>{{subTitle}}</h5>
+            </div>
+            <div class="title">
+                <h2>{{title}}</h2>
+            </div>
+            <div class="body">
+                <p>{{body}}</p>
+            </div>
         </div>
-        <div class="title">
-            <h2>{{title}}</h2>
+        <div class="cta-section-button">
+            <button>{{btnTitle}}</button>
         </div>
-        <div class="body">
-            <p>{{body}}</p>
+        <div class="background-img">
+            <img src="{{bkgLogo}}" alt="">
         </div>
     </div>
-    <div class="cta-section-button">
-        <button>{{btnTitle}}</button>
-    </div>
-    <div class="background-img">
-        <img src="{{bkgLogo}}" alt="">
-    </div>
-</div>
+</secction>

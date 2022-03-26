@@ -8,39 +8,41 @@
 {% set teamMemPost2="Chief Information Officer"%}
 
 <!-- img path -->
-{% set team1ImgPath="/image/png/team/team1wide.png"%}
-{% set team2ImgPath="/image/png/team/team2wide.png"%}
+{% set team1ImgPath="css/image/png/team/team1wide.png"%}
+{% set team2ImgPath="css/image/png/team/team2wide.png"%}
 
 
-<div class="team-section-horizontalView">
-    <div class="team-content-section">
-        <div class="team-content-title">
-            <h2>{{title}}</h2>
-        </div>
-        <div class="team-content-body">
-            <p>{{body}}</p>
-        </div>
-    </div>
-    <div class="team-img-grid-section">
-        <div class="team-member">
-            <img src="{{team1ImgPath}}" alt="">
-            <div class="team-member-name">
-                <h4>{{teamMemName1}}</h4>
+<section class="body">
+    <div class="team-section-horizontalView">
+        <div class="team-content-section">
+            <div class="team-content-title">
+                <h2>{{title}}</h2>
             </div>
-            <div class="team-member-position">
-                <p>{{teamMemPost1}}</p>
+            <div class="team-content-body">
+                <p>{{body}}</p>
             </div>
         </div>
-        <div class="team-member">
+        <div class="team-img-grid-section">
             <div class="team-member">
-                <img src="{{team2ImgPath}}" alt="">
+                <img src="{{team1ImgPath}}" alt="">
                 <div class="team-member-name">
-                    <h4>{{teamMemName2}}</h4>
+                    <h4>{{teamMemName1}}</h4>
                 </div>
                 <div class="team-member-position">
-                    <p>{{teamMemPost2}}</p>
+                    <p>{{teamMemPost1}}</p>
+                </div>
+            </div>
+            <div class="team-member">
+                <div class="team-member">
+                    <img src="{{team2ImgPath}}" alt="">
+                    <div class="team-member-name">
+                        <h4>{{teamMemName2}}</h4>
+                    </div>
+                    <div class="team-member-position">
+                        <p>{{teamMemPost2}}</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+</section>
