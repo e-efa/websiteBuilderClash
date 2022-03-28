@@ -1,23 +1,25 @@
-<!-- hero1 section -->
+{% import '_globalVaribalesForNunjucks.njk' as hero2 %}
+
+<!-- hero2 section -->
 <section class="body">
     <div class="h2-hero_section">
         <div class="content-section">
             <div class="title">
-                <h2>Billing simplified.</h2>
+                <h2>{{hero2.heroSectionTitle}}</h2>
             </div>
             <div class="body">
-                <p>A subheading that addresses the what, the why we should care and hopefully some social proof.</p>
+                <p>{{hero2.heroSectionBody}}</p>
             </div>
             <div class="btn_container">
-                <button class="btn btn-black hero2-btn">Try it free</button>
+                <button class="btn">{{hero2.heroSectionBtnTitle}}</button>
                 <div class="sub-body">
-                    <span>No credit card required.</span>
+                    <span>{{hero2.heroSectionSubBody}}</span>
                 </div>
             </div>
         </div>
         <div class="image_section">
-            <img src="css/image/png/hero2/Mobile-Mockup.png" alt="mobile">
-            <img src="css/image/png/hero2/Mobile-Mockup-2.png" alt="mobile-2">
+            <img src="{{hero2.heroSectionSecondaryImg}}" alt="mobile">
+            <img src="{{hero2.heroSectionTertiaryImg}}" alt="mobile-2">
         </div>
     </div>
 </section>

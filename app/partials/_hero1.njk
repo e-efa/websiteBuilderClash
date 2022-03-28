@@ -1,35 +1,36 @@
 
-{% import '_globalVaribalesForNunjucks.njk' as hero1%}
+{% import '_globalVaribalesForNunjucks.njk' as hero1 %}
+
 <!-- hero1 section -->
 <section class="body">
     <div class="h1-hero_section">
         <div class="content-section">
             <div class="title">
-                <h2>{{hero1.heading}}</h2>
+                <h2>{{hero1.heroSectionTitle}}</h2>
             </div>
             <div class="body">
-                <p>{{hero1.body}}</p>
+                <p>{{hero1.heroSectionBody}}</p>
             </div>
-            <button>{{hero1.btnTitle}}</button>
+            <button>{{hero1.heroSectionBtnTitle}}</button>
             <div class="sub-body">
-                <span>{{hero1.subBody}}</span>
+                <span>{{hero1.heroSectionSubBody}}</span>
             </div>
             <div class="testimonial-section">
                 <div class="testi-person_img">
-                    <img src="{{hero1.testimonialProfilePicture}}" alt="person">
+                    <img src="{{hero1.heroSectionTestimonialProfilePicture}}" alt="person">
                 </div>
                 <div class="testi-content">
                     <div class="testi-body">
-                        <p>{{hero1.testimonialBody}}</p>
+                        <p>{{hero1.heroSectionTestimonialBody}}</p>
                     </div>
                     <div class="testi-position">
-                        <span>{{hero1.testimonialPost}}</span>
+                        <span>{{hero1.heroSectionTestimonialPost}}</span>
                     </div>
                 </div>
             </div>
         </div>
         <div class="image_section">
-            <img src="{{hero1.mainImg}}" alt="mobile">
+            <img src="{{hero1.heroSectionPrimaryImg}}" alt="mobile">
         </div>
     </div>
 </section>
