@@ -1,33 +1,35 @@
+
+{% import '_globalVaribalesForNunjucks.njk' as hero1%}
 <!-- hero1 section -->
 <section class="body">
     <div class="h1-hero_section">
         <div class="content-section">
             <div class="title">
-                <h2>Billing simplified.</h2>
+                <h2>{{hero1.heading}}</h2>
             </div>
             <div class="body">
-                <p>A subheading that addresses the what, the why we should care and hopefully some social proof.</p>
+                <p>{{hero1.body}}</p>
             </div>
-            <button>Give it a try</button>
+            <button>{{hero1.btnTitle}}</button>
             <div class="sub-body">
-                <span>No credit card required.</span>
+                <span>{{hero1.subBody}}</span>
             </div>
             <div class="testimonial-section">
                 <div class="testi-person_img">
-                    <img src="css/image/png/hero1/hero1-prsn.png" alt="person">
+                    <img src="{{hero1.testimonialProfilePicture}}" alt="person">
                 </div>
                 <div class="testi-content">
                     <div class="testi-body">
-                        <p>“A testimonial that absolutely nails the value proposition in a sentence or two”.</p>
+                        <p>{{hero1.testimonialBody}}</p>
                     </div>
                     <div class="testi-position">
-                        <span>Cameron Williamson, CEO, Stripe</span>
+                        <span>{{hero1.testimonialPost}}</span>
                     </div>
                 </div>
             </div>
         </div>
         <div class="image_section">
-            <img src="css/image/png/hero1/hero1-mobile.png" alt="mobile">
+            <img src="{{hero1.mainImg}}" alt="mobile">
         </div>
     </div>
 </section>

@@ -240,19 +240,6 @@
     }
   }
 }
-// &-dark {
-//   @extend .hero_section;
-//   background: #000000;
-//   color: $Background;
-// }
-// &-light {
-//   @extend .hero_section;
-//   background: $Background;
-// }
-// &-purple {
-//   @extend .hero_section;
-//   background: $Highlight-2;
-// }
 .hero_section-img {
   order: 1;
   @include desktops {
@@ -298,7 +285,6 @@
     width: 90em;
     margin: auto;
     background: $hero1-bgColor;
-    // padding-top: 170px;
     padding-bottom: 132px;
     padding-left: 0px;
     gap: 80px;
