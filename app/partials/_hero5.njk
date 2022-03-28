@@ -1,34 +1,37 @@
+{% import '_globalVaribalesForNunjucks.njk' as hero5 %}
+
+{# hero5 #}
 <div class="hero-5">
     <div class="bg-purple">
         <div class="h1-hero_section">
             <div class="content-section">
                 <div class="title light-task">
-                    <h2>Billing simplified.</h2>
+                    <h2>{{hero5.heroSectionTitle}}</h2>
                 </div>
                 <div class="body light-task">
-                    <p>A subheading that addresses the what, the why we should care and hopefully some social proof.</p>
+                    <p>{{hero5.heroSectionBody}}</p>
                 </div>
-                <button class="btn btn-black">Give it a try</button>
+                <button class="btn btn-black">{{hero5.heroSectionBtnTitle}}</button>
                 <div class="sub-body light-task">
-                    <span>No credit card required.</span>
+                    <span>{{hero5.heroSectionSubBody}}</span>
                 </div>
                 <div class="testimonial-section testi-h5">
                     <div class="testi-person_img">
-                        <img src="css/image/png/hero1/hero1-prsn.png" alt="person">
+                        <img src="{{hero5.heroSectionTestimonialPrimaryProfilePicture}}" alt="person">
                     </div>
                     <div class="testi-content">
                         <div class="testi-body">
-                            <p>“A testimonial that absolutely nails the value proposition in a sentence or two”.</p>
+                            <p>{{hero5.heroSectionTestimonialBody}}</p>
                         </div>
                         <div class="testi-position">
-                            <span>Cameron Williamson, CEO, Stripe</span>
+                            <span>{{hero5.heroSectionTestimonialPost}}</span>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="image_section">
-                <img src="css/image/png/hero1/hero1-mobile.png" alt="mobile">
+                <img src="{{hero5.heroSectionPrimaryImg}}" alt="mobile">
             </div>
         </div>
-    </div>  
+    </div>
 </div>
