@@ -1,38 +1,40 @@
+{% import '_globalVaribalesForNunjucks.njk' as hero8 %}
+
 <!-- hero 8 section-->
 <section class="body">
     <div class="h8-hero_section">
         <div class="content-section">
             <div class="title">
-                <h2>Billing simplified.</h2>
+                <h2>{{hero8.heroSectionTitle}}</h2>
             </div>
             <div class="body">
-                <p>A subheading that addresses the what, the why we should care and hopefully some social proof.</p>
+                <p>{{hero8.heroSectionBody}}</p>
             </div>
             <div class="button-section flex-btn">
-                <button class="btn btn-black ios_app">iOS App <img src="css/image/svg/navbar/Apple.svg"
+                <button class="btn btn-black ios_app">iOS App <img src="{{hero8.heroSectionAppleLogo}}"
                         alt="apple"></button>
-                <button class="btn btn-black android_app">Android App <img src="css/image/svg/navbar/Android.svg"
+                <button class="btn btn-black android_app">Android App <img src="{{hero8.heroSectionAndroidLogo}}"
                         alt="android"></button>
             </div>
             <div class="sub-body">
-                <span>No credit card required.</span>
+                <span>{{hero8.heroSectionSubBody}}</span>
             </div>
             <div class="testimonial-section">
                 <div class="testi-person_img">
-                    <img src="css/image/png/hero7/person1.png" alt="person">
+                    <img src="{{hero8.heroSectionTestimonialFourthProfilePicture}}" alt="person">
                 </div>
                 <div class="testi-content">
                     <div class="testi-body">
-                        <p>“A testimonial that absolutely nails the value proposition in a sentence or two”.</p>
+                        <p>{{hero8.heroSectionTestimonialBody}}</p>
                     </div>
                     <div class="testi-position">
-                        <span>Cameron Williamson, CEO, Stripe</span>
+                        <span>{{hero8.heroSectionTestimonialPost}}</span>
                     </div>
                 </div>
             </div>
         </div>
         <div class="image_section-circle">
-            <img src="css/image/png/hero1/hero1-mobile.png" alt="mobile">
+            <img src="{{hero8.heroSectionPrimaryImg}}" alt="mobile">
         </div>
     </div>
 </section>
