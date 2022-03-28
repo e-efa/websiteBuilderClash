@@ -1,38 +1,40 @@
-<!-- hero4 gradient version-->
+{% import '_globalVaribalesForNunjucks.njk' as hero4 %}
+
+<!-- hero4 -->
 <section class="body">
   <div class="hero_section">
     <div class="hero_section-content">
       <div class="title">
-        <h2>Billing simplified.</h2>
+        <h2>{{hero4.heroSectionTitle}}</h2>
       </div>
       <div class="body">
-        <p>A subheading that addresses the what, the why we should care and hopefully some social proof.</p>
+        <p>{{hero4.heroSectionBody}}</p>
       </div>
       <div class="button">
         <button class="btn btn-download">Download the app</button>
       </div>
       <div class="sub-text">
-        <span>No credit card required.</span>
+        <span>{{hero4.heroSectionSubBody}}</span>
       </div>
       <div class="testimonial-section">
         <div class="person-face">
-          <img src="css/image/png/hero4/cus-1.png" alt="person1">
+          <img src="{{hero4.heroSectionTestimonialTertiaryProfilePicture}}" alt="person1">
         </div>
         <div class="customer_content">
           <div class="details">
-            <p>“A testimonial that absolutely nails the value proposition in a sentence or two”.</p>
+            <p>{{hero4.heroSectionTestimonialBody}}</p>
           </div>
           <div class="position">
-            <span>Cameron Williamson, CEO, Stripe</span>
+            <span>{{hero4.heroSectionTestimonialPost}}</span>
           </div>
         </div>
       </div>
       <div class="circle">
-        <img src="css/image/png/hero4/hero-circle.png" alt="circle">
+        <img src="{{hero4.heroSectionPrimaryCircleImg}}" alt="circle">
       </div>
     </div>
     <div class="hero_section-img">
-      <img src="css/image/png/hero4/clash-hero-img.png" alt="mobile">
+      <img src="{{hero4.heroSectionSecondaryImg}}" alt="mobile">
     </div>
   </div>
 </section>
