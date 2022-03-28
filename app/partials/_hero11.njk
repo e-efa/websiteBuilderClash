@@ -3,21 +3,24 @@
 {% set buttonName1="Button"%}
 {% set buttonName2="Button"%}
 {% set heroImageLight="css/image/png/hero11/Half-Browser.png"%}
+
+{% import '_globalVaribalesForNunjucks.njk' as hero11 %}
+
 <!-- hero 11 light -->
 <section class="html">
     <div class="hero-section">
         <div class="hero-section-title">
-            <h2>{{title}}</h2>
+            <h2>{{hero11.heroSectionSecondaryTitle}}</h2>
         </div>
         <div class="hero-section-body">
-            <p>{{body}}</p>
+            <p>{{hero11.heroSectionBody}}</p>
         </div>
         <div class="hero-section-buttons">
-            <button class="btn btn1-h11">{{buttonName1}}</button>
-            <button class="btn btn2-h11">{{buttonName2}}</button>
+            <button class="btn btn1-h11">{{hero11.heroSectionSixthBtnTitle}}</button>
+            <button class="btn btn2-h11">{{hero11.heroSectionSixthBtnTitle}}</button>
         </div>
         <div class="hero-section-img">
-            <img src="{{heroImageLight}}" alt="">
+            <img src="{{hero11.heroSectionFourthImg}}" alt="">
         </div>
     </div>
 </section>
