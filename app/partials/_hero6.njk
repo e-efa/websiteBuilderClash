@@ -1,21 +1,24 @@
+{% import '_globalVaribalesForNunjucks.njk' as hero6 %}
+
+{# hero 6 #}
 
 <section class="body">
     <div class="hero_section-h6">
         <div class="content_section">
             <div class="title">
-                <h2>Billing simplified.</h2>
+                <h2>{{hero6.heroSectionTitle}}</h2>
             </div>
             <div class="body">
-                <p>Start billing like a pro and get paid within minutes.</p>
+                <p>{{hero6.heroSectionSecondaryBody}}</p>
             </div>
             <div class="button_section">
-                <button>Download for free</button>
+                <button>{{hero6.heroSectionTertiaryBtnTitle}}</button>
             </div>
         </div>
         <div class="image_section">
             <div class="circle-bg">
-                <img src="css/image/png/hero6/circle-img.png" alt="circle">
-                <img src="css/image/png/hero1/hero1-mobile.png" alt="mobile">
+                <img src="{{hero6.heroSectionPurpalFillCircleBckgrndImg}}" alt="circle">
+                <img src="{{hero6.heroSectionPrimaryImg}}" alt="mobile">
             </div>
         </div>
     </div>
